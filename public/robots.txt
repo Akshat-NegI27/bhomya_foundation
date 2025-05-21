@@ -1,0 +1,8 @@
+# robots.txt for mhveducation.com
+
+User-agent: *
+Allow: /
+Disallow:
+
+# Sitemap (very important for indexing)
+Sitemap: https://mhveducation.com/sitemap.xml

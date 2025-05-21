@@ -1,0 +1,145 @@
+@import "../fonts/fonts.css";
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(
+    circle at center,
+    #ffffff,
+    #fad0c4,
+    #fad0c4,
+    #fbc2eb,
+    #a6c1ee,
+    #e2f5b5,
+    #b3f7bc
+  );
+  background-size: 300% 300%;
+  animation: gradient-animation 10s ease infinite;
+
+  z-index: 9999;
+  transition: opacity 0.7s ease-in-out;
+}
+
+.loader-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  position: relative;
+  animation: fadeInThenOut 2s ease forwards;
+  animation-delay: 0s;
+}
+
+.loader-quote {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  position: absolute;
+  opacity: 0;
+  animation: quoteFadeIn 1.5s ease forwards;
+  animation-delay: 2s; /* Starts after text fades out */
+}
+
+.loader-fadeout {
+  animation: fadeOut 1s forwards;
+  pointer-events: none;
+}
+
+@keyframes fadeInThenOut {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes quoteFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .loader-container {
+    .loader-text,
+    .loader-quote {
+      font-size: 1rem;
+      letter-spacing: 5px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .loader-container {
+    .loader-text,
+    .loader-quote {
+      font-size: 1rem;
+      letter-spacing: 3px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .loader-container {
+    .loader-text,
+    .loader-quote {
+      font-size: 1rem;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .loader-container {
+    .loader-text,
+    .loader-quote {
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+    }
+  }
+}

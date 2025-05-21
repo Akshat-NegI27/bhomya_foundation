@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url(../../fonts/sofia-pro/style.css);
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+
+@font-face {
+  font-family: gilroyy;
+  src: url(../../fonts/Gilroy-ExtraBold.otf);
+}
+@font-face {
+  font-family: sfprotext;
+  src: url(../../fonts/SFPRODISPLAYMEDIUM.OTF);
+}
+@font-face {
+  font-family: gilroy;
+  src: url(../../fonts/Gilroy-Light.otf);
+}
+@font-face {
+  font-family: manrope;
+  src: url(../../fonts/Manrope-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: helvetica2;
+  src: url(../../fonts/helvetica.woff);
+}
+@font-face {
+  font-family: generalsans-medium;
+  src: url(../../fonts/GeneralSans-Medium.otf);
+}
+@font-face {
+  font-family: generalsans-regular;
+  src: url(../../fonts/GeneralSans-Regular.otf);
+}
+@font-face {
+  font-family: patron-m;
+  src: url(../../fonts/Patron-Medium.ttf);
+}
+@font-face {
+  font-family: patron-r;
+  src: url(../../fonts/Patron-Regular.woff2);
+}
+
+@font-face {
+  font-family: inter-thin;
+  src: url(../../fonts/Inter-Thin.woff2);
+}
+@font-face {
+  font-family: inter-n7;
+  src: url(../../fonts/inter_n7.woff2);
+}
+@font-face {
+  font-family: inter-n8;
+  src: url(../../fonts/inter_n8.woff2);
+}
+@font-face {
+  font-family: inter-n9;
+  src: url(../../fonts/inter_n9.woff2);
+}
+@font-face {
+  font-family: worksans-n4;
+  src: url(../../fonts/worksans_n4.woff2);
+}
+@font-face {
+  font-family: worksans-n5;
+  src: url(../../fonts/worksans_n5.woff2);
+}
+@font-face {
+  font-family: consoloas;
+  src: url(../../fonts/Consolas.woff);
+}
+
+@font-face {
+  font-family: DM-Sans2;
+  src: url(../../fonts/DM-Sans2.woff2);
+}
+@font-face {
+  font-family: DM-Sans;
+  src: url(../../fonts/DM-Sans.woff2);
+}
