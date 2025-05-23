@@ -10,6 +10,9 @@ main {
   width: 100%;
 }
 
+.profil {
+  width: 100%;
+}
 footer {
   position: relative;
   width: 100%;
@@ -46,14 +49,13 @@ footer .containerx {
 .profil .logo_area {
   display: flex;
   align-items: center;
-  height: 20%;
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .profil .logo_area img {
-  filter: invert(100%);
-  width: 20%;
-  height: 20%;
+  /* filter: invert(100%); */
+  width: 120px;
 }
 
 .logo_area .logo_name {

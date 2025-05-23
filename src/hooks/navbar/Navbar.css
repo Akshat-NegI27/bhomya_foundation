@@ -2,7 +2,6 @@
 
 .navbar {
   position: fixed;
-
   top: 0;
   left: 0;
   right: 0;
@@ -11,9 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   backdrop-filter: blur(10px);
-
   transition: all 0.3s ease-in-out;
   z-index: 1000;
 }
@@ -27,7 +24,7 @@
     transition: all 0.3s ease-in-out;
     a {
       transition: color 0.3s ease-in-out;
-      color: rgba(65, 65, 65, 0.733);
+      color: rgba(0, 0, 0, 0.5);
     }
   }
   .navbar-links a::after {
@@ -38,14 +35,14 @@
     height: 1.5px;
     bottom: -1px;
     left: 0;
-    background-color: #000000;
+    background-color: #3ca238;
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
   }
 
   .navbar-links a:hover,
   .navbar-links a.active {
-    color: #000000;
+    color: #236724;
   }
   .btn-download {
     color: #000000;
@@ -68,15 +65,14 @@
 .logo {
   display: flex;
   align-items: center;
-  height: 65px;
+  height: 50px;
   margin-left: 90px;
-}
+  img {
+    height: 100%;
+    width: 100%;
 
-.logo img {
-  height: 120%;
-  width: 100%;
-
-  transition: height 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+  }
 }
 
 .menu-icon {
@@ -89,9 +85,9 @@
 .navbar-links {
   display: flex;
   gap: 28px;
-  font-family: worksans-n4;
-  font-weight: 800;
-  font-size: 16px;
+  font-family: inter-thin;
+  font-weight: 500;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
@@ -110,14 +106,14 @@
   height: 1.5px;
   bottom: -1px;
   left: 0;
-  background-color: #000000;
+  background-color: #3ca238;
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;
 }
 
 .navbar-links a:hover,
 .navbar-links a.active {
-  color: #000000;
+  color: #236724;
 }
 
 .navbar-links a:hover::after,
