@@ -7,28 +7,28 @@ const images = [
   { src: "https://images.pexels.com/photos/6591155/pexels-photo-6591155.jpeg" },
   { src: "https://images.pexels.com/photos/6143367/pexels-photo-6143367.jpeg" },
   { src: "https://images.pexels.com/photos/7047432/pexels-photo-7047432.jpeg" },
-   { src: "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg" },
+  { src: "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg" },
   { src: "https://images.pexels.com/photos/6591155/pexels-photo-6591155.jpeg" },
-   { src: "https://images.pexels.com/photos/6757642/pexels-photo-6757642.jpeg" },
- { src: "https://images.pexels.com/photos/6143367/pexels-photo-6143367.jpeg" },
+  { src: "https://images.pexels.com/photos/6757642/pexels-photo-6757642.jpeg" },
+  { src: "https://images.pexels.com/photos/6143367/pexels-photo-6143367.jpeg" },
   { src: "https://images.pexels.com/photos/7047432/pexels-photo-7047432.jpeg" },
-   { src: "https://images.pexels.com/photos/6757642/pexels-photo-6757642.jpeg" },
+  { src: "https://images.pexels.com/photos/6757642/pexels-photo-6757642.jpeg" },
   { src: "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg" },
   { src: "https://images.pexels.com/photos/6591155/pexels-photo-6591155.jpeg" },
   { src: "https://images.pexels.com/photos/6143367/pexels-photo-6143367.jpeg" },
   { src: "https://images.pexels.com/photos/7047432/pexels-photo-7047432.jpeg" },
-    { src: "https://images.pexels.com/photos/7047432/pexels-photo-7047432.jpeg" },
-   { src: "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg" },
+  { src: "https://images.pexels.com/photos/7047432/pexels-photo-7047432.jpeg" },
+  { src: "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg" },
   { src: "https://images.pexels.com/photos/6757642/pexels-photo-6757642.jpeg" },
   { src: "https://images.pexels.com/photos/6591155/pexels-photo-6591155.jpeg" },
   { src: "https://images.pexels.com/photos/6143367/pexels-photo-6143367.jpeg" },
   { src: "https://images.pexels.com/photos/7047432/pexels-photo-7047432.jpeg" },
-   { src: "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg" },
+  { src: "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg" },
   { src: "https://images.pexels.com/photos/6757642/pexels-photo-6757642.jpeg" },
   { src: "https://images.pexels.com/photos/6591155/pexels-photo-6591155.jpeg" },
   { src: "https://images.pexels.com/photos/6143367/pexels-photo-6143367.jpeg" },
   { src: "https://images.pexels.com/photos/7047432/pexels-photo-7047432.jpeg" },
-   { src: "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg" },
+  { src: "https://images.pexels.com/photos/6646918/pexels-photo-6646918.jpeg" },
   { src: "https://images.pexels.com/photos/6591155/pexels-photo-6591155.jpeg" },
   { src: "https://images.pexels.com/photos/6143367/pexels-photo-6143367.jpeg" },
   { src: "https://images.pexels.com/photos/7047432/pexels-photo-7047432.jpeg" },
@@ -53,7 +53,8 @@ const GalleryContent = () => {
         {images.map((img, idx) => (
           <div className="masonry-item" key={idx}>
             <div className="img-wrapper">
-              <img src={img.src} alt={`Gallery ${idx}`} />
+              <img src={img.src} alt={`Gallery ${idx}`} loading="lazy" />
+
               <div className="hover-icon" onClick={() => openLightbox(idx)}>
                 <FaExpandAlt />
               </div>
@@ -64,9 +65,14 @@ const GalleryContent = () => {
 
       {lightboxOpen && (
         <div className="lightbox" onClick={closeLightbox}>
-          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+          <div
+            className="lightbox-content"
+            onClick={(e) => e.stopPropagation()}
+          >
             <img src={images[activeIndex].src} alt="enlarged" />
-            <span className="close">&times;</span>
+            <span className="close" onClick={closeLightbox}>
+              &times;
+            </span>
           </div>
         </div>
       )}
