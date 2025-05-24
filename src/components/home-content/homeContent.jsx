@@ -15,8 +15,10 @@ const HomeContent = () => {
         <img src={prop2} className="prop2" alt="" />
 
         <div className="sec1-content">
+          <h3>Environmental Conservation NGO</h3>
           <h1>
-            TOGETHER FOR <br /> TREES UNITED FOR <br /> TOMORROW
+            Together For Trees
+            <br /> United For Tomorrow
           </h1>
           <h2>Be the Change, Plant the Change.</h2>
           <p>
