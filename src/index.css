@@ -9,6 +9,16 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: none;
+
+  ::selection {
+    background-color: #cacaca;
+    color: #000000;
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
 }
 
 body {
@@ -17,4 +27,5 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
