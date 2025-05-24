@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css";
-import brandlogo from "/assets/img/logo.png";
+import brandlogo from "/assets/img/logo.webp";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
@@ -23,10 +23,6 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);

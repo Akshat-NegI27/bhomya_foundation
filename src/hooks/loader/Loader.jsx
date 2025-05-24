@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Loader.css";
 
-const quotes = [
-  "Germinating the seeds of conservation.",
-];
+const quotes = ["Germinating the seeds of conservation."];
 
 const Loader = ({ onComplete }) => {
   const [fadeOut, setFadeOut] = useState(false);

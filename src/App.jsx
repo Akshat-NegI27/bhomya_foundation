@@ -14,10 +14,10 @@ const Donate = lazy(() => import("./pages/donate/donate"));
 const Gallery = lazy(() => import("./pages/gallery/gallery"));
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 5500); // Adjust if needed
+    const timer = setTimeout(() => setLoading(false), 6000); // Adjust if needed
     return () => clearTimeout(timer);
   }, []);
 
