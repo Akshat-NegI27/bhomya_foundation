@@ -11,15 +11,18 @@ const Footer = () => {
           <div className="profil">
             <div className="logo_area">
               <img src={logo} alt="MVM EDUCATION Logo" />
-              { }
+              {}
             </div>
             <div className="desc_area">
               <p>
-                We are the Bhomya Foundation in Dehradun, offering strong values, impactful programs, and dedicated efforts for a better society.
+                We are the Bhomya Foundation in Dehradun, offering strong
+                values, impactful programs, and dedicated efforts for a better
+                society.
               </p>
               <h2>Office Address:</h2>
               <p>
-                Monal Enclave, Near Kargi Chowk, Dehradun, Uttarakhand – 248001, India
+                Monal Enclave, Near Kargi Chowk, Dehradun, Uttarakhand – 248001,
+                India
               </p>
             </div>
             <div className="social_media">
@@ -48,7 +51,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Become a Member
+                    Become a Member jkashdkasj hdkjas
                   </a>
                 </li>
                 <li>
