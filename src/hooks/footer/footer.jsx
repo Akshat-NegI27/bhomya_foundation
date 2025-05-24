@@ -11,18 +11,15 @@ const Footer = () => {
           <div className="profil">
             <div className="logo_area">
               <img src={logo} alt="MVM EDUCATION Logo" />
-              {}
+              { }
             </div>
             <div className="desc_area">
               <p>
-                We are the leading Trading Institute in Dehradun, having a great
-                infrastructure, reliable teaching methods, and experienced staff
-                in our organization.
+                We are the Bhomya Foundation in Dehradun, offering strong values, impactful programs, and dedicated efforts for a better society.
               </p>
               <h2>Office Address:</h2>
               <p>
-                Iksana Workspaces, Anand Arcade, Kishanpur, Dehradun,
-                Uttarakhand 248001
+                Monal Enclave, Near Kargi Chowk, Dehradun, Uttarakhand – 248001, India
               </p>
             </div>
             <div className="social_media">
@@ -44,14 +41,14 @@ const Footer = () => {
           <div className="service_area">
             <ul className="service_header">
               <ul className="service_header">
-                <li className="service_name">Courses</li>
+                <li className="service_name">GET INVOLVE</li>
                 <li>
                   <a
                     href="/assets/courses/Beginner_Technical_Analysis_Course_Syllabus.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Beginner Technical Analysis Course
+                    Become a Member
                   </a>
                 </li>
                 <li>
@@ -60,7 +57,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Advanced Technical Analysis Course
+                    Become a Volunteer
                   </a>
                 </li>
                 <li>
@@ -69,7 +66,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Intraday Strategy Course
+                    Join as Intern
                   </a>
                 </li>
                 <li>
@@ -78,7 +75,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Elliott Wave Program
+                    Become a Mentor
                   </a>
                 </li>
                 <li>
@@ -87,7 +84,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Chartered Market Technician (CMT)
+                    Become a Partner
                   </a>
                 </li>
               </ul>
@@ -104,7 +101,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <Link to="/courses">Fee Structure</Link>
+                <Link to="/about">About Us</Link>
               </li>
               <li>
                 <Link to="/contact">Support</Link>
@@ -126,7 +123,7 @@ const Footer = () => {
           <div className="below">
             <div className="copy_right">
               <box-icon name="copyright"></box-icon>
-              <span>2025 MHV Education</span>
+              <span>2025 BHOMYA FOUNDATION</span>
             </div>
             <div className="tou">
               <a href="#">Terms of Use</a>
