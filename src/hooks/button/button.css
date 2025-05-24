@@ -76,7 +76,7 @@ button:hover .circle {
 
 button:hover .circle .icon.arrow {
   background: #fff;
-  transform: translate(14px, 0);
+  transform: translate(12px, 0);
 }
 
 button:hover .button-text {

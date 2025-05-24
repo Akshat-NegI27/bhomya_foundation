@@ -72,7 +72,7 @@
     top: 600px;
     left: -10px;
     width: 600px;
-    z-index: 2;
+    z-index: 0;
     /* rotate: 5deg; */
   }
 }
