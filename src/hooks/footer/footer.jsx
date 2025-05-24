@@ -51,7 +51,7 @@ const Footer = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Become a Member jkashdkasj hdkjas
+                    Become a Member sadas
                   </a>
                 </li>
                 <li>
