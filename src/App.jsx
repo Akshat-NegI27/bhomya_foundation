@@ -2,6 +2,7 @@ import { useState, useEffect, Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import CustomCursor from "./hooks/CustomCursor";
 import Loader from "./hooks/loader/Loader";
+import "./App.css";
 
 // Lazy-loaded pages
 const Home = lazy(() => import("./pages/home/home"));
