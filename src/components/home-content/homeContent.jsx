@@ -7,6 +7,10 @@ import prop2 from "/assets/img/prop2.png";
 import img2 from "/assets/img/photo1.webp";
 import { Link } from "react-router-dom";
 
+import logo1 from "/assets/img/BSOI.png";
+import logo2 from "/assets/img/IFSAlogo.svg";
+import logo3 from "/assets/img/doonlogo.avif";
+
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -242,6 +246,29 @@ const HomeContent = () => {
             environment for future generations.
           </p>
         </div>
+        <div className="sec3-logos">
+          <div className="sec3logo">
+            <img src={logo1} alt="BSOI" />
+          </div>
+          <div className="ifsa-logo">
+            <img src={logo2} alt="IFSA" />
+          </div>
+          <div className="sec3logo">
+            <img src={logo3} alt="Doon University" />
+          </div>
+        </div>
+        <div className="sec3-video">
+          <iframe
+            width="900"
+            height="600"
+            src="https://www.youtube.com/embed/ECHrDbdYPXo?autoplay=1&controls=0&loop=1&playlist=ECHrDbdYPXo&mute=1"
+            title="Eco Partnership"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
 
       {/* -----------------section 5----------------- */}
@@ -292,6 +319,47 @@ const HomeContent = () => {
             </div>
           </SwiperSlide>
         </Swiper>
+      </div>
+
+      {/* -----------------section 6----------------- */}
+      <div className="sec6">
+        <div className="sec6-text">
+          <h2>Get our Cause</h2>
+          <h1>Get Involved</h1>
+          <div className="line"></div>
+          <p>
+            There are many ways you can contribute to our mission and help make
+            a difference in environmental conservation.
+          </p>
+        </div>
+        <div className="newsletter">
+          <div className="newsletter-content">
+            <h2>Join Our Newsletter</h2>
+            <p>
+              Stay updated with our latest initiatives, events, and conservation
+              news. Be the first to know about upcoming volunteer opportunities
+              and campaigns.
+            </p>
+            <form>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                class="custom-input"
+                placeholder="Enter your email"
+                required
+              />
+              <button type="submit">Subscribe</button>
+            </form>
+            <p className="terms">
+              We respect your privacy. Unsubscribe at any time.
+            </p>
+          </div>
+          <div className="newsletter-img">
+            <img src={img2} alt="Newsletter" />
+          </div>
+        </div>
       </div>
     </div>
   );
