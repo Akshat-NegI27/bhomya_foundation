@@ -263,10 +263,10 @@ const HomeContent = () => {
             height="600"
             src="https://www.youtube.com/embed/ECHrDbdYPXo?autoplay=1&controls=0&loop=1&playlist=ECHrDbdYPXo&mute=1"
             title="Eco Partnership"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
           ></iframe>
         </div>
       </div>
@@ -345,8 +345,8 @@ const HomeContent = () => {
                 type="email"
                 id="email"
                 name="email"
-                autocomplete="email"
-                class="custom-input"
+                autoComplete="email"
+                className="custom-input"
                 placeholder="Enter your email"
                 required
               />

@@ -1,62 +1,241 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContactContent.css";
 
 const ContactContent = () => {
-  return (
-    <div className="contact-container">
-      <h5 className="badge">Reach Out</h5>
-      <h1 className="title">Contact Us</h1>
-      <p className="subtitle">Have questions or want to get involved? Reach out to us using the form below or contact us directly.</p>
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-      <div className="contact-wrapper">
+  const [errors, setErrors] = useState({});
+  const [agreed, setAgreed] = useState(false);
+  const [status, setStatus] = useState("");
+
+  const validate = () => {
+    const newErrors = {};
+
+    if (!formData.firstName.trim())
+      newErrors.firstName = "First name is required.";
+    if (!formData.lastName.trim())
+      newErrors.lastName = "Last name is required.";
+    if (!formData.email.trim()) newErrors.email = "Email is required.";
+    else if (!/\S+@\S+\.\S+/.test(formData.email))
+      newErrors.email = "Invalid email address.";
+
+    if (!formData.subject.trim()) newErrors.subject = "Subject is required.";
+    if (!formData.message.trim()) newErrors.message = "Message is required.";
+
+    return newErrors;
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setErrors({ ...errors, [e.target.name]: "" }); // Clear error on change
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!agreed) {
+      setStatus("Please agree to the terms before submitting.");
+      return;
+    }
+    const validationErrors = validate();
+
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      setStatus("Please fix the errors above.");
+      return;
+    }
+
+    setStatus("Sending...");
+
+    // Simulate AJAX
+    setTimeout(() => {
+      setStatus("Message sent successfully!");
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+      setErrors({});
+      setAgreed(false);
+    }, 1000);
+  };
+  return (
+    <div className="contactpg">
+      <div className="contact-header">
+        <h2>Reach Out</h2>
+        <h1>Contact Us</h1>
+        <div className="line"></div>
+        <p>
+          Have questions or want to get involved? Reach out to us using the form
+          below or contact us directly.
+        </p>
+      </div>
+
+      <div className="contact-container">
         {/* Left: Contact Form */}
         <div className="contact-form">
-          <form>
+          <form onSubmit={handleSubmit} noValidate>
             <div className="form-row">
               <div className="form-group">
-                <label>First Name *</label>
-                <input type="text" placeholder="Enter your first name" required />
+                <label htmlFor="firstName">
+                  First Name <span>*</span>
+                </label>
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  placeholder="Enter your first name"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                  autoComplete="given-name"
+                  aria-required="true"
+                />
+                <small className="error-message">{errors.firstName}</small>
               </div>
+
               <div className="form-group">
-                <label>Last Name *</label>
-                <input type="text" placeholder="Enter your last name" required />
+                <label htmlFor="lastName">
+                  Last Name <span>*</span>
+                </label>
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  placeholder="Enter your last name"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                  autoComplete="family-name"
+                  aria-required="true"
+                />
+                <small className="error-message">{errors.lastName}</small>
               </div>
             </div>
+
             <div className="form-group">
-              <label>Email *</label>
-              <input type="email" placeholder="Enter your email" required />
+              <label htmlFor="email">
+                Email <span>*</span>
+              </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email"
+                value={formData.email}
+                onChange={handleChange}
+                autoComplete="email"
+                aria-required="true"
+              />
+              <small className="error-message">{errors.email}</small>
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="subject">
+                Subject <span>*</span>
+              </label>
+              <input
+                type="text"
+                name="subject"
+                id="subject"
+                placeholder="Enter subject"
+                value={formData.subject}
+                onChange={handleChange}
+                autoComplete="off"
+                aria-required="true"
+              />
+              <small className="error-message">{errors.subject}</small>
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="message">
+                Message <span>*</span>
+              </label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Enter your message"
+                value={formData.message}
+                onChange={handleChange}
+                autoComplete="off"
+                aria-required="true"
+              ></textarea>
+              <small className="error-message">{errors.message}</small>
             </div>
             <div className="form-group">
-              <label>Subject *</label>
-              <input type="text" placeholder="Enter subject" required />
+              <label
+                htmlFor="agreement"
+                style={{ display: "flex", alignItems: "center" }}
+              >
+                <input
+                  type="checkbox"
+                  id="agreement"
+                  name="agreement"
+                  checked={agreed}
+                  onChange={(e) => setAgreed(e.target.checked)}
+                  aria-required="true"
+                  style={{ marginRight: "8px" }}
+                />
+                I agree to the terms and conditions
+              </label>
+              {!agreed && status && (
+                <small className="error-message" style={{ color: "red" }}>
+                  You must agree before submitting.
+                </small>
+              )}
             </div>
-            <div className="form-group">
-              <label>Message *</label>
-              <textarea placeholder="Enter your message" required></textarea>
-            </div>
-            <button type="submit" className="send-btn">Send Message ✉️</button>
+            <button type="submit" className="send-btn">
+              Send Message ✉️
+            </button>
+            {status && (
+              <p
+                style={{
+                  marginTop: "1em",
+                  color: status.includes("success") ? "green" : "red",
+                }}
+              >
+                {status}
+              </p>
+            )}
           </form>
-          <p className="disclaimer">By submitting this form, you agree to our privacy policy and terms of service.</p>
         </div>
 
         {/* Right: Info + Map */}
         <div className="contact-info-box">
           <div className="info-section">
             <h3>Contact Information</h3>
-            <p><strong>Email:</strong> info@bhomyafoundation.org</p>
-            <p><strong>Phone:</strong> +91 XXXXX XXXXX</p>
-            <p><strong>Address:</strong> Mangal Chowk, Near Kargi Chowk, Dehradun, Uttarakhand – 248001, India</p>
-            <p><strong>Working Hours:</strong><br />Monday – Friday: 9:00 AM – 5:00 PM</p>
+            <p>
+              <strong>Email:</strong> info@bhomyafoundation.org
+            </p>
+            <p>
+              <strong>Phone:</strong> +91 XXXXX XXXXX
+            </p>
+            <p>
+              <strong>Address:</strong> Mangal Chowk, Near Kargi Chowk,
+              Dehradun, <br />
+              Uttarakhand – 248001, India
+            </p>
+            <p>
+              <strong>Working Hours:</strong>
+              <br />
+              Monday – Friday: 9:00 AM – 5:00 PM
+            </p>
           </div>
           <div className="map-container">
             <iframe
               title="Map"
-              src="https://www.google.com/maps?s=web&rlz=1C1ONGR_enIN1026IN1026&lqi=ClVBZGRyZXNzOiBNb25hbCBFbmNsYXZlLCBMYW5lLTdiLCBDaGFuZGNoYWssIEJhbmphcmF3YWxhLCBEZWhyYWR1biwgVXR0YXJha2hhbmQgMjQ4MDAxIgJIAUi7m--txreAgAhaaxAAEAEQAhADEAQQBRAGEAcQCBgAGAEYAhgEGAUYBhgHGAgiR21vbmFsIGVuY2xhdmUgbGFuZSA3YiBjaGFuZGNoYWsgYmFuamFyYXdhbGEgZGVocmFkdW4gdXR0YXJha2hhbmQgMjQ4MDAxkgETaG91c2luZ19kZXZlbG9wbWVudA&vet=12ahUKEwig-cysuLyNAxUc6zgGHfpCHMAQ1YkKegQIIBAB..i&cs=1&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KYXcyXCaKQk5McCyhKWr46Hj&daddr=Chandchak,+Banjarawala,+Dehradun,+Uttarakhand+248001"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.6935780523636!2d78.02321251114482!3d30.274310807538118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3909295de5014f3f%3A0xb10d63ecc70303fc!2sMonal%20Enclave%2C%20Chandchak%2C%20Banjarawala%2C%20Dehradun%2C%20Uttarakhand%20248001!5e0!3m2!1sen!2sin!4v1748171148866!5m2!1sen!2sin"
               width="100%"
               height="250"
               style={{ border: 0 }}
               allowFullScreen=""
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
@@ -64,10 +243,11 @@ const ContactContent = () => {
 
       <div className="follow-section">
         <h4>Follow Us</h4>
-        <p>Stay connected with us on social media to update on our latest initiatives and events.</p>
-        <div className="social-icons">
-          {/* Add social icons if needed */}
-        </div>
+        <p>
+          Stay connected with us on social media to update on our latest
+          initiatives and events.
+        </p>
+        <div className="social-icons">{/* Add social icons if needed */}</div>
       </div>
     </div>
   );
