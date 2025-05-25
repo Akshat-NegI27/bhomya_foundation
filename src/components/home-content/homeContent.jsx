@@ -7,6 +7,24 @@ import prop2 from "/assets/img/prop2.png";
 import img2 from "/assets/img/photo1.webp";
 import { Link } from "react-router-dom";
 
+// Swiper
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay } from "swiper/modules";
+
+// Slider Images
+import slide1 from "/assets/img/photo1.webp";
+import slide2 from "/assets/img/photo1.webp";
+import slide21 from "/assets/img/photo1.webp";
+import slide22 from "/assets/img/photo1.webp";
+import slide23 from "/assets/img/photo1.webp";
+import slide24 from "/assets/img/photo1.webp";
+import slide31 from "/assets/img/photo1.webp";
+import slide32 from "/assets/img/photo1.webp";
+import slide33 from "/assets/img/photo1.webp";
+
 const CheckIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -210,6 +228,47 @@ const HomeContent = () => {
       </div>
 
       {/* -----------------section 3----------------- */}
+      <div className="page6">
+        <h1 data-scroll data-scroll-speed="0.01">
+          Get in touch.
+        </h1>
+        <Swiper
+          // data-scroll data-scroll-speed="0.2"
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Autoplay]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="slidess">
+              <img src={slide1} alt="" />
+              <img src={slide2} alt="" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="slides">
+              <img src={slide21} alt="" />
+              <img src={slide22} alt="" />
+              <img src={slide23} alt="" />
+              <img src={slide24} alt="" />
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="slidesx">
+              <img src={slide31} alt="" />
+              <img src={slide32} alt="" />
+              <img src={slide33} alt="" />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </div>
   );
 };
