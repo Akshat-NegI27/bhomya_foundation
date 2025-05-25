@@ -14,3 +14,123 @@
     color: #666;
   }
 }
+
+.involve-wrapper {
+  padding-top: 80px; /* Adjust if navbar is fixed */
+  padding-bottom: 60px; /* Adjust if footer is fixed */
+  background: #f3fdf3;
+  min-height: calc(100vh - 140px); /* Adjust based on navbar+footer height */
+}
+
+.involve-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.involve-header .badge {
+  display: inline-block;
+  background-color: #e6f4e6;
+  padding: 6px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  color: #2b6d2b;
+  margin-bottom: 8px;
+}
+
+.involve-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #205820;
+  margin-bottom: 0.5rem;
+}
+
+.involve-header p {
+  font-size: 1.1rem;
+  color: #4b4b4b;
+  margin-bottom: 2rem;
+}
+
+.involve-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.involve-card {
+  flex: 1 1 30%;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.involve-card:hover {
+  transform: translateY(-5px);
+}
+
+.icon-circle {
+  background-color: #e7f9e7;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #1b491b;
+}
+
+.subtitle {
+  font-weight: 500;
+  color: #4b4b4b;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.btn.green {
+  background-color: #2d862d;
+  color: white;
+}
+
+.btn.brown {
+  background-color: #79663f;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .involve-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .involve-card {
+    width: 100%;
+    max-width: 500px;
+  }
+}
