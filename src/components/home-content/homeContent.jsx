@@ -136,6 +136,7 @@ const HomeContent = () => {
             </ul>
           </div>
           <div className="right-image">
+            <div className="overlaydark"></div>
             <div className="overlay">
               <h1>Working towards a greener planet</h1>
               <p>
@@ -230,6 +231,22 @@ const HomeContent = () => {
       {/* -----------------section 3----------------- */}
       <div className="sec3">
         <div className="sec3-text">
+          <h2>Our Support</h2>
+          <h1>Our Partners</h1>
+          <div className="line"></div>
+
+          <p>
+            We are proud to collaborate with dedicated partners who share our
+            commitment to sustainability. Their support empowers us to implement
+            impactful initiatives, strengthen communities, and protect the
+            environment for future generations.
+          </p>
+        </div>
+      </div>
+
+      {/* -----------------section 5----------------- */}
+      <div className="sec5">
+        <div className="sec5-text">
           <h2>Our Initiatives</h2>
           <h1>Our Programs</h1>
           <div className="line"></div>

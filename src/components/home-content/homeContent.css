@@ -213,6 +213,19 @@
       display: flex;
       align-items: flex-end;
       justify-content: center;
+      .overlaydark {
+        position: absolute;
+        width: 650px;
+        height: 500px;
+        border-radius: 15px;
+        z-index: 2;
+        background-image: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.6),
+          transparent
+        );
+        pointer-events: none;
+      }
       .image-box {
         width: 650px;
         height: 500px;
@@ -227,11 +240,10 @@
           transition: transform 0.6s ease-in-out; /* Smooth transition */
           will-change: transform; /* Better GPU performance */
         }
-        .imgg2:hover {
-          transform: scale(1.06); /* Slightly enlarge the image on hover */
-        }
       }
-
+      .image-box:hover .imgg2 {
+        transform: scale(1.06);
+      }
       .overlay {
         display: flex;
         flex-direction: column;
@@ -325,6 +337,55 @@
 
 /* -------------section 3------------- */
 .sec3 {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 64px;
+  background-color: #ffffff;
+  .sec3-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 44px;
+    h1 {
+      font-size: 36px;
+      color: #236724;
+      font-family: Poppins;
+      margin-bottom: 12px;
+    }
+    h2 {
+      font-size: 14px;
+      color: #236724;
+      margin-bottom: 16px;
+      font-weight: 500;
+      font-family: inter-thin;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background-color: #e0f7de;
+    }
+
+    p {
+      color: #000000;
+      text-align: center;
+      max-width: 800px;
+      font-family: poppins;
+      font-size: 16px;
+    }
+    .line {
+      width: 96px;
+      height: 4px;
+      background-color: #9ca469;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+/* -------------section 5------------- */
+.sec5 {
   height: fit-content;
   width: 100%;
   display: flex;
@@ -333,7 +394,7 @@
   padding: 50px 64px;
   flex-direction: column;
   background-color: #ffffff;
-  .sec3-text {
+  .sec5-text {
     display: flex;
     flex-direction: column;
     align-items: center;
