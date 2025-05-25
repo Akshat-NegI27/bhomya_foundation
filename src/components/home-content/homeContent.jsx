@@ -15,15 +15,15 @@ import "swiper/css/navigation";
 import { Autoplay } from "swiper/modules";
 
 // Slider Images
-import slide1 from "/assets/img/photo1.webp";
-import slide2 from "/assets/img/photo1.webp";
-import slide21 from "/assets/img/photo1.webp";
-import slide22 from "/assets/img/photo1.webp";
-import slide23 from "/assets/img/photo1.webp";
-import slide24 from "/assets/img/photo1.webp";
-import slide31 from "/assets/img/photo1.webp";
-import slide32 from "/assets/img/photo1.webp";
-import slide33 from "/assets/img/photo1.webp";
+import slide1  from "/assets/img/s9.jpg";
+import slide2  from "/assets/img/s8.jpg";
+import slide21 from "/assets/img/s7.jpg";
+import slide22 from "/assets/img/s6.jpg";
+import slide23 from "/assets/img/s5.jpg";
+import slide24 from "/assets/img/s4.jpg";
+import slide31 from "/assets/img/s3.jpg";
+import slide32 from "/assets/img/s2.jpg";
+import slide33 from "/assets/img/s1.jpg";
 
 const CheckIcon = () => (
   <svg
