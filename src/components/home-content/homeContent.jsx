@@ -12,11 +12,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 // Slider Images
-import slide1  from "/assets/img/s9.jpg";
-import slide2  from "/assets/img/s8.jpg";
+import slide11 from "/assets/img/s9.jpg";
+import slide12 from "/assets/img/s8.jpg";
 import slide21 from "/assets/img/s7.jpg";
 import slide22 from "/assets/img/s6.jpg";
 import slide23 from "/assets/img/s5.jpg";
@@ -228,43 +228,50 @@ const HomeContent = () => {
       </div>
 
       {/* -----------------section 3----------------- */}
-      <div className="page6">
-        <h1 data-scroll data-scroll-speed="0.01">
-          Get in touch.
-        </h1>
+      <div className="sec3">
+        <div className="sec3-text">
+          <h2>Our Initiatives</h2>
+          <h1>Our Programs</h1>
+          <div className="line"></div>
+          <p>
+            Discover the various initiatives and programs we run to promote
+            environmental conservation and sustainable development.
+          </p>
+        </div>
         <Swiper
-          // data-scroll data-scroll-speed="0.2"
           spaceBetween={30}
           centeredSlides={true}
+          loop={true}
           autoplay={{
-            delay: 2000,
+            delay: 2500,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Autoplay]}
+          pagination={{ clickable: true }}
+          navigation={false}
+          modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="slidess">
-              <img src={slide1} alt="" />
-              <img src={slide2} alt="" />
+            <div className="pan1">
+              <img src={slide11} alt="Slide 11" />
+              <img src={slide12} alt="Slide 12" />
             </div>
           </SwiperSlide>
+
           <SwiperSlide>
-            <div className="slides">
-              <img src={slide21} alt="" />
-              <img src={slide22} alt="" />
-              <img src={slide23} alt="" />
-              <img src={slide24} alt="" />
+            <div className="pan2">
+              <img src={slide21} alt="Slide 21" />
+              <img src={slide22} alt="Slide 22" />
+              <img src={slide23} alt="Slide 23" />
+              <img src={slide24} alt="Slide 24" />
             </div>
           </SwiperSlide>
+
           <SwiperSlide>
-            <div className="slidesx">
-              <img src={slide31} alt="" />
-              <img src={slide32} alt="" />
-              <img src={slide33} alt="" />
+            <div className="pan3">
+              <img src={slide31} alt="Slide 31" />
+              <img src={slide32} alt="Slide 32" />
+              <img src={slide33} alt="Slide 33" />
             </div>
           </SwiperSlide>
         </Swiper>
