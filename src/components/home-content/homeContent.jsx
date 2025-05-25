@@ -4,7 +4,7 @@ import "../../hooks/button/button.css";
 import img1 from "/assets/img/img1.png";
 import prop1 from "/assets/img/prop1.png";
 import prop2 from "/assets/img/prop2.png";
-import img2 from "/assets/img/img2.jpg";
+import img2 from "/assets/img/photo1.webp";
 import { Link } from "react-router-dom";
 
 const CheckIcon = () => (
