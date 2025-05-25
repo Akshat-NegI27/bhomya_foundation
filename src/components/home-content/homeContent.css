@@ -12,12 +12,12 @@
   }
 }
 .sec1 {
-  padding: 65px 80px;
+  padding: 6rem 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   gap: 20px;
   /* background-color: #e0f7de; */
   background-image: linear-gradient(to bottom right, #f6f7ed, #d2f2cf);
@@ -475,7 +475,7 @@
 
 .mySwiper {
   width: 100%;
-  height: 75vh;
+  height: fit-content;
   .swiper-pagination-bullet {
     background-color: #236724;
     height: 12px;
