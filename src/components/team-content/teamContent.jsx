@@ -149,7 +149,7 @@ const TeamContent = () => {
           </p>
         </div>
 
-        <div className="hero-imagae" ref={imageRef}>
+        <div className="hero-imagae">
           <img src={heros} className="ix" alt="Team Hero" />
         </div>
       </div>
