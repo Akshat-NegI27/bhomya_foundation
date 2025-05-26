@@ -231,6 +231,7 @@
         height: 500px;
         border-radius: 15px;
         overflow: hidden;
+        position: relative;
         .imgg2 {
           /* width: 650px;
           height: 500px; */

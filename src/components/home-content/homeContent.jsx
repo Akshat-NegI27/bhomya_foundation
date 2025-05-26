@@ -140,7 +140,6 @@ const HomeContent = () => {
             </ul>
           </div>
           <div className="right-image">
-            <div className="overlaydark"></div>
             <div className="overlay">
               <h1>Working towards a greener planet</h1>
               <p>
@@ -149,6 +148,7 @@ const HomeContent = () => {
               </p>
             </div>
             <div className="image-box">
+              <div className="overlaydark "></div>
               <img src={img2} className="imgg2" alt="Mission" />
             </div>
           </div>
