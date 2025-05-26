@@ -1,6 +1,10 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
+
 import "./homeContent.css";
 import "../../hooks/button/button.css";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 import img1 from "/assets/img/img1.png";
 import prop1 from "/assets/img/prop1.png";
 import prop2 from "/assets/img/prop2.png";
@@ -48,6 +52,28 @@ const CheckIcon = () => (
 );
 
 const HomeContent = () => {
+  const headingRef = useRef(null);
+  const asd = useRef(null);
+
+  useEffect(() => {
+    if (asd.current) {
+      gsap.fromTo(
+        asd.current,
+        { scale: 1, borderRadius: "0px" },
+        {
+          scale: 0.7,
+          borderRadius: "50px",
+          ease: "none",
+          scrollTrigger: {
+            trigger: headingRef.current,
+            start: "-=200",
+            end: "+=500",
+            scrub: true,
+          },
+        }
+      );
+    }
+  }, []);
   return (
     <div className="homepg-main">
       {/* -----------------section 1----------------- */}
@@ -237,7 +263,7 @@ const HomeContent = () => {
         <div className="sec3-text">
           <h2>Our Support</h2>
           <h1>Our Partners</h1>
-          <div className="line"></div>
+          <div ref={headingRef} className="line"></div>
 
           <p>
             We are proud to collaborate with dedicated partners who share our
@@ -257,7 +283,7 @@ const HomeContent = () => {
             <img src={logo3} alt="Doon University" />
           </div>
         </div>
-        <div className="sec3-video">
+        <div ref={asd} className="sec3-video">
           <iframe
             width="900"
             height="600"
