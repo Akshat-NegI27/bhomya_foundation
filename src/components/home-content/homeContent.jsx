@@ -61,13 +61,13 @@ const HomeContent = () => {
         asd.current,
         { scale: 1, borderRadius: "0px" },
         {
-          scale: 0.7,
-          borderRadius: "50px",
+          scale: 0.9,
+          borderRadius: "60px",
           ease: "none",
           scrollTrigger: {
             trigger: headingRef.current,
             start: "-=200",
-            end: "+=500",
+            end: "+=1400",
             scrub: true,
           },
         }
@@ -283,9 +283,10 @@ const HomeContent = () => {
             <img src={logo3} alt="Doon University" />
           </div>
         </div>
-        <div ref={asd} className="sec3-video">
+        <div  className="sec3-video">
           <iframe
-            width="900"
+          ref={asd}
+            width="2200"
             height="600"
             src="https://www.youtube.com/embed/ECHrDbdYPXo?autoplay=1&controls=0&loop=1&playlist=ECHrDbdYPXo&mute=1"
             title="Eco Partnership"
