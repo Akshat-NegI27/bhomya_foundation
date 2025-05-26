@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./teamContent.css";
-
 import heros from "/assets/img/g2.jpg";
+
 import {
   FaFacebookF,
   FaLinkedinIn,
   FaTwitter,
   FaUserFriends,
 } from "react-icons/fa";
+
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const SocialIcons = () => (
   <div className="social-icons">
@@ -20,9 +24,9 @@ const SocialIcons = () => (
 const TeamCard = ({ name, title, desc, skills, image }) => (
   <div className="team-card">
     <div className="team-image">{image && <img src={image} alt={name} />}</div>
+
     <div className="team-info">
-      <h3>{name}</h3>
-      <span className="role">{title}</span>
+      <h3>{name}</h3> <span className="role">{title}</span>
       <p>{desc}</p>
       <div className="skills">
         {skills.map((skill, i) => (
@@ -37,6 +41,28 @@ const TeamCard = ({ name, title, desc, skills, image }) => (
 );
 
 const TeamContent = () => {
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    if (imageRef.current) {
+      gsap.fromTo(
+        imageRef.current,
+        { scale: 1, borderRadius: "0px" },
+        {
+          scale: 0.7,
+          borderRadius: "50px",
+          ease: "none",
+          scrollTrigger: {
+            trigger: imageRef.current,
+            start: "top top",
+            end: "bottom top",
+            scrub: true,
+          },
+        }
+      );
+    }
+  }, []);
+
   const founder = {
     name: "Sarah Johnson",
     title: "Founder & CEO",
@@ -141,27 +167,27 @@ const TeamContent = () => {
           <h1>
             Meet Our <span className="highlight">Dream Team</span>
           </h1>
+
           <p className="intro">
             We're a collection of passionate individuals from diverse
-            backgrounds,
-            <br />
+            backgrounds, <br />
             united by our shared commitment to excellence and innovation.
           </p>
         </div>
 
         <div className="hero-imagae">
-          <img src={heros} className="ix" alt="Team Hero" />
+          <img ref={imageRef} src={heros} className="ix" alt="Team Hero" />
         </div>
       </div>
-
-      {/* Founder Section */}
       <h2 className="section-heading">Our Founder</h2>
       <p className="section-subheading">The visionary behind our mission</p>
+
       <div className="founder-wrapper">
         <div className="founder-card">
           <div className="team-image">
             {founder.image && <img src={founder.image} alt={founder.name} />}
           </div>
+
           <div className="team-info">
             <h3>{founder.name}</h3>
             <span className="role">{founder.title}</span>
@@ -170,26 +196,25 @@ const TeamContent = () => {
           </div>
         </div>
       </div>
-
-      {/* Core Team Section */}
       <h2 className="section-heading">Core Team & Co-founders</h2>
       <p className="section-subheading">The driving force behind our success</p>
+
       <div className="team-grid">
         {coreTeam.map((member, i) => (
           <TeamCard key={i} {...member} />
         ))}
       </div>
-
-      {/* Extended Team Section */}
       <h2 className="section-heading">Our Extended Team</h2>
       <p className="section-subheading">
         The talented individuals who make it all possible
       </p>
+
       <div className="extended-wrapper">
         <div className="extended-header">
           <FaUserFriends className="icon" />
           <h3>Our Extended Team</h3>
         </div>
+
         <div className="extended-grid">
           {extendedTeam.map((member, index) => (
             <div className="extended-card" key={index}>
@@ -198,12 +223,11 @@ const TeamContent = () => {
           ))}
         </div>
       </div>
-
-      {/* Detailed Highlights */}
       <h2 className="section-heading">Team Member Highlights</h2>
       <p className="section-subheading">
         Learn more about our amazing team members
       </p>
+
       <div className="detailed-team">
         {detailedTeam.map((member, i) => (
           <div
@@ -214,6 +238,7 @@ const TeamContent = () => {
             <div className="detailed-photo">
               {member.image && <img src={member.image} alt={member.name} />}
             </div>
+
             <div className="detailed-info">
               <h3>{member.name}</h3>
               <p className="role">{member.title}</p>
