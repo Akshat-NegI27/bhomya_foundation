@@ -1,6 +1,13 @@
 import React from "react";
 import "./teamContent.css";
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaUserFriends } from "react-icons/fa";
+
+import heros from "/assets/img/g2.jpg";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaTwitter,
+  FaUserFriends,
+} from "react-icons/fa";
 
 const SocialIcons = () => (
   <div className="social-icons">
@@ -12,9 +19,7 @@ const SocialIcons = () => (
 
 const TeamCard = ({ name, title, desc, skills, image }) => (
   <div className="team-card">
-    <div className="team-image">
-      {image && <img src={image} alt={name} />}
-    </div>
+    <div className="team-image">{image && <img src={image} alt={name} />}</div>
     <div className="team-info">
       <h3>{name}</h3>
       <span className="role">{title}</span>
@@ -35,10 +40,9 @@ const TeamContent = () => {
   const founder = {
     name: "Sarah Johnson",
     title: "Founder & CEO",
-    desc:
-      "Visionary leader with 10+ years of experience in tech. Passionate about building systems that make a difference and empowering teams to achieve extraordinary results.",
+    desc: "Visionary leader with 10+ years of experience in tech. Passionate about building systems that make a difference and empowering teams to achieve extraordinary results.",
     skills: [],
-    image: "/assets/img/g1.jpg", 
+    image: "/assets/img/g1.jpg",
   };
 
   const coreTeam = [
@@ -47,42 +51,42 @@ const TeamContent = () => {
       title: "Co-founder & CTO",
       desc: "Full-stack architect and tech visionary.",
       skills: ["AI/ML", "Backend", "Cloud Architecture"],
-    image: "/assets/img/g1.jpg", 
+      image: "/assets/img/g1.jpg",
     },
     {
       name: "Emily Davis",
       title: "Creative Director",
       desc: "Design strategist focused on user experience.",
       skills: ["UI/UX", "Figma", "Design Systems"],
-    image: "/assets/img/g1.jpg", 
+      image: "/assets/img/g1.jpg",
     },
     {
       name: "David Rodriguez",
       title: "Lead Developer",
       desc: "Expert in building scalable backend systems.",
       skills: ["TypeScript", "Python", "DevOps"],
-    image: "/assets/img/g1.jpg", 
+      image: "/assets/img/g1.jpg",
     },
     {
       name: "Lisa Park",
       title: "AI Strategist",
       desc: "Works on responsible AI, predictive systems.",
       skills: ["ML Models", "Analytics", "AI Ethics"],
-    image: "/assets/img/g1.jpg", 
+      image: "/assets/img/g1.jpg",
     },
     {
       name: "James Wilson",
       title: "Sales Director",
       desc: "Drives sales and enterprise growth.",
       skills: ["CRM", "B2B Sales", "Negotiation"],
-    image: "/assets/img/g1.jpg", 
+      image: "/assets/img/g1.jpg",
     },
     {
       name: "Rachel Kim",
       title: "Marketing Director",
       desc: "Crafts content strategy and brand presence.",
       skills: ["SEO", "Content", "Paid Media"],
-    image: "/assets/img/g1.jpg", 
+      image: "/assets/img/g1.jpg",
     },
   ];
 
@@ -102,7 +106,7 @@ const TeamContent = () => {
       id: "michael",
       name: "Michael Chen",
       title: "Co-founder & CTO",
-    image: "/assets/img/g1.jpg", 
+      image: "/assets/img/g1.jpg",
       bio: "Michael is a full-stack architect with 15+ years of experience in AI/ML and scalable systems.",
       experience: [
         "Led development of 50+ enterprise platforms",
@@ -113,7 +117,7 @@ const TeamContent = () => {
       id: "emily",
       name: "Emily Davis",
       title: "Creative Director",
-    image: "/assets/img/g1.jpg", 
+      image: "/assets/img/g1.jpg",
       bio: "Emily brings innovative thinking to every pixel she touches, specializing in immersive UX.",
       experience: [
         "Former Lead Designer at TopDesign Inc.",
@@ -124,7 +128,7 @@ const TeamContent = () => {
       id: "david",
       name: "David Rodriguez",
       title: "Lead Developer",
-    image: "/assets/img/g1.jpg", 
+      image: "/assets/img/g1.jpg",
       bio: "David is a backend expert with deep understanding of DevOps, cloud architecture, and scalable systems.",
       experience: ["10+ years in Node/Python", "Built resilient microservices"],
     },
@@ -132,13 +136,23 @@ const TeamContent = () => {
 
   return (
     <div className="team-wrapper">
-      <h1>
-        Meet Our <span className="highlight">Dream Team</span>
-      </h1>
-      <p className="intro">
-        We're a collection of passionate individuals from diverse backgrounds,
-        united by our shared commitment to excellence and innovation.
-      </p>
+      <div className="hero-team">
+        <div className="texta">
+          <h1>
+            Meet Our <span className="highlight">Dream Team</span>
+          </h1>
+          <p className="intro">
+            We're a collection of passionate individuals from diverse
+            backgrounds,
+            <br />
+            united by our shared commitment to excellence and innovation.
+          </p>
+        </div>
+
+        <div className="hero-imagae" ref={imageRef}>
+          <img src={heros} className="ix" alt="Team Hero" />
+        </div>
+      </div>
 
       {/* Founder Section */}
       <h2 className="section-heading">Our Founder</h2>
@@ -187,10 +201,16 @@ const TeamContent = () => {
 
       {/* Detailed Highlights */}
       <h2 className="section-heading">Team Member Highlights</h2>
-      <p className="section-subheading">Learn more about our amazing team members</p>
+      <p className="section-subheading">
+        Learn more about our amazing team members
+      </p>
       <div className="detailed-team">
         {detailedTeam.map((member, i) => (
-          <div className={`detailed-card ${i % 2 === 0 ? "left" : "right"}`} id={member.id} key={i}>
+          <div
+            className={`detailed-card ${i % 2 === 0 ? "left" : "right"}`}
+            id={member.id}
+            key={i}
+          >
             <div className="detailed-photo">
               {member.image && <img src={member.image} alt={member.name} />}
             </div>
