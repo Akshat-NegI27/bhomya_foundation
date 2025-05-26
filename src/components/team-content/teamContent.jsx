@@ -38,7 +38,7 @@ const TeamContent = () => {
     desc:
       "Visionary leader with 10+ years of experience in tech. Passionate about building systems that make a difference and empowering teams to achieve extraordinary results.",
     skills: [],
-    image: "",
+    image: "/assets/img/g1.jpg", 
   };
 
   const coreTeam = [
@@ -47,42 +47,42 @@ const TeamContent = () => {
       title: "Co-founder & CTO",
       desc: "Full-stack architect and tech visionary.",
       skills: ["AI/ML", "Backend", "Cloud Architecture"],
-      image: "",
+    image: "/assets/img/g1.jpg", 
     },
     {
       name: "Emily Davis",
       title: "Creative Director",
       desc: "Design strategist focused on user experience.",
       skills: ["UI/UX", "Figma", "Design Systems"],
-      image: "",
+    image: "/assets/img/g1.jpg", 
     },
     {
       name: "David Rodriguez",
       title: "Lead Developer",
       desc: "Expert in building scalable backend systems.",
       skills: ["TypeScript", "Python", "DevOps"],
-      image: "",
+    image: "/assets/img/g1.jpg", 
     },
     {
       name: "Lisa Park",
       title: "AI Strategist",
       desc: "Works on responsible AI, predictive systems.",
       skills: ["ML Models", "Analytics", "AI Ethics"],
-      image: "",
+    image: "/assets/img/g1.jpg", 
     },
     {
       name: "James Wilson",
       title: "Sales Director",
       desc: "Drives sales and enterprise growth.",
       skills: ["CRM", "B2B Sales", "Negotiation"],
-      image: "",
+    image: "/assets/img/g1.jpg", 
     },
     {
       name: "Rachel Kim",
       title: "Marketing Director",
       desc: "Crafts content strategy and brand presence.",
       skills: ["SEO", "Content", "Paid Media"],
-      image: "",
+    image: "/assets/img/g1.jpg", 
     },
   ];
 
@@ -95,6 +95,39 @@ const TeamContent = () => {
     "Nina Patel – Content Strategist",
     "Tom Anderson – Customer Success",
     "Sophie Zhang – Data Scientist",
+  ];
+
+  const detailedTeam = [
+    {
+      id: "michael",
+      name: "Michael Chen",
+      title: "Co-founder & CTO",
+    image: "/assets/img/g1.jpg", 
+      bio: "Michael is a full-stack architect with 15+ years of experience in AI/ML and scalable systems.",
+      experience: [
+        "Led development of 50+ enterprise platforms",
+        "Mentor for 500+ junior developers",
+      ],
+    },
+    {
+      id: "emily",
+      name: "Emily Davis",
+      title: "Creative Director",
+    image: "/assets/img/g1.jpg", 
+      bio: "Emily brings innovative thinking to every pixel she touches, specializing in immersive UX.",
+      experience: [
+        "Former Lead Designer at TopDesign Inc.",
+        "Speaker at UX World 2023",
+      ],
+    },
+    {
+      id: "david",
+      name: "David Rodriguez",
+      title: "Lead Developer",
+    image: "/assets/img/g1.jpg", 
+      bio: "David is a backend expert with deep understanding of DevOps, cloud architecture, and scalable systems.",
+      experience: ["10+ years in Node/Python", "Built resilient microservices"],
+    },
   ];
 
   return (
@@ -112,7 +145,9 @@ const TeamContent = () => {
       <p className="section-subheading">The visionary behind our mission</p>
       <div className="founder-wrapper">
         <div className="founder-card">
-          <div className="team-image"></div>
+          <div className="team-image">
+            {founder.image && <img src={founder.image} alt={founder.name} />}
+          </div>
           <div className="team-info">
             <h3>{founder.name}</h3>
             <span className="role">{founder.title}</span>
@@ -148,6 +183,29 @@ const TeamContent = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Detailed Highlights */}
+      <h2 className="section-heading">Team Member Highlights</h2>
+      <p className="section-subheading">Learn more about our amazing team members</p>
+      <div className="detailed-team">
+        {detailedTeam.map((member, i) => (
+          <div className={`detailed-card ${i % 2 === 0 ? "left" : "right"}`} id={member.id} key={i}>
+            <div className="detailed-photo">
+              {member.image && <img src={member.image} alt={member.name} />}
+            </div>
+            <div className="detailed-info">
+              <h3>{member.name}</h3>
+              <p className="role">{member.title}</p>
+              <p>{member.bio}</p>
+              <ul>
+                {member.experience.map((exp, idx) => (
+                  <li key={idx}>{exp}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
