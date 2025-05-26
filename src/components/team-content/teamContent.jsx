@@ -41,21 +41,22 @@ const TeamCard = ({ name, title, desc, skills, image }) => (
 );
 
 const TeamContent = () => {
-  const imageRef = useRef(null);
+  const headingRef = useRef(null);
+  const asd = useRef(null);
 
   useEffect(() => {
-    if (imageRef.current) {
+    if (asd.current) {
       gsap.fromTo(
-        imageRef.current,
+        asd.current,
         { scale: 1, borderRadius: "0px" },
         {
           scale: 0.7,
           borderRadius: "50px",
           ease: "none",
           scrollTrigger: {
-            trigger: imageRef.current,
-            start: "top top",
-            end: "bottom top",
+            trigger: headingRef.current,
+            start: "-=200",
+            end: "+=500",
             scrub: true,
           },
         }
@@ -164,7 +165,7 @@ const TeamContent = () => {
     <div className="team-wrapper">
       <div className="hero-team">
         <div className="texta">
-          <h1>
+          <h1 ref={headingRef}>
             Meet Our <span className="highlight">Dream Team</span>
           </h1>
 
@@ -176,7 +177,7 @@ const TeamContent = () => {
         </div>
 
         <div className="hero-imagae">
-          <img ref={imageRef} src={heros} className="ix" alt="Team Hero" />
+          <img ref={asd} src={heros} className="ix" alt="Team Hero" />
         </div>
       </div>
       <h2 className="section-heading">Our Founder</h2>
