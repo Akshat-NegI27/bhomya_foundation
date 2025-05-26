@@ -1,6 +1,6 @@
 import React from "react";
 import "./teamContent.css";
-import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaTwitter, FaUserFriends } from "react-icons/fa";
 
 const SocialIcons = () => (
   <div className="social-icons">
@@ -38,7 +38,7 @@ const TeamContent = () => {
     desc:
       "Visionary leader with 10+ years of experience in tech. Passionate about building systems that make a difference and empowering teams to achieve extraordinary results.",
     skills: [],
-    image: "", // Add founder image if available
+    image: "",
   };
 
   const coreTeam = [
@@ -86,6 +86,17 @@ const TeamContent = () => {
     },
   ];
 
+  const extendedTeam = [
+    "Alex Thompson – Software Engineer",
+    "Maria Garcia – UX Designer",
+    "Robert Kim – DevOps Engineer",
+    "Jennifer Lee – Business Analyst",
+    "Carlos Martinez – Quality Assurance",
+    "Nina Patel – Content Strategist",
+    "Tom Anderson – Customer Success",
+    "Sophie Zhang – Data Scientist",
+  ];
+
   return (
     <div className="team-wrapper">
       <h1>
@@ -96,12 +107,22 @@ const TeamContent = () => {
         united by our shared commitment to excellence and innovation.
       </p>
 
+      {/* Founder Section */}
       <h2 className="section-heading">Our Founder</h2>
       <p className="section-subheading">The visionary behind our mission</p>
       <div className="founder-wrapper">
-        <TeamCard {...founder} />
+        <div className="founder-card">
+          <div className="team-image"></div>
+          <div className="team-info">
+            <h3>{founder.name}</h3>
+            <span className="role">{founder.title}</span>
+            <p>{founder.desc}</p>
+            <SocialIcons />
+          </div>
+        </div>
       </div>
 
+      {/* Core Team Section */}
       <h2 className="section-heading">Core Team & Co-founders</h2>
       <p className="section-subheading">The driving force behind our success</p>
       <div className="team-grid">
@@ -110,10 +131,24 @@ const TeamContent = () => {
         ))}
       </div>
 
+      {/* Extended Team Section */}
       <h2 className="section-heading">Our Extended Team</h2>
       <p className="section-subheading">
         The talented individuals who make it all possible
       </p>
+      <div className="extended-wrapper">
+        <div className="extended-header">
+          <FaUserFriends className="icon" />
+          <h3>Our Extended Team</h3>
+        </div>
+        <div className="extended-grid">
+          {extendedTeam.map((member, index) => (
+            <div className="extended-card" key={index}>
+              {member}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

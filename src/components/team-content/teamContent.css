@@ -69,6 +69,56 @@ h1 {
   gap: 25px;
   margin-bottom: 60px;
 }
+/* Founder */
+.founder-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.founder-card {
+  width: 360px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.founder-card:hover {
+  transform: translateY(-4px);
+}
+
+.founder-card .team-image {
+  height: 200px;
+  background-color: #d1fae5;
+}
+
+.founder-card .team-info {
+  padding: 20px;
+  text-align: center;
+}
+
+.founder-card h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.founder-card .role {
+  display: inline-block;
+  margin: 8px 0;
+  font-size: 0.8rem;
+  color: #16a34a;
+  background-color: #dcfce7;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.founder-card p {
+  font-size: 0.85rem;
+  color: #4b5563;
+  margin-bottom: 10px;
+}
 
 /* Card Styles */
 .team-card {
@@ -148,4 +198,51 @@ h1 {
 
 .social-icons svg:hover {
   color: #065f46;
+}
+
+.extended-wrapper {
+  background: #e6fdf0;
+  margin: 40px auto;
+  padding: 40px 20px;
+  border-radius: 16px;
+  max-width: 1000px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+
+.extended-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.extended-header .icon {
+  color: #16a34a;
+  font-size: 1.2rem;
+}
+
+.extended-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #047857;
+}
+
+.extended-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.extended-card {
+  background: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  min-width: 220px;
+  text-align: center;
 }
