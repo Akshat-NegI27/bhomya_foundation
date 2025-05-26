@@ -16,13 +16,13 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   background-color: #f0fdf4;
 }
 
 .team-wrapper {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 100px 20px 80px;
   text-align: center;
@@ -77,8 +77,8 @@ h1 {
 }
 
 .founder-card {
-  width: 360px;
-  background-color: white;
+  width: 660px;
+  background-color: rgb(130, 108, 108);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
@@ -90,7 +90,7 @@ h1 {
 }
 
 .founder-card .team-image {
-  height: 200px;
+  height: 400px;
   background-color: #d1fae5;
 }
 
@@ -122,7 +122,7 @@ h1 {
 
 /* Card Styles */
 .team-card {
-  width: 280px;
+  width: 460px;
   background-color: #fff;
   border-radius: 12px;
   overflow: hidden;
@@ -135,7 +135,7 @@ h1 {
 }
 
 .team-image {
-  height: 180px;
+  height: 280px;
   background-color: #d1fae5;
 }
 
