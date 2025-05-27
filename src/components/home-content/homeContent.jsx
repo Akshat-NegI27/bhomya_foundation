@@ -9,6 +9,7 @@ import img1 from "/assets/img/img1.png";
 import prop1 from "/assets/img/prop1.png";
 import prop2 from "/assets/img/prop2.png";
 import img2 from "/assets/img/photo1.webp";
+import img3 from "/assets/img/newsletter.JPG";
 import { Link } from "react-router-dom";
 
 import logo1 from "/assets/img/BSOI.png";
@@ -384,7 +385,7 @@ const HomeContent = () => {
             </p>
           </div>
           <div className="newsletter-img">
-            <img src={img2} alt="Newsletter" />
+            <img src={img3} alt="Newsletter" />
           </div>
         </div>
       </div>
