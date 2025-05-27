@@ -13,32 +13,43 @@ const InvolveContent = () => {
             difference in environmental conservation.
           </p>
         </div>
-
-        <div className="involve-cards">
-          <div className="involve-card">
-            <div className="icon-circle">
-              <i className="icon-heart" />
-            </div>
-            <h2>Donate</h2>
-            <p className="subtitle">Support our conservation efforts financially</p>
-            <p className="description">
-              Your donations help us implement conservation programs, conduct
-              research, and create educational materials for communities.
-            </p>
-            <button className="btn green">Make a Donation</button>
-          </div>
-
-          <div className="involve-card">
+<div className="involve-card">
             <div className="icon-circle">
               <i className="icon-volunteer" />
             </div>
             <h2>Volunteer</h2>
-            <p className="subtitle">Join our team and make a hands-on impact</p>
+            <p className="subtitle">Make a direct, meaningful impact</p>
             <p className="description">
-              Volunteer your time and skills for tree plantation drives, clean-up
-              events, awareness campaigns, or help with administrative tasks.
+              Contribute your time, energy, or skills to our projects — from plantation
+              drives to awareness campaigns and event support.
             </p>
             <button className="btn brown">Become a Volunteer</button>
+          </div>
+        <div className="involve-cards">
+          <div className="involve-card">
+            <div className="icon-circle">
+              <i className="icon-intern" />
+            </div>
+            <h2>Intern/Trainee</h2>
+            <p className="subtitle">Gain hands-on experience and training</p>
+            <p className="description">
+              Join us as an intern or trainee to work on real environmental projects,
+              research, and campaigns while developing your skills.
+            </p>
+            <button className="btn green">Apply as Intern</button>
+          </div>
+
+          <div className="involve-card">
+            <div className="icon-circle">
+              <i className="icon-member" />
+            </div>
+            <h2>Member</h2>
+            <p className="subtitle">Be a committed part of our mission</p>
+            <p className="description">
+              As a member, you’ll stay connected, contribute ideas, join programs,
+              and help shape the future of our green initiatives.
+            </p>
+            <button className="btn brown">Join as Member</button>
           </div>
 
           <div className="involve-card">
@@ -46,13 +57,15 @@ const InvolveContent = () => {
               <i className="icon-partner" />
             </div>
             <h2>Partner With Us</h2>
-            <p className="subtitle">Collaborate for greater environmental impact</p>
+            <p className="subtitle">Collaborate to drive greater change</p>
             <p className="description">
-              We welcome partnerships with organizations, educational institutions,
-              and businesses that share our vision for environmental conservation.
+              Whether you're a business, institute, or NGO, partner with us to create
+              joint programs and drive lasting environmental impact.
             </p>
-            <button className="btn green">Partner With Us</button>
+            <button className="btn green">Become a Partner</button>
           </div>
+
+          
         </div>
       </div>
     </div>
