@@ -13,18 +13,7 @@ const InvolveContent = () => {
             difference in environmental conservation.
           </p>
         </div>
-<div className="involve-card">
-            <div className="icon-circle">
-              <i className="icon-volunteer" />
-            </div>
-            <h2>Volunteer</h2>
-            <p className="subtitle">Make a direct, meaningful impact</p>
-            <p className="description">
-              Contribute your time, energy, or skills to our projects — from plantation
-              drives to awareness campaigns and event support.
-            </p>
-            <button className="btn brown">Become a Volunteer</button>
-          </div>
+
         <div className="involve-cards">
           <div className="involve-card">
             <div className="icon-circle">
@@ -65,7 +54,18 @@ const InvolveContent = () => {
             <button className="btn green">Become a Partner</button>
           </div>
 
-          
+          <div className="involve-card">
+            <div className="icon-circle">
+              <i className="icon-volunteer" />
+            </div>
+            <h2>Volunteer</h2>
+            <p className="subtitle">Make a direct, meaningful impact</p>
+            <p className="description">
+              Contribute your time, energy, or skills to our projects — from plantation
+              drives to awareness campaigns and event support.
+            </p>
+            <button className="btn brown">Become a Volunteer</button>
+          </div>
         </div>
       </div>
     </div>
