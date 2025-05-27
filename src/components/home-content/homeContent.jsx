@@ -62,8 +62,8 @@ const HomeContent = () => {
         asd.current,
         { scale: 1, borderRadius: "0px" },
         {
-          scale: 0.9,
-          borderRadius: "60px",
+          scale: 0.7,
+          borderRadius: "70px",
           ease: "none",
           scrollTrigger: {
             trigger: headingRef.current,
