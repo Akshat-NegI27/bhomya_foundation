@@ -100,11 +100,12 @@ const TeamContent = () => {
 
   const coreTeam = [
     {
-      name: "Michael Chen",
-      title: "Co-founder & CTO",
-      desc: "Full-stack architect and tech visionary.",
-      skills: ["AI/ML", "Backend", "Cloud Architecture"],
-      image: "/assets/img/g1.jpg",
+      name: "Arun Pratap Mishra",
+      title: "Vice President",
+      desc: "Vision. Leadership. Impact.",
+      punch: "Driving innovation with purpose and precision.",
+      skills: ["Leadership", "Strategic Planning", "Organizational Management"],
+      image: "/assets/img/vice__president.jpg",
       socials: {
         facebook: "https://facebook.com/michaelchen",
         instagram: "https://instagram.com/michaelchen",
@@ -113,24 +114,26 @@ const TeamContent = () => {
       },
     },
     {
-      name: "Emily Davis",
-      title: "Creative Director",
-      desc: "Design strategist focused on user experience.",
-      skills: ["UI/UX", "Figma", "Design Systems"],
-      image: "/assets/img/g1.jpg",
+      name: "Pratiksha",
+      title: "Strategist",
+      desc: "Ideas. Execution. Outreach.",
+      punch: "Crafting impactful journeys through design thinking.",
+      skills: ["Campaign Strategy", "User Research", "Engagement"],
+      image: "/assets/img/strategist.jpg",
       socials: {
         facebook: "https://facebook.com/emilydavis",
-        instagram: "https://instagram.com/emilydavis",
+        instagram: "https://www.instagram.com/pratiksha.panwar_2k4?igsh=MWlocDJlOWltYXA1Mw==",
         twitter: "https://twitter.com/emilydavis",
         linkedin: "https://linkedin.com/in/emilydavis",
       },
     },
     {
-      name: "David Rodriguez",
-      title: "Lead Developer",
-      desc: "Expert in building scalable backend systems.",
-      skills: ["TypeScript", "Python", "DevOps"],
-      image: "/assets/img/g1.jpg",
+      name: "Sipu",
+      title: "Joint Secretary",
+      desc: "Structure. Support. Coordination.",
+      punch: "Engineering structure behind social impact.",
+      skills: ["Administration", "Documentation", "Coordination"],
+      image: "/assets/img/joint_secratery.jpg",
       socials: {
         facebook: "https://facebook.com/davidrodriguez",
         instagram: "https://instagram.com/davidrodriguez",
@@ -138,6 +141,7 @@ const TeamContent = () => {
         linkedin: "https://linkedin.com/in/davidrodriguez",
       },
     },
+
     {
       name: "Lisa Park",
       title: "AI Strategist",
