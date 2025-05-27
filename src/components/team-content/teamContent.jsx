@@ -1,33 +1,52 @@
 import React, { useEffect, useRef } from "react";
 import "./teamContent.css";
 import heros from "/assets/img/g2.jpg";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  FaFacebookF,
-  FaLinkedinIn,
-  FaTwitter,
-  FaUserFriends,
-} from "react-icons/fa";
+  faXTwitter,
+  faLinkedin,
+  faInstagram,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-const SocialIcons = () => (
+const SocialIcons = ({ links }) => (
   <div className="social-icons">
-    <FaFacebookF />
-    <FaLinkedinIn />
-    <FaTwitter />
+    {links.facebook && (
+      <a href={links.facebook} target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faFacebook} />
+      </a>
+    )}
+    {links.instagram && (
+      <a href={links.instagram} target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faInstagram} />
+      </a>
+    )}
+    {links.twitter && (
+      <a href={links.twitter} target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faXTwitter} />
+      </a>
+    )}
+    {links.linkedin && (
+      <a href={links.linkedin} target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faLinkedin} />
+      </a>
+    )}
   </div>
 );
 
-const TeamCard = ({ name, title, desc, skills, image }) => (
+const TeamCard = ({ name, title, desc, skills, image, socials }) => (
   <div className="team-card">
     <div className="team-image">{image && <img src={image} alt={name} />}</div>
 
     <div className="team-info">
-      <h3>{name}</h3> <span className="role">{title}</span>
+      <h3>{name}</h3>
+      <span className="role">{title}</span>
       <p>{desc}</p>
+
       <div className="skills">
         {skills.map((skill, i) => (
           <span className="skill" key={i}>
@@ -35,7 +54,8 @@ const TeamCard = ({ name, title, desc, skills, image }) => (
           </span>
         ))}
       </div>
-      <SocialIcons />
+
+      {socials && <SocialIcons links={socials} />}
     </div>
   </div>
 );
@@ -67,9 +87,15 @@ const TeamContent = () => {
   const founder = {
     name: "Sarah Johnson",
     title: "Founder & CEO",
-    desc: "Visionary leader with 10+ years of experience in tech. Passionate about building systems that make a difference and empowering teams to achieve extraordinary results.",
+    desc: "Our President and Founder, Himanshu, established the Bhomya Foundation with a heartfelt commitment to environmental sustainability and social empowerment. With a deep connection to nature and a strong sense of community, Himanshu envisioned a platform where action meets awareness — where individuals come together to create lasting ecological impact. Under his leadership, the foundation has grown from a passionate idea into a vibrant force for good — spearheading initiatives in environmental conservation, education, and rural development. Himanshu believes in leading by example, often working on the ground alongside volunteers, nurturing green spaces, and building bridges between people and purpose.",
     skills: [],
     image: "/assets/img/g1.jpg",
+    socials: {
+      facebook: "https://facebook.com/sarahjohnson",
+      instagram: "https://instagram.com/sarahjohnson",
+      twitter: "https://twitter.com/sarahjohnson",
+      linkedin: "https://linkedin.com/in/sarahjohnson",
+    },
   };
 
   const coreTeam = [
@@ -79,6 +105,12 @@ const TeamContent = () => {
       desc: "Full-stack architect and tech visionary.",
       skills: ["AI/ML", "Backend", "Cloud Architecture"],
       image: "/assets/img/g1.jpg",
+      socials: {
+        facebook: "https://facebook.com/michaelchen",
+        instagram: "https://instagram.com/michaelchen",
+        twitter: "https://twitter.com/michaelchen",
+        linkedin: "https://linkedin.com/in/michaelchen",
+      },
     },
     {
       name: "Emily Davis",
@@ -86,6 +118,12 @@ const TeamContent = () => {
       desc: "Design strategist focused on user experience.",
       skills: ["UI/UX", "Figma", "Design Systems"],
       image: "/assets/img/g1.jpg",
+      socials: {
+        facebook: "https://facebook.com/emilydavis",
+        instagram: "https://instagram.com/emilydavis",
+        twitter: "https://twitter.com/emilydavis",
+        linkedin: "https://linkedin.com/in/emilydavis",
+      },
     },
     {
       name: "David Rodriguez",
@@ -93,6 +131,12 @@ const TeamContent = () => {
       desc: "Expert in building scalable backend systems.",
       skills: ["TypeScript", "Python", "DevOps"],
       image: "/assets/img/g1.jpg",
+      socials: {
+        facebook: "https://facebook.com/davidrodriguez",
+        instagram: "https://instagram.com/davidrodriguez",
+        twitter: "https://twitter.com/davidrodriguez",
+        linkedin: "https://linkedin.com/in/davidrodriguez",
+      },
     },
     {
       name: "Lisa Park",
@@ -100,6 +144,12 @@ const TeamContent = () => {
       desc: "Works on responsible AI, predictive systems.",
       skills: ["ML Models", "Analytics", "AI Ethics"],
       image: "/assets/img/g1.jpg",
+      socials: {
+        facebook: "https://facebook.com/lisapark",
+        instagram: "https://instagram.com/lisapark",
+        twitter: "https://twitter.com/lisapark",
+        linkedin: "https://linkedin.com/in/lisapark",
+      },
     },
     {
       name: "James Wilson",
@@ -107,6 +157,12 @@ const TeamContent = () => {
       desc: "Drives sales and enterprise growth.",
       skills: ["CRM", "B2B Sales", "Negotiation"],
       image: "/assets/img/g1.jpg",
+      socials: {
+        facebook: "https://facebook.com/jameswilson",
+        instagram: "https://instagram.com/jameswilson",
+        twitter: "https://twitter.com/jameswilson",
+        linkedin: "https://linkedin.com/in/jameswilson",
+      },
     },
     {
       name: "Rachel Kim",
@@ -114,6 +170,12 @@ const TeamContent = () => {
       desc: "Crafts content strategy and brand presence.",
       skills: ["SEO", "Content", "Paid Media"],
       image: "/assets/img/g1.jpg",
+      socials: {
+        facebook: "https://facebook.com/rachelkim",
+        instagram: "https://instagram.com/rachelkim",
+        twitter: "https://twitter.com/rachelkim",
+        linkedin: "https://linkedin.com/in/rachelkim",
+      },
     },
   ];
 
@@ -180,8 +242,13 @@ const TeamContent = () => {
           <img ref={asd} src={heros} className="ix" alt="Team Hero" />
         </div>
       </div>
-      <h2 className="section-heading">Our Founder</h2>
-      <p className="section-subheading">The visionary behind our mission</p>
+
+      <h2 className="section-heading-founder">Our Founder</h2>
+      <div className="linex"></div>
+
+      <p className="section-subheading-founder">
+        The visionary behind our mission
+      </p>
 
       <div className="founder-wrapper">
         <div className="founder-card">
@@ -189,15 +256,18 @@ const TeamContent = () => {
             {founder.image && <img src={founder.image} alt={founder.name} />}
           </div>
 
-          <div className="team-info">
+          <div className="founder-info">
             <h3>{founder.name}</h3>
-            <span className="role">{founder.title}</span>
+            <span className="frole">{founder.title}</span>
             <p>{founder.desc}</p>
-            <SocialIcons />
+            <SocialIcons links={founder.socials} />
           </div>
         </div>
       </div>
+
       <h2 className="section-heading">Core Team & Co-founders</h2>
+      <div className="line"></div>
+
       <p className="section-subheading">The driving force behind our success</p>
 
       <div className="team-grid">
@@ -206,16 +276,13 @@ const TeamContent = () => {
         ))}
       </div>
       <h2 className="section-heading">Our Extended Team</h2>
+      <div className="line"></div>
+
       <p className="section-subheading">
         The talented individuals who make it all possible
       </p>
 
       <div className="extended-wrapper">
-        <div className="extended-header">
-          <FaUserFriends className="icon" />
-          <h3>Our Extended Team</h3>
-        </div>
-
         <div className="extended-grid">
           {extendedTeam.map((member, index) => (
             <div className="extended-card" key={index}>

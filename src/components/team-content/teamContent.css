@@ -24,11 +24,15 @@ body {
 .team-wrapper {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 100px 20px 80px;
+  padding: 50px 20px 80px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
 }
 
 .hero-team {
+  width: 100%;
   .texta {
     display: flex;
     flex-direction: column;
@@ -75,17 +79,46 @@ body {
 
 .section-heading {
   color: #047857;
-  font-size: 1.2rem;
-  margin-top: 40px;
-  font-weight: 600;
+  font-size: 3.5rem;
+  /* margin-top: 40px; */
+  font-family: inter-n8;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .section-subheading {
-  font-size: 0.8rem;
+  font-size: 0.95rem;
   color: #6b7280;
   margin-bottom: 30px;
+  text-align: center;
+  font-family: "inter-thin";
+  line-height: normal;
+}
+.section-heading-founder {
+  color: #047857;
+  font-size: 3.5rem;
+  /* margin-top: 40px; */
+  font-family: inter-n8;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: normal;
 }
 
+.section-subheading-founder {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "inter-thin";
+  line-height: normal;
+}
+.linex {
+  width: 276px;
+  height: 4px;
+  background-color: #9ca469;
+  margin-bottom: 16px;
+  align-self: center;
+}
 .founder-wrapper {
   display: flex;
   justify-content: center;
@@ -97,7 +130,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 /* Founder */
 .founder-wrapper {
@@ -107,66 +140,88 @@ body {
 }
 
 .founder-card {
-  width: 660px;
-  background-color: rgb(130, 108, 108);
-  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  gap: 20px;
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease;
 }
 
-.founder-card:hover {
-  transform: translateY(-4px);
+.founder-info {
+  background-color: #dcfce7;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 50%;
 }
 
 .founder-card .team-image {
-  height: 400px;
-  background-color: #d1fae5;
+  height: 550px;
 }
 
-.founder-card .team-info {
-  padding: 20px;
+.founder-card .founder-info {
+  padding: 40px;
   text-align: center;
 }
 
 .founder-card h3 {
-  font-size: 1.2rem;
-  margin: 0;
-}
-
-.founder-card .role {
-  display: inline-block;
-  margin: 8px 0;
-  font-size: 0.8rem;
-  color: #16a34a;
-  background-color: #dcfce7;
-  padding: 4px 10px;
-  border-radius: 999px;
+  font-size: 2.2rem;
+  line-height: normal;
+  text-align: left;
+  align-self: flex-start;
 }
 
 .founder-card p {
-  font-size: 0.85rem;
+  font-size: 0.875rem;
   color: #4b5563;
   margin-bottom: 10px;
+  text-align: justify;
+  text-align: justify;
+  -ms-text-justify: inter-word; /* For IE only */
+  text-justify: inter-word;
+}
+
+.founder-card .frole {
+  /* display: inline-block; */
+  /* margin: 8px 0; */
+  align-self: flex-start;
+  font-size: 1.1rem;
+  font-family: Poppins;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #000000;
 }
 
 /* Card Styles */
 .team-card {
   width: 460px;
-  background-color: #fff;
+  background-color: #e1eeda;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .team-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-8px);
+  background-color: #a0eabb;
+  transition: height, background-color 1s ease;
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.12);
+  .team-image {
+    height: 260px;
+    transition: height, 0.4s ease;
+  }
 }
 
 .team-image {
-  height: 280px;
+  height: 400px;
   width: 100%;
+  transition: height 0.4s ease;
   background-color: #d1fae5;
   overflow: hidden;
 }
@@ -177,29 +232,40 @@ body {
   object-fit: cover;
   display: block;
 }
-
+.line {
+  width: 400px;
+  height: 4px;
+  background-color: #9ca469;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
 .team-info {
   padding: 15px;
+  height: 110px;
 }
 
 .team-info h3 {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  color: #236724;
+  line-height: normal;
+  text-align: center;
+  line-height: normal;
 }
 
 .role {
   display: inline-block;
   margin: 5px 0;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: #16a34a;
   background-color: #dcfce7;
-  padding: 2px 8px;
-  border-radius: 999px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-family: "inter-thin";
+  font-weight: 500;
 }
 
 .team-info p {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: #555;
   margin: 10px 0;
 }
@@ -207,7 +273,7 @@ body {
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 8px;
   justify-content: center;
   margin-bottom: 10px;
 }
@@ -215,30 +281,105 @@ body {
 .skill {
   background-color: #ecfdf5;
   color: #047857;
-  font-size: 0.7rem;
+  font-size: 0.775rem;
   padding: 4px 8px;
+  font-weight: 500;
   border-radius: 999px;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 10px;
-  color: #16a34a;
-  font-size: 0.9rem;
+  padding: 10px;
+}
+
+.social-icons svg {
+  background: #fff;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  padding: 6px;
+  animation: ease-in-out 0.3s;
+}
+
+.social-icons svg::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: -35px;
+  background: inherit;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.social-icons svg:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.social-icons .fa-x-twitter {
+  color: #000;
+}
+.social-icons .fa-instagram {
+  color: #e4405f;
+}
+.social-icons .fa-facebook {
+  color: #1877f2;
+}
+.social-icons .fa-linkedin {
+  color: #0077b5;
 }
 
 .social-icons svg:hover {
-  color: #065f46;
+  color: #fff;
+  transform: scale(1.8);
+  /* box-shadow: none; */
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.social-icons .fa-x-twitter:hover,
+.social-icons .fa-x-twitter:hover::after {
+  background: #000;
+}
+
+.social-icons .fa-instagram:hover,
+.social-icons .fa-instagram:hover::after {
+  background: #e4405f;
+}
+
+.social-icons .fa-facebook:hover,
+.social-icons .fa-facebook:hover::after {
+  background: #1877f2;
+}
+
+.social-icons .fa-linkedin:hover,
+.social-icons .fa-linkedin:hover::after {
+  background: #0077b5;
 }
 
 .extended-wrapper {
   background: #e6fdf0;
-  margin: 40px auto;
-  padding: 40px 20px;
+  margin: 20px auto;
+  padding: 0px 20px 40px;
   border-radius: 16px;
-  max-width: 1000px;
+  max-width: 1500px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
 }
 
@@ -266,32 +407,41 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px;
+  gap: 24px;
 }
 
 .extended-card {
-  background: white;
+  background: #e1eeda;
   padding: 10px 16px;
   border-radius: 8px;
   font-size: 0.85rem;
   color: #333;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   min-width: 220px;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.extended-card:hover {
+  transform: translateY(-6px);
+  transform: scale(1.5);
+  background: #d1fae5;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .detailed-team {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 90px;
   padding: 40px 0;
 }
 
 .detailed-card {
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 40px;
-  max-width: 1000px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -303,15 +453,25 @@ body {
   flex-direction: row-reverse;
 }
 
+.detailed-photo {
+  width: 580px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .detailed-photo img {
-  width: 260px;
-  height: 260px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .detailed-info {
+  width: 50%;
+  padding: 20px;
+  /* background-color: red; */
   flex: 1;
   text-align: left;
 }
