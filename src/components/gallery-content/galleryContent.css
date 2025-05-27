@@ -1,4 +1,4 @@
-.homepg {
+/* .homepg {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,14 +13,26 @@
     font-size: 1.2em;
     color: #666;
   }
-}
+} */
 
-body {
+/* body {
   margin: 0;
   background: #fff;
   font-family: "Segoe UI", sans-serif;
+} */
+
+.gallery-header {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #56606b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-.img-wrapper {
+
+.gallery-container .img-wrapper {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
@@ -74,12 +86,9 @@ body {
 }
 
 .gallery-container {
-  padding-top: 65px;
-  padding-bottom: 65px;
-  max-width: 1380px;
+  max-width: 1480px;
   margin: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 0 16px 65px;
 }
 
 .gallery-title {
