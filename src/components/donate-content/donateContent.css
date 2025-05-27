@@ -14,3 +14,141 @@
     color: #666;
   }
 }
+
+
+.donate-wrapper {
+  padding: 80px 5%;
+  background-color: #f9f9f9;
+  font-family: 'Inter', sans-serif;
+}
+
+.donate-form {
+  display: flex;
+  flex-wrap: wrap;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.donate-left-panel,
+.donate-right-panel {
+  flex: 1;
+  padding: 40px;
+  min-width: 320px;
+}
+
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-bottom: 24px;
+}
+
+.amount-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.impact-btn {
+  padding: 10px 0;
+  border: 1.5px solid #c8e6c9;
+  border-radius: 12px;
+  background: #f4fbf4;
+  color: #2d6c44;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-align: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.impact-btn.selected {
+  background-color: #2d6c44;
+  color: #ffffff;
+  border-color: #2d6c44;
+}
+
+.custom-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1.5px solid #ddd;
+  background-color: #fefefe;
+}
+
+.donation-type-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.type-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.type-card input {
+  margin-top: 6px;
+}
+
+.type-card.active {
+  background: #f0f8f1;
+  border-color: #2d6c44;
+}
+
+.donate-right-panel input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  border: 1.5px solid #ddd;
+  background-color: #fafafa;
+  font-size: 0.95rem;
+}
+
+.impact-box {
+  background: #e3f1e7;
+  padding: 16px 20px;
+  border-left: 4px solid #2d6c44;
+  margin: 24px 0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.donate-btn {
+  width: 100%;
+  padding: 14px;
+  background: #2d6c44;
+  color: #ffffff;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.donate-btn:hover {
+  background-color: #245438;
+}
+
+.secure-text {
+  display: block;
+  margin-top: 12px;
+  font-size: 0.75rem;
+  color: #888;
+  text-align: center;
+}
