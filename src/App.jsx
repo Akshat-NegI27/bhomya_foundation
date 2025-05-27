@@ -1,7 +1,12 @@
-import { useState, useEffect, Suspense, lazy } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState, Suspense, lazy } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 import CustomCursor from "./hooks/CustomCursor";
-import Loader from "./hooks/loader/Loader";
 import "./App.css";
 
 // Lazy-loaded pages
@@ -14,38 +19,35 @@ const Involve = lazy(() => import("./pages/involve/involve"));
 const Donate = lazy(() => import("./pages/donate/donate"));
 const Gallery = lazy(() => import("./pages/gallery/gallery"));
 
-const App = () => {
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 6000); // Adjust if needed
-    return () => clearTimeout(timer);
-  }, []);
+const AnimatedRoutes = () => {
+  const location = useLocation();
 
   return (
-    <>
-      {loading ? (
-        <Loader />
-      ) : (
-        <div className="app-wrapper fade-in">
-          <CustomCursor />
-          <Router>
-            <Suspense fallback={<Loader />}>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route path="/team" element={<Team />} />
-                <Route path="/gallery" element={<Gallery />} />
-                <Route path="/involve" element={<Involve />} />
-                <Route path="/donate" element={<Donate />} />
-                <Route path="/store" element={<Store />} />
-              </Routes>
-            </Suspense>
-          </Router>
-        </div>
-      )}
-    </>
+    <AnimatePresence mode="wait">
+      <Suspense fallback={null}>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/involve" element={<Involve />} />
+          <Route path="/donate" element={<Donate />} />
+          <Route path="/store" element={<Store />} />
+        </Routes>
+      </Suspense>
+    </AnimatePresence>
+  );
+};
+
+const App = () => {
+  return (
+    <Router>
+      <CustomCursor />
+      <AnimatedRoutes />
+
+      <div className="app-wrapper fade-in"></div>
+    </Router>
   );
 };
 

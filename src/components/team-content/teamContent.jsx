@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import "./teamContent.css";
 import heros from "/assets/img/g2.jpg";
+import Curve from "../../components/Curve";
 
 import {
   FaFacebookF,
@@ -162,98 +163,102 @@ const TeamContent = () => {
   ];
 
   return (
-    <div className="team-wrapper">
-      <div className="hero-team">
-        <div className="texta">
-          <h1 ref={headingRef}>
-            Meet Our <span className="highlight">Dream Team</span>
-          </h1>
+    <Curve backgroundColor="#ffffff">
+      <div className="team-wrapper">
+        <div className="hero-team">
+          <div className="texta">
+            <h1 ref={headingRef}>
+              Meet Our <span className="highlight">Dream Team</span>
+            </h1>
 
-          <p className="intro">
-            We're a collection of passionate individuals from diverse
-            backgrounds, <br />
-            united by our shared commitment to excellence and innovation.
-          </p>
-        </div>
-
-        <div className="hero-imagae">
-          <img ref={asd} src={heros} className="ix" alt="Team Hero" />
-        </div>
-      </div>
-      <h2 className="section-heading">Our Founder</h2>
-      <p className="section-subheading">The visionary behind our mission</p>
-
-      <div className="founder-wrapper">
-        <div className="founder-card">
-          <div className="team-image">
-            {founder.image && <img src={founder.image} alt={founder.name} />}
+            <p className="intro">
+              We're a collection of passionate individuals from diverse
+              backgrounds, <br />
+              united by our shared commitment to excellence and innovation.
+            </p>
           </div>
 
-          <div className="team-info">
-            <h3>{founder.name}</h3>
-            <span className="role">{founder.title}</span>
-            <p>{founder.desc}</p>
-            <SocialIcons />
+          <div className="hero-imagae">
+            <img ref={asd} src={heros} className="ix" alt="Team Hero" />
           </div>
         </div>
-      </div>
-      <h2 className="section-heading">Core Team & Co-founders</h2>
-      <p className="section-subheading">The driving force behind our success</p>
+        <h2 className="section-heading">Our Founder</h2>
+        <p className="section-subheading">The visionary behind our mission</p>
 
-      <div className="team-grid">
-        {coreTeam.map((member, i) => (
-          <TeamCard key={i} {...member} />
-        ))}
-      </div>
-      <h2 className="section-heading">Our Extended Team</h2>
-      <p className="section-subheading">
-        The talented individuals who make it all possible
-      </p>
+        <div className="founder-wrapper">
+          <div className="founder-card">
+            <div className="team-image">
+              {founder.image && <img src={founder.image} alt={founder.name} />}
+            </div>
 
-      <div className="extended-wrapper">
-        <div className="extended-header">
-          <FaUserFriends className="icon" />
-          <h3>Our Extended Team</h3>
+            <div className="team-info">
+              <h3>{founder.name}</h3>
+              <span className="role">{founder.title}</span>
+              <p>{founder.desc}</p>
+              <SocialIcons />
+            </div>
+          </div>
         </div>
+        <h2 className="section-heading">Core Team & Co-founders</h2>
+        <p className="section-subheading">
+          The driving force behind our success
+        </p>
 
-        <div className="extended-grid">
-          {extendedTeam.map((member, index) => (
-            <div className="extended-card" key={index}>
-              {member}
+        <div className="team-grid">
+          {coreTeam.map((member, i) => (
+            <TeamCard key={i} {...member} />
+          ))}
+        </div>
+        <h2 className="section-heading">Our Extended Team</h2>
+        <p className="section-subheading">
+          The talented individuals who make it all possible
+        </p>
+
+        <div className="extended-wrapper">
+          <div className="extended-header">
+            <FaUserFriends className="icon" />
+            <h3>Our Extended Team</h3>
+          </div>
+
+          <div className="extended-grid">
+            {extendedTeam.map((member, index) => (
+              <div className="extended-card" key={index}>
+                {member}
+              </div>
+            ))}
+          </div>
+        </div>
+        <h2 className="section-heading">Team Member Highlights</h2>
+        <p className="section-subheading">
+          Learn more about our amazing team members
+        </p>
+
+        <div className="detailed-team">
+          {detailedTeam.map((member, i) => (
+            <div
+              className={`detailed-card ${i % 2 === 0 ? "left" : "right"}`}
+              id={member.id}
+              key={i}
+            >
+              <div className="detailed-photo">
+                {member.image && <img src={member.image} alt={member.name} />}
+              </div>
+
+              <div className="detailed-info">
+                <h3>{member.name}</h3>
+                <p className="role">{member.title}</p>
+                <p>{member.bio}</p>
+                <ul>
+                  {member.experience.map((exp, idx) => (
+                    <li key={idx}>{exp}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>
       </div>
-      <h2 className="section-heading">Team Member Highlights</h2>
-      <p className="section-subheading">
-        Learn more about our amazing team members
-      </p>
-
-      <div className="detailed-team">
-        {detailedTeam.map((member, i) => (
-          <div
-            className={`detailed-card ${i % 2 === 0 ? "left" : "right"}`}
-            id={member.id}
-            key={i}
-          >
-            <div className="detailed-photo">
-              {member.image && <img src={member.image} alt={member.name} />}
-            </div>
-
-            <div className="detailed-info">
-              <h3>{member.name}</h3>
-              <p className="role">{member.title}</p>
-              <p>{member.bio}</p>
-              <ul>
-                {member.experience.map((exp, idx) => (
-                  <li key={idx}>{exp}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
+    </Curve>
   );
 };
 

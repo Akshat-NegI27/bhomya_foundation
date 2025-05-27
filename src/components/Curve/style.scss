@@ -1,0 +1,47 @@
+.curve {
+  svg,
+  .background {
+    position: fixed;
+    height: calc(100vh + 600px);
+    width: 100vw;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+  }
+  .background {
+    background-color: rgb(173, 26, 26);
+    transition: opacity 0s linear 0.1s;
+  }
+  .route {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    color: rgb(192, 12, 12);
+    font-size: 86px;
+    z-index: 9999;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
+
+// .page.curve {
+//   position: relative;
+//   z-index: 1;
+// }
+
+.page.curve .route {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: rgb(192, 12, 12);
+  font-size: 86px;
+  text-align: center;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+// .page.curve {
+//   position: relative;
+//   min-height: 100vh;
+//   overflow: hidden;
+// }

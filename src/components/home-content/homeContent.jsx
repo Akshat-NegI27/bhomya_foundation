@@ -32,6 +32,7 @@ import slide24 from "/assets/img/s4.jpg";
 import slide31 from "/assets/img/s3.jpg";
 import slide32 from "/assets/img/s2.jpg";
 import slide33 from "/assets/img/s1.jpg";
+import Curve from "../../components/Curve";
 
 const CheckIcon = () => (
   <svg
@@ -75,320 +76,322 @@ const HomeContent = () => {
     }
   }, []);
   return (
-    <div className="homepg-main">
-      {/* -----------------section 1----------------- */}
-      <div className="sec1">
-        <img src={prop1} className="prop1" alt="" />
-        <img src={prop2} className="prop2" alt="" />
+    <Curve backgroundColor="#000">
+      <div className="homepg-main">
+        {/* -----------------section 1----------------- */}
+        <div className="sec1">
+          <img src={prop1} className="prop1" alt="" />
+          <img src={prop2} className="prop2" alt="" />
 
-        <div className="sec1-content">
-          <h3>Environmental Conservation NGO</h3>
-          <h1>
-            Together For Trees
-            <br /> United For Tomorrow
-          </h1>
-          <h2>Be the Change, Plant the Change.</h2>
-          <p>
-            At Bhomya Foundation, we empower communities to nurture nature
-            through innovative conservation and sustainable practices. <br />
-            Join us on our mission to restore ecological balance, promote
-            organic growth, and create a greener future for all.
-          </p>
-          <div className="buttons">
-            <Link className="button-underline" to="/Team">
-              View All Courses
-            </Link>
-            <button
-              onClick={() => {
-                navigate("/About");
-              }}
-              className="learn-more"
-            >
-              <span className="circle">
-                <span className="icon arrow"></span>
-              </span>
-              <span className="button-text">Enroll Now</span>
-            </button>
-          </div>
-        </div>
-        <div className="sec1-image">
-          <img src={img1} className="imgg1" alt="Hero" />
-        </div>
-      </div>
-
-      {/* -----------------section 2----------------- */}
-      <div className="sec2">
-        <div className="head-text">
-          <h2>Our Story</h2>
-          <h1>About Bhomya Foundation</h1>
-          <p>
-            Dedicated to environmental conservation and sustainable community
-            development since 2022, officially registered under the Society Act
-            on 7th February 2024.
-          </p>
-        </div>
-        <div className="sec2-content">
-          <div className="left-text">
-            <h1>Our Mission</h1>
+          <div className="sec1-content">
+            <h3>Environmental Conservation NGO</h3>
+            <h1>
+              Together For Trees
+              <br /> United For Tomorrow
+            </h1>
+            <h2>Be the Change, Plant the Change.</h2>
             <p>
-              Bhomya Foundation is committed to promoting environmental
-              conservation and sustainable community development. The mission is
-              to create an eco-conscious society where people work in harmony
-              with nature to restore ecosystems, protect biodiversity, and
-              foster sustainable living.
+              At Bhomya Foundation, we empower communities to nurture nature
+              through innovative conservation and sustainable practices. <br />
+              Join us on our mission to restore ecological balance, promote
+              organic growth, and create a greener future for all.
             </p>
-            <h2>Our Objectives</h2>
-            <ul>
-              <li>
-                <CheckIcon />
-                <div className="point">
-                  To raise awareness about environmental issues and promote
-                  sustainable practices.
-                </div>
-              </li>
-              <li>
-                <CheckIcon />
-                To engage communities in conservation efforts through education
-                and hands-on activities.
-              </li>
-              <li>
-                <CheckIcon /> To support the restoration of degraded ecosystems
-                and promote biodiversity.
-              </li>
-              <li>
-                <CheckIcon /> To empower individuals and communities to take
-                action for a greener future.
-              </li>
-              <li>
-                <CheckIcon /> Promote sustainable practices like organic farming
-                and reforestation.
-              </li>
-            </ul>
+            <div className="buttons">
+              <Link className="button-underline" to="/Team">
+                View All Courses
+              </Link>
+              <button
+                onClick={() => {
+                  navigate("/About");
+                }}
+                className="learn-more"
+              >
+                <span className="circle">
+                  <span className="icon arrow"></span>
+                </span>
+                <span className="button-text">Enroll Now</span>
+              </button>
+            </div>
           </div>
-          <div className="right-image">
-            <div className="overlay">
-              <h1>Working towards a greener planet</h1>
+          <div className="sec1-image">
+            <img src={img1} className="imgg1" alt="Hero" />
+          </div>
+        </div>
+
+        {/* -----------------section 2----------------- */}
+        <div className="sec2">
+          <div className="head-text">
+            <h2>Our Story</h2>
+            <h1>About Bhomya Foundation</h1>
+            <p>
+              Dedicated to environmental conservation and sustainable community
+              development since 2022, officially registered under the Society
+              Act on 7th February 2024.
+            </p>
+          </div>
+          <div className="sec2-content">
+            <div className="left-text">
+              <h1>Our Mission</h1>
               <p>
-                Our efforts span from Uttarakhand's mountains to communities
-                across North India
+                Bhomya Foundation is committed to promoting environmental
+                conservation and sustainable community development. The mission
+                is to create an eco-conscious society where people work in
+                harmony with nature to restore ecosystems, protect biodiversity,
+                and foster sustainable living.
+              </p>
+              <h2>Our Objectives</h2>
+              <ul>
+                <li>
+                  <CheckIcon />
+                  <div className="point">
+                    To raise awareness about environmental issues and promote
+                    sustainable practices.
+                  </div>
+                </li>
+                <li>
+                  <CheckIcon />
+                  To engage communities in conservation efforts through
+                  education and hands-on activities.
+                </li>
+                <li>
+                  <CheckIcon /> To support the restoration of degraded
+                  ecosystems and promote biodiversity.
+                </li>
+                <li>
+                  <CheckIcon /> To empower individuals and communities to take
+                  action for a greener future.
+                </li>
+                <li>
+                  <CheckIcon /> Promote sustainable practices like organic
+                  farming and reforestation.
+                </li>
+              </ul>
+            </div>
+            <div className="right-image">
+              <div className="overlay">
+                <h1>Working towards a greener planet</h1>
+                <p>
+                  Our efforts span from Uttarakhand's mountains to communities
+                  across North India
+                </p>
+              </div>
+              <div className="image-box">
+                <div className="overlaydark "></div>
+                <img src={img2} className="imgg2" alt="Mission" />
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* -----------------Banner----------------- */}
+        <div className="banner">
+          <div className="cards">
+            <div className="b1">
+              <div className="icon-bg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  className="iconn"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#236724"
+                  strokeWidth="2"
+                >
+                  <path d="M8 2v4" />
+                  <path d="M16 2v4" />
+                  <rect width="18" height="18" x="3" y="4" rx="2" />
+                  <path d="M3 10h18" />
+                </svg>
+              </div>
+              <h1>Registered</h1>
+              <p>
+                Society Act (Registered on 7th February 2024, Registration No.
+                UK0600822024012700)
               </p>
             </div>
-            <div className="image-box">
-              <div className="overlaydark "></div>
-              <img src={img2} className="imgg2" alt="Mission" />
+            <div className="b2">
+              <div className="icon-bg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  className="iconn"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#236724"
+                  strokeWidth="2"
+                >
+                  <path d="M8 2v4" />
+                  <path d="M16 2v4" />
+                  <rect width="18" height="18" x="3" y="4" rx="2" />
+                  <path d="M3 10h18" />
+                </svg>
+              </div>
+              <h1>Established</h1>
+              <p>
+                Working from 5th June 2022 and officially registered under the
+                Society Act on 7th February 2024.
+              </p>
+            </div>
+            <div className="b3">
+              <div className="icon-bg">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="28"
+                  height="28"
+                  className="iconn"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="#236724"
+                  strokeWidth="2"
+                >
+                  <path d="M8 2v4" />
+                  <path d="M16 2v4" />
+                  <rect width="18" height="18" x="3" y="4" rx="2" />
+                  <path d="M3 10h18" />
+                </svg>
+              </div>
+              <h1>Location</h1>
+              <p>
+                Monal Enclave, Near Kargi Chowk, Dehradun, Uttarakhand – 248001,
+                India
+              </p>
             </div>
           </div>
         </div>
-      </div>
-      {/* -----------------Banner----------------- */}
-      <div className="banner">
-        <div className="cards">
-          <div className="b1">
-            <div className="icon-bg">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                className="iconn"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#236724"
-                strokeWidth="2"
-              >
-                <path d="M8 2v4" />
-                <path d="M16 2v4" />
-                <rect width="18" height="18" x="3" y="4" rx="2" />
-                <path d="M3 10h18" />
-              </svg>
-            </div>
-            <h1>Registered</h1>
+
+        {/* -----------------section 3----------------- */}
+        <div className="sec3">
+          <div className="sec3-text">
+            <h2>Our Support</h2>
+            <h1>Our Partners</h1>
+            <div ref={headingRef} className="line"></div>
+
             <p>
-              Society Act (Registered on 7th February 2024, Registration No.
-              UK0600822024012700)
+              We are proud to collaborate with dedicated partners who share our
+              commitment to sustainability. Their support empowers us to
+              implement impactful initiatives, strengthen communities, and
+              protect the environment for future generations.
             </p>
           </div>
-          <div className="b2">
-            <div className="icon-bg">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                className="iconn"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#236724"
-                strokeWidth="2"
-              >
-                <path d="M8 2v4" />
-                <path d="M16 2v4" />
-                <rect width="18" height="18" x="3" y="4" rx="2" />
-                <path d="M3 10h18" />
-              </svg>
+          <div className="sec3-logos">
+            <div className="sec3logo">
+              <img src={logo1} alt="BSOI" />
             </div>
-            <h1>Established</h1>
+            <div className="ifsa-logo">
+              <img src={logo2} alt="IFSA" />
+            </div>
+            <div className="sec3logo">
+              <img src={logo3} alt="Doon University" />
+            </div>
+          </div>
+          <div className="sec3-video">
+            <iframe
+              ref={asd}
+              width="2200"
+              height="600"
+              src="https://www.youtube.com/embed/ECHrDbdYPXo?autoplay=1&controls=0&loop=1&playlist=ECHrDbdYPXo&mute=1"
+              title="Eco Partnership"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+
+        {/* -----------------section 5----------------- */}
+        <div className="sec5">
+          <div className="sec5-text">
+            <h2>Our Initiatives</h2>
+            <h1>Our Programs</h1>
+            <div className="line"></div>
             <p>
-              Working from 5th June 2022 and officially registered under the
-              Society Act on 7th February 2024.
+              Discover the various initiatives and programs we run to promote
+              environmental conservation and sustainable development.
             </p>
           </div>
-          <div className="b3">
-            <div className="icon-bg">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="28"
-                height="28"
-                className="iconn"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="#236724"
-                strokeWidth="2"
-              >
-                <path d="M8 2v4" />
-                <path d="M16 2v4" />
-                <rect width="18" height="18" x="3" y="4" rx="2" />
-                <path d="M3 10h18" />
-              </svg>
-            </div>
-            <h1>Location</h1>
+          <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            loop={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{ clickable: true }}
+            navigation={false}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <div className="pan1">
+                <img src={slide11} alt="Slide 11" />
+                <img src={slide12} alt="Slide 12" />
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="pan2">
+                <img src={slide21} alt="Slide 21" />
+                <img src={slide22} alt="Slide 22" />
+                <img src={slide23} alt="Slide 23" />
+                <img src={slide24} alt="Slide 24" />
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="pan3">
+                <img src={slide31} alt="Slide 31" />
+                <img src={slide32} alt="Slide 32" />
+                <img src={slide33} alt="Slide 33" />
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
+
+        {/* -----------------section 6----------------- */}
+        <div className="sec6">
+          <div className="sec6-text">
+            <h2>Get our Cause</h2>
+            <h1>Get Involved</h1>
+            <div className="line"></div>
             <p>
-              Monal Enclave, Near Kargi Chowk, Dehradun, Uttarakhand – 248001,
-              India
+              There are many ways you can contribute to our mission and help
+              make a difference in environmental conservation.
             </p>
           </div>
-        </div>
-      </div>
-
-      {/* -----------------section 3----------------- */}
-      <div className="sec3">
-        <div className="sec3-text">
-          <h2>Our Support</h2>
-          <h1>Our Partners</h1>
-          <div ref={headingRef} className="line"></div>
-
-          <p>
-            We are proud to collaborate with dedicated partners who share our
-            commitment to sustainability. Their support empowers us to implement
-            impactful initiatives, strengthen communities, and protect the
-            environment for future generations.
-          </p>
-        </div>
-        <div className="sec3-logos">
-          <div className="sec3logo">
-            <img src={logo1} alt="BSOI" />
-          </div>
-          <div className="ifsa-logo">
-            <img src={logo2} alt="IFSA" />
-          </div>
-          <div className="sec3logo">
-            <img src={logo3} alt="Doon University" />
-          </div>
-        </div>
-        <div  className="sec3-video">
-          <iframe
-          ref={asd}
-            width="2200"
-            height="600"
-            src="https://www.youtube.com/embed/ECHrDbdYPXo?autoplay=1&controls=0&loop=1&playlist=ECHrDbdYPXo&mute=1"
-            title="Eco Partnership"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
-        </div>
-      </div>
-
-      {/* -----------------section 5----------------- */}
-      <div className="sec5">
-        <div className="sec5-text">
-          <h2>Our Initiatives</h2>
-          <h1>Our Programs</h1>
-          <div className="line"></div>
-          <p>
-            Discover the various initiatives and programs we run to promote
-            environmental conservation and sustainable development.
-          </p>
-        </div>
-        <Swiper
-          spaceBetween={30}
-          centeredSlides={true}
-          loop={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          pagination={{ clickable: true }}
-          navigation={false}
-          modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <div className="pan1">
-              <img src={slide11} alt="Slide 11" />
-              <img src={slide12} alt="Slide 12" />
+          <div className="newsletter">
+            <div className="newsletter-content">
+              <h2>Join Our Newsletter</h2>
+              <p>
+                Stay updated with our latest initiatives, events, and
+                conservation news. Be the first to know about upcoming volunteer
+                opportunities and campaigns.
+              </p>
+              <form>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  autoComplete="email"
+                  className="custom-input"
+                  placeholder="Enter your email"
+                  required
+                />
+                <button type="submit">Subscribe</button>
+              </form>
+              <p className="terms">
+                We respect your privacy. Unsubscribe at any time.
+              </p>
             </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="pan2">
-              <img src={slide21} alt="Slide 21" />
-              <img src={slide22} alt="Slide 22" />
-              <img src={slide23} alt="Slide 23" />
-              <img src={slide24} alt="Slide 24" />
+            <div className="newsletter-img">
+              <img src={img2} alt="Newsletter" />
             </div>
-          </SwiperSlide>
-
-          <SwiperSlide>
-            <div className="pan3">
-              <img src={slide31} alt="Slide 31" />
-              <img src={slide32} alt="Slide 32" />
-              <img src={slide33} alt="Slide 33" />
-            </div>
-          </SwiperSlide>
-        </Swiper>
-      </div>
-
-      {/* -----------------section 6----------------- */}
-      <div className="sec6">
-        <div className="sec6-text">
-          <h2>Get our Cause</h2>
-          <h1>Get Involved</h1>
-          <div className="line"></div>
-          <p>
-            There are many ways you can contribute to our mission and help make
-            a difference in environmental conservation.
-          </p>
-        </div>
-        <div className="newsletter">
-          <div className="newsletter-content">
-            <h2>Join Our Newsletter</h2>
-            <p>
-              Stay updated with our latest initiatives, events, and conservation
-              news. Be the first to know about upcoming volunteer opportunities
-              and campaigns.
-            </p>
-            <form>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                autoComplete="email"
-                className="custom-input"
-                placeholder="Enter your email"
-                required
-              />
-              <button type="submit">Subscribe</button>
-            </form>
-            <p className="terms">
-              We respect your privacy. Unsubscribe at any time.
-            </p>
-          </div>
-          <div className="newsletter-img">
-            <img src={img2} alt="Newsletter" />
           </div>
         </div>
       </div>
-    </div>
+    </Curve>
   );
 };
 
