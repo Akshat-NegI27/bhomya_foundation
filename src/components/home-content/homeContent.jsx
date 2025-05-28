@@ -94,11 +94,11 @@ const HomeContent = () => {
             At Bhomya Foundation, we empower communities to nurture nature
             through innovative conservation and sustainable practices. <br />
             Join us on our mission to restore ecological balance, promote
-            organic growth, and create a greener future for all.
+            organic growth,<br></br> and create a greener future for all.
           </p>
           <div className="buttons">
-            <Link className="button-underline" to="/Team">
-              View All Courses
+            <Link className="button-underline" to="/About">
+              To Know More
             </Link>
             <button
               onClick={() => {
@@ -109,7 +109,7 @@ const HomeContent = () => {
               <span className="circle">
                 <span className="icon arrow"></span>
               </span>
-              <span className="button-text">Enroll Now</span>
+              <span className="button-text">Contribute </span>
             </button>
           </div>
         </div>
