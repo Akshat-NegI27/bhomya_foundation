@@ -1,7 +1,34 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./involveContent.css";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const InvolveContent = () => {
+  const cardsRef = useRef([]);
+
+  useEffect(() => {
+    cardsRef.current.forEach((card, i) => {
+      gsap.fromTo(
+        card,
+        { x: i % 2 === 0 ? -150 : 150, opacity: 0 },
+        {
+          x: 0,
+          opacity: 1,
+          scrollTrigger: {
+            trigger: card,
+            start: "top 85%",
+            end: "bottom 60%",
+            scrub: true,
+          },
+          duration: 1,
+          ease: "power2.out",
+        }
+      );
+    });
+  }, []);
+
   return (
     <div className="involve-wrapper">
       <div className="involve-container">
@@ -15,57 +42,83 @@ const InvolveContent = () => {
         </div>
 
         <div className="involve-cards">
-          <div className="involve-card">
-            <div className="icon-circle">
-              <i className="icon-intern" />
+          {[
+            {
+              title: "Intern / Trainee",
+              subtitle: "Gain hands-on experience and training",
+              desc: "Interns and trainees work closely with our environmental experts...",
+              roles: [
+                "🌿 Field and Research Projects",
+                "📈 Data analysis and reporting",
+                "🧪 Environmental experiments",
+                "📝 Documentation & Campaigns",
+              ],
+              btn: "Apply as Intern",
+              color: "green",
+              icon: "icon-intern",
+            },
+            {
+              title: "Member",
+              subtitle: "Be a committed part of our mission",
+              desc: "Members support us with regular participation...",
+              roles: [
+                "📬 Monthly newsletters & reports",
+                "🤝 Event & workshop access",
+                "🗳 Feedback & planning involvement",
+                "🎖 Recognition for loyalty",
+              ],
+              btn: "Join as Member",
+              color: "brown",
+              icon: "icon-member",
+            },
+            {
+              title: "Partner With Us",
+              subtitle: "Collaborate to drive greater change",
+              desc: "Collaborate as a strategic partner...",
+              roles: [
+                "🏢 CSR Projects",
+                "📊 Impact reporting",
+                "📚 Educational tie-ups",
+                "🌐 Network access",
+              ],
+              btn: "Become a Partner",
+              color: "green",
+              icon: "icon-partner",
+            },
+            {
+              title: "Volunteer",
+              subtitle: "Make a direct, meaningful impact",
+              desc: "Volunteers play a critical role in on-ground activities...",
+              roles: [
+                "🌱 Plantation drives",
+                "📣 Awareness campaigns",
+                "🎪 Event coordination",
+                "🧠 Creative contributions",
+              ],
+              btn: "Become a Volunteer",
+              color: "brown",
+              icon: "icon-volunteer",
+            },
+          ].map((card, index) => (
+            <div
+              className="involve-card wide-card"
+              key={index}
+              ref={(el) => (cardsRef.current[index] = el)}
+            >
+              <div className="icon-circle">
+                <i className={card.icon} />
+              </div>
+              <h2>{card.title}</h2>
+              <p className="subtitle">{card.subtitle}</p>
+              <p className="description">{card.desc}</p>
+              <ul className="details-list">
+                {card.roles.map((role, i) => (
+                  <li key={i}>{role}</li>
+                ))}
+              </ul>
+              <button className={`btn ${card.color}`}>{card.btn}</button>
             </div>
-            <h2>Intern/Trainee</h2>
-            <p className="subtitle">Gain hands-on experience and training</p>
-            <p className="description">
-              Join us as an intern or trainee to work on real environmental projects,
-              research, and campaigns while developing your skills.
-            </p>
-            <button className="btn green">Apply as Intern</button>
-          </div>
-
-          <div className="involve-card">
-            <div className="icon-circle">
-              <i className="icon-member" />
-            </div>
-            <h2>Member</h2>
-            <p className="subtitle">Be a committed part of our mission</p>
-            <p className="description">
-              As a member, you’ll stay connected, contribute ideas, join programs,
-              and help shape the future of our green initiatives.
-            </p>
-            <button className="btn brown">Join as Member</button>
-          </div>
-
-          <div className="involve-card">
-            <div className="icon-circle">
-              <i className="icon-partner" />
-            </div>
-            <h2>Partner With Us</h2>
-            <p className="subtitle">Collaborate to drive greater change</p>
-            <p className="description">
-              Whether you're a business, institute, or NGO, partner with us to create
-              joint programs and drive lasting environmental impact.
-            </p>
-            <button className="btn green">Become a Partner</button>
-          </div>
-
-          <div className="involve-card">
-            <div className="icon-circle">
-              <i className="icon-volunteer" />
-            </div>
-            <h2>Volunteer</h2>
-            <p className="subtitle">Make a direct, meaningful impact</p>
-            <p className="description">
-              Contribute your time, energy, or skills to our projects — from plantation
-              drives to awareness campaigns and event support.
-            </p>
-            <button className="btn brown">Become a Volunteer</button>
-          </div>
+          ))}
         </div>
       </div>
     </div>
