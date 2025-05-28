@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./galleryContent.css";
+import "./responsive_gallery.css";
 import GalleryImage from "./GalleryImage";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

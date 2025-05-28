@@ -1,0 +1,14 @@
+@media only screen and (max-width: 767px) {
+.gallery-header{
+    height: 25vh;
+}    .masonry-grid {
+        column-count: 2;
+    }
+    .gallery-heading-content h1{
+        font-size: 2.5rem;
+    }
+    .gallery-banner-image {
+    width: 130%;
+    height: 270px;
+    }
+}

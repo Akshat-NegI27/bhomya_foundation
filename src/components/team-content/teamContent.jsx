@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./teamContent.css";
+import "./responsive_team.css";
 import heros from "/assets/img/g2.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -87,7 +88,7 @@ const TeamContent = () => {
   const founder = {
     name: "Himanshu",
     title: "Founder & President",
-    desc: "Our President and Founder, Himanshu, established the Bhomya Foundation with a heartfelt commitment to environmental sustainability and social empowerment. With a deep connection to nature and a strong sense of community, Himanshu envisioned a platform where action meets awareness — where individuals come together to create lasting ecological impact. Under his leadership, the foundation has grown from a passionate idea into a vibrant force for good — spearheading initiatives in environmental conservation, education, and rural development. Himanshu believes in leading by example, often working on the ground alongside volunteers, nurturing green spaces, and building bridges between people and purpose.",
+    desc: " Himanshu Sahu brings a rich academic foundation in Agriculture, Environmental Science, and Social Work, combined with a deep commitment to sustainable development and ecological conservation. Currently pursuing his Ph.D. at the Wildlife Institute of India, his research focuses on soil chemistry and its role in plant ecology—an area that informs many of the foundation's initiatives.As the Founder and President of Bhomya Foundation, Himanshu is dedicated to empowering communities and nurturing environmental consciousness, especially among the youth.He believes that meaningful change begins at the grassroots and that inspiring young minds today will create the environmental leaders of tomorrow. Under his leadership, the foundation continues to drive community- based conservation, environmental education, and collective action toward a greener, more sustainable future.",
     skills: [],
     image: "/assets/img/himanshu.jpg",
     socials: {
@@ -113,18 +114,20 @@ const TeamContent = () => {
         linkedin: "https://linkedin.com/in/michaelchen",
       },
     },
+
+
     {
-      name: "Pratiksha",
-      title: "Strategist",
-      desc: "Ideas. Execution. Outreach.",
-      punch: "Crafting impactful journeys through design thinking.",
-      skills: ["Campaign Strategy", "User Research", "Engagement"],
-      image: "/assets/img/strategist.jpg",
+      name: "Pooja Purohit",
+      title: "Secretary",
+      desc: "Coordination. Commitment. Communication.",
+      punch: "Organizing impact through clarity and compassion.",
+      skills: ["Operations", "Documentation", "Stakeholder Communication"],
+      image: "/assets/img/pooja.jpg",
       socials: {
-        facebook: "https://facebook.com/emilydavis",
-        instagram: "https://www.instagram.com/pratiksha.panwar_2k4?igsh=MWlocDJlOWltYXA1Mw==",
-        twitter: "https://twitter.com/emilydavis",
-        linkedin: "https://linkedin.com/in/emilydavis",
+        facebook: "https://facebook.com/jameswilson",
+        instagram: "https://www.instagram.com/poojapurohit1?utm_source=qr&igsh=aHJnNTU3MHR5d2sw",
+        twitter: "https://twitter.com/jameswilson",
+        linkedin: "https://linkedin.com/in/jameswilson",
       },
     },
     {
@@ -141,7 +144,20 @@ const TeamContent = () => {
         linkedin: "https://linkedin.com/in/davidrodriguez",
       },
     },
-
+    {
+      name: "Pratiksha",
+      title: "Strategist",
+      desc: "Ideas. Execution. Outreach.",
+      punch: "Crafting impactful journeys through design thinking.",
+      skills: ["Campaign Strategy", "User Research", "Engagement"],
+      image: "/assets/img/strategist.jpg",
+      socials: {
+        facebook: "https://facebook.com/emilydavis",
+        instagram: "https://www.instagram.com/pratiksha.panwar_2k4?igsh=MWlocDJlOWltYXA1Mw==",
+        twitter: "https://twitter.com/emilydavis",
+        linkedin: "https://linkedin.com/in/emilydavis",
+      },
+    },
     {
       name: "Himani Bhandari",
       title: "Volunteer – AI Research",
@@ -156,32 +172,8 @@ const TeamContent = () => {
         linkedin: "https://linkedin.com/in/himanibhandari",
       },
     },
-    {
-      name: "James Wilson",
-      title: "Sales Director",
-      desc: "Drives sales and enterprise growth.",
-      skills: ["CRM", "B2B Sales", "Negotiation"],
-      image: "/assets/img/g1.jpg",
-      socials: {
-        facebook: "https://facebook.com/jameswilson",
-        instagram: "https://instagram.com/jameswilson",
-        twitter: "https://twitter.com/jameswilson",
-        linkedin: "https://linkedin.com/in/jameswilson",
-      },
-    },
-    {
-      name: "Rachel Kim",
-      title: "Marketing Director",
-      desc: "Crafts content strategy and brand presence.",
-      skills: ["SEO", "Content", "Paid Media"],
-      image: "/assets/img/g1.jpg",
-      socials: {
-        facebook: "https://facebook.com/rachelkim",
-        instagram: "https://instagram.com/rachelkim",
-        twitter: "https://twitter.com/rachelkim",
-        linkedin: "https://linkedin.com/in/rachelkim",
-      },
-    },
+
+
   ];
 
   const extendedTeam = [
@@ -207,7 +199,30 @@ const TeamContent = () => {
         "Mentored youth leaders and volunteers in leadership development programs"
       ],
     },
-
+    {
+      id: "pooja",
+      name: "Pooja Purohit",
+      title: "Secretary",
+      image: "/assets/img/pooja.jpg",
+      bio: "Pooja Purohit holds a Master’s degree in Environmental Science and serves as the Secretary of Bhomya Foundation. She is deeply committed to community-led conservation efforts, with a particular focus on the interconnection between communities and river ecosystems. Her passion lies in understanding the dynamics of water quality and the ecological health of Indian rivers. Through her work with the foundation, she advocates for sustainable water management, river restoration, and environmental awareness. Pooja brings a strong sense of dedication to integrating scientific understanding with grassroots action, aiming to create lasting impact for both nature and society.",
+      experience: [
+        "Leads river ecosystem awareness programs in rural and urban settlements",
+        "Coordinated water quality monitoring initiatives in the Himalayan region",
+        "Plays a central role in community mobilization for river cleanup campaigns"
+      ],
+    },
+    {
+      id: "sipu",
+      name: "Sipu",
+      title: "Joint Secretary",
+      image: "/assets/img/joint_secratery.jpg",
+      bio: "Sipu is a passionate ecologist and the Joint Secretary of Bhomya Foundation. He focuses on the intersection of urban biodiversity, forest conservation, and environmental education. Known for his extensive fieldwork and commitment to scientific rigor, he translates research into community education tools. Whether tracking bird populations or coordinating habitat restoration efforts, Sipu brings a grounded, data-driven approach to every project while supporting the administrative backbone of the organization.",
+      experience: [
+        "Published field notes on migratory bird diversity in northern India",
+        "Led a local habitat restoration program across 3 forest edge villages",
+        "Developed ecological education toolkits for school-level biodiversity clubs"
+      ],
+    },
     {
       id: "pratiksha",
       name: "Pratiksha Panwar",
@@ -221,18 +236,7 @@ const TeamContent = () => {
       ],
     },
 
-    {
-      id: "sipu",
-      name: "Sipu",
-      title: "Joint Secretary",
-      image: "/assets/img/joint_secratery.jpg",
-      bio: "Sipu is a passionate ecologist and the Joint Secretary of Bhomya Foundation. He focuses on the intersection of urban biodiversity, forest conservation, and environmental education. Known for his extensive fieldwork and commitment to scientific rigor, he translates research into community education tools. Whether tracking bird populations or coordinating habitat restoration efforts, Sipu brings a grounded, data-driven approach to every project while supporting the administrative backbone of the organization.",
-      experience: [
-        "Published field notes on migratory bird diversity in northern India",
-        "Led a local habitat restoration program across 3 forest edge villages",
-        "Developed ecological education toolkits for school-level biodiversity clubs"
-      ],
-    },
+
 
     {
       id: "himani",

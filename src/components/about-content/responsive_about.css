@@ -1,0 +1,78 @@
+@media only screen and (max-width: 767px) {
+    .photox {
+        width: 350px;
+    }
+
+    .about-card {
+        margin-top: 10px;
+    }
+
+    .what-we-do {
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+.about-card {
+    max-width: 380px;
+}
+.our-impact
+{
+    padding: 10px 16px;
+}
+.photox img {
+        width: 100%;
+        height: auto;
+    }
+    .impact-stats {
+        display: none;
+    }
+
+    .achievements-section {
+        padding: 16px 16px;
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+
+    .timeline-line {
+        display: none;
+
+    }
+
+    .timeline-item {
+        margin: 0;
+    }
+
+    .achievements-section {
+        .description {
+            margin: 0;
+        }
+    }
+
+    .future-vision {
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+
+    .future-vision {
+        .vision-flex {
+            flex-direction: column;
+            align-items: center;
+            max-width: 380px;
+        }
+
+        .vision-list {
+            align-items: center;
+        }
+    }
+
+
+    .future-vision {
+        .commitment-box {
+            max-width: 380px;
+        }
+    }
+   
+
+}

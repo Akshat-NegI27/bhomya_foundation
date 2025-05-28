@@ -1,4 +1,5 @@
 import "./aboutContent.css";
+import "./responsive_about.css";
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -67,7 +68,7 @@ const AboutContent = () => {
               climate resilience.
             </p>
           </div>
-          <div className="about-card" style={{ marginTop: "150px" }}>
+          <div className="about-card" >
             <div className="photox">
               <img src="/assets/img/wwd3.jpg" alt="Where We Work" />
             </div>

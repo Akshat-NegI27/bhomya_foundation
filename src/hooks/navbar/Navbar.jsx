@@ -105,24 +105,54 @@ const Navbar = () => {
           </button>
         </div>
 
-        <div className="sidebar-links">
-          <NavLink to="/" onClick={toggleSidebar}>
+        <div className={`sidebar-links ${menuOpen ? "open" : ""}`}>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Home
           </NavLink>
-          <NavLink to="/Courses" onClick={toggleSidebar}>
-            Courses
-          </NavLink>
-          <NavLink to="/About" onClick={toggleSidebar}>
+          <NavLink
+            to="/About"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             About
           </NavLink>
-          <NavLink to="/Contact" onClick={toggleSidebar}>
+          <NavLink
+            to="/Team"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Team
+          </NavLink>
+          <NavLink
+            to="/Gallery"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Gallery
+          </NavLink>
+          <NavLink
+            to="/Store"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Nature Store
+          </NavLink>
+          <NavLink
+            to="/Involve"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
+            Get Involve
+          </NavLink>
+          <NavLink
+            to="/Contact"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Contact Us
           </NavLink>
         </div>
 
-        <div className="sidebar-footer">
+        <div className="navbar-actions">
           <Link to="/donate">
-            <button className="btn-enroll">Donate</button>
+            <button className="btn-download">Donate</button>
           </Link>
         </div>
       </div>

@@ -1,0 +1,26 @@
+@media only screen and (max-width: 767px) {
+.contactpg {
+    padding: 16px 16px 16px;
+}
+    .contact-header {
+    h1 {
+        font-size: 2rem;
+    }
+    }
+    .follow-title {
+    font-size: 1.5rem;
+    }
+    .follow-section {
+        min-width: 0px;
+        max-width: 380px;
+    p {
+
+        font-size: 0.8rem;
+    }
+    }
+    .social-media-list li a {
+        font-size: 0.9rem;
+    }
+    .social-media-list li {
+height: 40px};
+}

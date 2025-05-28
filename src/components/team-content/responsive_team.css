@@ -1,0 +1,66 @@
+@media only screen and (max-width: 767px) {
+    .hero-team {
+        & .texta {
+            h1 {
+                font-size: 3rem;
+            }
+
+            .intro {
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+    .hero-team {
+        .hero-imagae {
+            height: 300px;
+        }
+    }
+
+    .section-heading-founder {
+        font-size: 2.5rem;
+
+    }
+
+    .founder-card {
+        flex-direction: column;
+
+    }
+
+    .founder-info {
+        max-width: 100%;
+    }
+
+    .section-heading {
+        font-size: 2rem;
+    }
+
+    .team-image {
+        height: 280px;
+    }
+
+    .detailed-card.left {
+        flex-direction: column;
+    }
+
+    .detailed-card.right {
+        flex-direction: column;
+    }
+
+    .detailed-card {
+        gap: 10px;
+
+    }
+
+    .detailed-info {
+        width: 100%;
+    }
+
+
+.detailed-photo {
+    width: 380px;
+}
+.line {
+    width: 380px;
+}
+}
