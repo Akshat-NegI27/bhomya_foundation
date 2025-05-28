@@ -84,7 +84,7 @@ const AboutContent = () => {
         <div className="programs-grid">
           <div className="program-card">
             <img
-              src="/assets/img/restoration.jpg"
+              src="/assets/img/wwd1.jpg"
               alt="Environmental Restoration"
             />
             <h4>Environmental Restoration</h4>
@@ -94,7 +94,7 @@ const AboutContent = () => {
             </p>
           </div>
           <div className="program-card">
-            <img src="/assets/img/community.jpg" alt="Community Engagement" />
+            <img src="/assets/img/wwd2.jpg" alt="Community Engagement" />
             <h4>Community Engagement</h4>
             <p>
               Engaging local communities through environmental events and
@@ -102,7 +102,7 @@ const AboutContent = () => {
             </p>
           </div>
           <div className="program-card">
-            <img src="/assets/img/education.jpg" alt="Education & Awareness" />
+            <img src="/assets/img/wwd3.jpg" alt="Education & Awareness" />
             <h4>Education & Awareness</h4>
             <p>
               Workshops, school programs, and digital campaigns for youth and
@@ -110,7 +110,7 @@ const AboutContent = () => {
             </p>
           </div>
           <div className="program-card">
-            <img src="/assets/img/research.jpg" alt="Research & Development" />
+            <img src="/assets/img/wwd4.jpg" alt="Research & Development" />
             <h4>Research & Development</h4>
             <p>
               Studies on environmental policies, climate models, and innovation
