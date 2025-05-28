@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./involveContent.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import FlairButton from "../../hooks/buttonhover/FlairButton";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -31,13 +32,79 @@ const InvolveContent = () => {
 
   return (
     <div className="involve-wrapper">
+      <section className="about-us">
+        <div className="textaa">
+          <h1>
+            About <span className="highlightt">Us</span>
+          </h1>
+          <p className="description">
+            Bhomya Foundation is a non-profit organization located in the heart
+            of Dehradun, Uttarakhand, dedicated to fostering environmental
+            conservation and sustainable community development.
+          </p>
+        </div>
+
+        <div className="about-cards-grid">
+          <div className="involves-card">
+            <div className="photox">
+              <img src="/assets/img/founder.jpg" alt="Vision" />
+            </div>
+            <h1>Intern / Trainee</h1>
+            <h2>Gain hands-on experience and professional training</h2>
+            <p>
+              Work alongside our experts on real-world environmental projects
+              involving fieldwork, data analysis, experiments, and impactful
+              campaigns.
+            </p>
+            <h3>Apply as Intern</h3>
+          </div>
+          <div className="involves-card">
+            <div className="photox">
+              <img src="/assets/img/wwd2.jpg" alt="Mission" />
+            </div>
+            <h1>Member</h1>
+            <h2>Be an active contributor to our mission</h2>
+            <p>
+              Support us through consistent involvement, get access to exclusive
+              events, newsletters, and help shape our initiatives.
+            </p>
+            <div style={{ padding: "50px" }}>
+              <FlairButton text="Donate Now" />
+            </div>
+          </div>
+          <div className="involves-card">
+            <div className="photox">
+              <img src="/assets/img/wwd3.jpg" alt="Where We Work" />
+            </div>
+            <h1>Partner With Us</h1>
+            <h2>Collaborate for greater impact</h2>
+            <p>
+              Join as a strategic ally for CSR projects, education programs, and
+              wide-reaching environmental initiatives.
+            </p>
+            <h3>Become a Partner</h3>
+          </div>
+          <div className="involves-card">
+            <div className="photox">
+              <img src="/assets/img/wwd3.jpg" alt="Where We Work" />
+            </div>
+            <h1>Volunteer</h1>
+            <h2>Create change on the ground</h2>
+            <p>
+              Contribute your time and creativity to plantation drives,
+              awareness campaigns, and event coordination.
+            </p>
+            <h3>Become a Volunteer</h3>
+          </div>
+        </div>
+      </section>
       <div className="involve-container">
         <div className="involve-header">
           <span className="badge">Join Our Cause</span>
           <h1>Get Involved</h1>
           <p>
-            There are many ways you can contribute to our mission and help make a
-            difference in environmental conservation.
+            There are many ways you can contribute to our mission and help make
+            a difference in environmental conservation.
           </p>
         </div>
 

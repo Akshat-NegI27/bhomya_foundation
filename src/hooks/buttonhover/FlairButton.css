@@ -1,0 +1,29 @@
+.flair-button {
+  position: relative;
+  padding: 12px 24px;
+  background-color: #bde6bf;
+  color: #975d5d;
+  font-size: 24px;
+  border: none;
+  /* cursor: pointer; */
+  cursor: none;
+  overflow: hidden;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.flair-button .flair {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #236724;
+  border-radius: 50%;
+  transform: translate(calc(var(--x) - 50%), calc(var(--y) - 50%)) scale(0);
+  transition: transform 0.2s ease;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.flair-button:hover .flair {
+  transform: translate(calc(var(--x) - 50%), calc(var(--y) - 50%)) scale(1);
+}
