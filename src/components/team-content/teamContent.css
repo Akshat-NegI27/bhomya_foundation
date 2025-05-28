@@ -181,7 +181,6 @@ body {
   color: #4b5563;
   margin-bottom: 10px;
   text-align: justify;
-  text-align: justify;
   -ms-text-justify: inter-word; /* For IE only */
   text-justify: inter-word;
 }
