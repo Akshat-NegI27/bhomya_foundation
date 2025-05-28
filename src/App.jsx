@@ -1,9 +1,8 @@
 import { useState, useEffect, Suspense, lazy } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
 import CustomCursor from "./hooks/CustomCursor";
 import Loader from "./hooks/loader/Loader";
-import PageTransition from "./components/PageTransition";
+// Removed PageTransition import
 import "./App.css";
 
 // Lazy-loaded pages
@@ -17,7 +16,7 @@ const Donate = lazy(() => import("./pages/donate/donate"));
 const Gallery = lazy(() => import("./pages/gallery/gallery"));
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -33,18 +32,16 @@ const App = () => {
         <div className="app-wrapper fade-in">
           <CustomCursor />
           <Suspense fallback={<Loader />}>
-            <AnimatePresence mode="wait">
-              <Routes location={location} key={location.pathname}>
-                <Route path="/" element={<PageTransition><Home /></PageTransition>} />
-                <Route path="/about" element={<PageTransition><About /></PageTransition>} />
-                <Route path="/contact" element={<PageTransition><Contact /></PageTransition>} />
-                <Route path="/team" element={<PageTransition><Team /></PageTransition>} />
-                <Route path="/gallery" element={<PageTransition><Gallery /></PageTransition>} />
-                <Route path="/involve" element={<PageTransition><Involve /></PageTransition>} />
-                <Route path="/donate" element={<PageTransition><Donate /></PageTransition>} />
-                <Route path="/store" element={<PageTransition><Store /></PageTransition>} />
-              </Routes>
-            </AnimatePresence>
+            <Routes location={location} key={location.pathname}>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/team" element={<Team />} />
+              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/involve" element={<Involve />} />
+              <Route path="/donate" element={<Donate />} />
+              <Route path="/store" element={<Store />} />
+            </Routes>
           </Suspense>
         </div>
       )}
