@@ -22,7 +22,10 @@
             z-index: 0;
         }
     }
-
+    .sec3 {
+        .sec3-logos {
+          max-width: 400px;
+        }}
   .sec1 {
     & .sec1-content {
       h1 {
@@ -60,6 +63,7 @@
             width: 210%;
             padding: 20px 0;
             gap: 20px;
+            max-width: 400px;
 
       & .right-image {
         width: 100%;
