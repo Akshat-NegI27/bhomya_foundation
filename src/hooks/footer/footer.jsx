@@ -32,7 +32,7 @@ const Footer = () => {
               <a href="https://www.instagram.com/mhveducation/">
                 <box-icon type="logo" name="instagram" size="md"></box-icon>
               </a>
-              <a href="https://www.linkedin.com/company/mhv-education/">
+              <a href="https://www.linkedin.com/in/bhomya-foundation/">
                 <box-icon
                   type="logo"
                   name="linkedin-square"
