@@ -91,10 +91,10 @@ const TeamContent = () => {
     skills: [],
     image: "/assets/img/himanshu.jpg",
     socials: {
-      facebook: "https://facebook.com/sarahjohnson",
-      instagram: "https://instagram.com/sarahjohnson",
-      twitter: "https://twitter.com/sarahjohnson",
-      linkedin: "https://linkedin.com/in/sarahjohnson",
+      facebook: "https://www.facebook.com/share/16jArF78XT/ ",
+      instagram: "https://www.instagram.com/sahu_sarkar09?igsh=bG1ya3BoZnZtcWFo",
+      // twitter: "https://twitter.com/sarahjohnson",
+      linkedin: "https://www.linkedin.com/in/himanshu-sahu-7329961a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
   };
 
