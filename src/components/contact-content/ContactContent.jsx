@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ContactContent.css";
+import "./responsive_contact.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const ContactContent = () => {
