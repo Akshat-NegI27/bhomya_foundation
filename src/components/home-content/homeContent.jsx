@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 
 import "./homeContent.css";
+import "./responsive_home.css";
 import "../../hooks/button/button.css";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
