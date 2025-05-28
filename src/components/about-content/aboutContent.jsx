@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
-import g1 from "/assets/img/g2.jpg";
+import g1 from "/assets/img/s4.jpg";
 
 const AboutContent = () => {
   const sectionRef = useRef();
@@ -15,8 +15,8 @@ const AboutContent = () => {
 
     ScrollTrigger.create({
       trigger: section,
-      start: "top -=100", // adjust the start position
-      end: "+=1430 top", // adjust the scroll length
+      start: "top -=85", // adjust the start position
+      end: "+=1380 top", // adjust the scroll length
       pin: pinWrap,
       pinSpacing: false,
       scrub: true,
@@ -31,17 +31,22 @@ const AboutContent = () => {
     <div className="about-wrapper">
       {/* About Us */}
       <section className="about-us">
-        <h2>
-          About <span className="highlight">Us</span>
-        </h2>
-        <p className="description">
-          Bhomya Foundation is a non-profit organization located in the heart of
-          Dehradun, Uttarakhand, dedicated to fostering environmental
-          conservation and sustainable community development.
-        </p>
+        <div className="textaa">
+          <h1>
+            About <span className="highlightt">Us</span>
+          </h1>
+          <p className="description">
+            Bhomya Foundation is a non-profit organization located in the heart
+            of Dehradun, Uttarakhand, dedicated to fostering environmental
+            conservation and sustainable community development.
+          </p>
+        </div>
+
         <div className="about-cards-grid">
-          <div className="about-card">
-            <img src="/assets/img/vision.jpg" alt="Vision" />
+          <div className="about-card" style={{ marginTop: "150px" }}>
+            <div className="photox">
+              <img src="/assets/img/founder.jpg" alt="Vision" />
+            </div>
             <h3>Our Vision</h3>
             <p>
               To create a greener, more sustainable world by empowering
@@ -50,17 +55,22 @@ const AboutContent = () => {
             </p>
           </div>
           <div className="about-card">
-            <img src="/assets/img/mission.jpg" alt="Mission" />
+            <div className="photox">
+              <img src="/assets/img/founder.jpg" alt="Mission" />
+            </div>
             <h3>Our Mission</h3>
-            <ul>
-              <li>Conserve natural resources through grassroots initiatives</li>
-              <li>Educate communities on environmental stewardship</li>
-              <li>Promote sustainable agriculture and eco-friendly living</li>
-              <li>Conduct research on biodiversity and climate resilience</li>
-            </ul>
+            <p>
+              We strive to conserve natural resources through grassroots
+              initiatives, educating communities on environmental stewardship,
+              and promoting sustainable agriculture and eco-friendly living. Our
+              work is further supported by research focused on biodiversity and
+              climate resilience.
+            </p>
           </div>
-          <div className="about-card">
-            <img src="/assets/img/work.jpg" alt="Where We Work" />
+          <div className="about-card" style={{ marginTop: "150px" }}>
+            <div className="photox">
+              <img src="/assets/img/wwd3.jpg" alt="Where We Work" />
+            </div>
             <h3>Where We Work</h3>
             <p>
               Primarily operating in Dehradun and across the Himalayan belt
@@ -75,7 +85,7 @@ const AboutContent = () => {
       {/* What We Do */}
       <section className="what-we-do">
         <h2>
-          What We <span className="highlight">Do</span>
+          What We <span className="highlight">Do?</span>
         </h2>
         <p className="description">
           We design and execute programs on both short- and long-term bases,
@@ -83,10 +93,13 @@ const AboutContent = () => {
         </p>
         <div className="programs-grid">
           <div className="program-card">
-            <img
-              src="/assets/img/wwd1.jpg"
-              alt="Environmental Restoration"
-            />
+            <div className="program-img">
+              <img
+                src="/assets/img/founder.jpg"
+                alt="Environmental Restoration"
+              />
+            </div>
+
             <h4>Environmental Restoration</h4>
             <p>
               Tree plantation drives, river cleanups, and reforestation
@@ -94,7 +107,10 @@ const AboutContent = () => {
             </p>
           </div>
           <div className="program-card">
-            <img src="/assets/img/wwd2.jpg" alt="Community Engagement" />
+            <div className="program-img">
+              <img src="/assets/img/founder.jpg" alt="Community Engagement" />
+            </div>
+
             <h4>Community Engagement</h4>
             <p>
               Engaging local communities through environmental events and
@@ -102,7 +118,10 @@ const AboutContent = () => {
             </p>
           </div>
           <div className="program-card">
-            <img src="/assets/img/wwd3.jpg" alt="Education & Awareness" />
+            <div className="program-img">
+              <img src="/assets/img/founder.jpg" alt="Education & Awareness" />
+            </div>
+
             <h4>Education & Awareness</h4>
             <p>
               Workshops, school programs, and digital campaigns for youth and
@@ -110,7 +129,10 @@ const AboutContent = () => {
             </p>
           </div>
           <div className="program-card">
-            <img src="/assets/img/wwd4.jpg" alt="Research & Development" />
+            <div className="program-img">
+              <img src="/assets/img/founder.jpg" alt="Research & Development" />
+            </div>
+
             <h4>Research & Development</h4>
             <p>
               Studies on environmental policies, climate models, and innovation
@@ -125,7 +147,7 @@ const AboutContent = () => {
         <h2>
           Our <span className="highlight">Impact</span>
         </h2>
-        <p>
+        <p className="description">
           Measurable change through dedicated environmental action and community
           engagement
         </p>
@@ -150,9 +172,9 @@ const AboutContent = () => {
       </section>
 
       {/* Achievements */}
-      <div className="asd">
+      <div className="pinBackground">
         <div className="achievements-bg" ref={pinWrapRef}>
-          <img src={g1} className="px" alt="" />
+          <img src={g1} className="pinImage" alt="" />
         </div>
       </div>
 
@@ -168,7 +190,6 @@ const AboutContent = () => {
 
         <div className="timeline-container">
           <div className="timeline-line"></div>
-
           <div className="timeline-item left">
             <div className="timeline-card">
               <h4>Community Clean-up Drives</h4>
@@ -255,24 +276,27 @@ const AboutContent = () => {
         <h2>
           Future <span className="highlight">Vision</span>
         </h2>
-        <p>
+        <p className="description">
           Our roadmap for expanding environmental impact and fostering
           sustainable community development across India
         </p>
-        <ul className="vision-list">
-          <li>Strengthen Global Partnerships</li>
-          <li>Large-scale Campaigns</li>
-          <li>Research & Publications</li>
-          <li>Educational Expansion</li>
-          <li>National Outreach</li>
-        </ul>
-        <div className="commitment-box">
-          <h3>Our Unwavering Commitment</h3>
-          <p>
-            The journey and mission of the Bhomya Foundation continues with
-            unwavering commitment to safeguarding the environment and fostering
-            meaningful community involvement for a sustainable future.
-          </p>
+        <div className="vision-flex">
+          <div className="vision-list">
+            <p>Strengthen Global Partnerships</p>
+            <p>Large-scale Campaigns</p>
+            <p>Research & Publications</p>
+            <p>Educational Expansion</p>
+            <p>National Outreach</p>
+          </div>
+          <div className="commitment-box">
+            <h3>Our Unwavering Commitment</h3>
+            <p>
+              The journey and mission of the Bhomya Foundation continues with
+              unwavering commitment to safeguarding the environment and
+              fostering meaningful community involvement for a sustainable
+              future.
+            </p>
+          </div>
         </div>
       </section>
     </div>
