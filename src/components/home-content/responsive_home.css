@@ -1,18 +1,18 @@
 @media only screen and (max-width: 767px) {
-    .sec1 .sec1-image img {
-        display: none;
+  .sec1 .sec1-image img {
+    display: none;
+  }
+
+  .sec1 {
+    padding: 90px 40px;
+
+    .sec1-content {
+      width: 100%;
     }
 
-    .sec1 {
-        padding: 90px 40px;
-
-        .sec1-content {
-            width: 100%;
-        }
-
-        .prop1 {
-            top: 50px;
-        }
+    .prop1 {
+      top: 50px;
+    }
 
         .prop2 {
             position: absolute;
@@ -23,44 +23,33 @@
         }
     }
 
-    .sec2 {
-        & .sec2-content {
-            .left-text {
-                width: 100%;
+  .sec1 {
+    & .sec1-content {
+      h1 {
+        font-size: 1.7rem;
+      }
 
-            }
-        }
+      h2 {
+        font-size: 14px;
+      }
     }
+  }
 
-    .sec1 {
-        & .sec1-content {
-            h1 {
-                font-size: 1.7rem;
-            }
+  .sec2 {
+    padding: 10px 20px;
+  }
 
-            h2 {
-                font-size: 14px;
-            }
-        }
+  .sec2 {
+    & .head-text {
+      h1 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+      }
     }
-
-    .sec2 {
-        padding: 10px 20px;
-
-    }
-
-    .sec2 {
-        & .head-text {
-            h1 {
-                font-size: 20px;
-            }
-
-            p {
-                font-size: 14px;
-            }
-        }
-
-    }
+  }
 
     .sec2 {
         .sec2-content {
@@ -71,113 +60,106 @@
             width: 210%;
             padding: 20px 0;
             gap: 20px;
-            max-width: 400px;
 
-            & .right-image {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
+      & .right-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-                & .image-box {
-                    width: 100%;
-                    max-width: 400px;
-                    height: auto;
+        & .image-box {
+          width: 100%;
+          max-width: 400px;
+          height: auto;
 
-                    .imgg2 {
-                        width: auto;
-                        height: 500px;
-                        object-fit: contain;
-                        border-radius: 15px;
-                    }
-                }
-            }
+          .imgg2 {
+            width: auto;
+            height: 500px;
+            object-fit: contain;
+            border-radius: 15px;
+          }
         }
+      }
     }
+  }
 
-    .sec2 {
-        & .sec2-content {
-            & .right-image {
-                .overlaydark {
-                    height: 500px;
-                    border-radius: 15px;
-                }
-
-                .overlay {
-                    position: absolute;
-                    width: 400px;
-                    padding: 20px;
-                    z-index: 3;
-                    top: 1440px;
-                }
-            }
+  .sec2 {
+    & .sec2-content {
+      & .right-image {
+        .overlaydark {
+          height: 500px;
+          border-radius: 15px;
         }
 
+        .overlay {
+          position: absolute;
+          width: 400px;
+          padding: 20px;
+          z-index: 3;
+          top: 1440px;
+        }
+      }
     }
+  }
 
-    .banner {
-        padding: 30px 20px;
+  .banner {
+    padding: 30px 20px;
 
-        .cards {
-            flex-direction: column;
-            padding: 0px 0px;
-            width: 100%;
-            gap: 16px;
-        }
+    .cards {
+      flex-direction: column;
+      padding: 0px 0px;
+      width: 100%;
+      gap: 16px;
     }
+  }
 
-    .sec3 {
-        .sec3-text {
-            width: 90%;
-        }
+  .sec3 {
+    .sec3-text {
+      width: 90%;
+    }
 
         .sec3-logos {
             flex-direction: column;
             gap: 20px;
-            max-width: 400px;
         }
     }
 
-    .sec5 {
-        padding: 20px 10px;
+  .sec5 {
+    padding: 20px 10px;
 
-        & .sec5-text {
-            width: 90%;
+    & .sec5-text {
+      width: 90%;
 
-            h1 {
-                font-size: 30px;
-            }
-        }
+      h1 {
+        font-size: 30px;
+      }
     }
+  }
 
-    .swiper {
-        display: none;
+  .swiper {
+    display: none;
 
-        .swiper-wrapper {
-            display: none;
-        }
-
+    .swiper-wrapper {
+      display: none;
     }
+  }
 
-    .sec6 {
-        padding: 10px 20px;
+  .sec6 {
+    padding: 10px 20px;
 
         .sec6-text {
             width: 90%;
         }
-
-        .newsletter-img {
+        .newsletter-img{
             width: 100%;
         }
-
         .newsletter {
             width: 100%;
             display: flex;
             flex-direction: column;
             padding: 25px;
             gap: 15px;
-
-            img {
+            img{
                 width: 100%;
                 height: auto;
                 object-fit: contain;
