@@ -56,7 +56,7 @@ const AboutContent = () => {
           </div>
           <div className="about-card">
             <div className="photox">
-              <img src="/assets/img/founder.jpg" alt="Mission" />
+              <img src="/assets/img/wwd2.jpg" alt="Mission" />
             </div>
             <h3>Our Mission</h3>
             <p>
