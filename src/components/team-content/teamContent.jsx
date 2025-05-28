@@ -85,11 +85,11 @@ const TeamContent = () => {
   }, []);
 
   const founder = {
-    name: "Sarah Johnson",
-    title: "Founder & CEO",
+    name: "Himanshu",
+    title: "Founder & President",
     desc: "Our President and Founder, Himanshu, established the Bhomya Foundation with a heartfelt commitment to environmental sustainability and social empowerment. With a deep connection to nature and a strong sense of community, Himanshu envisioned a platform where action meets awareness — where individuals come together to create lasting ecological impact. Under his leadership, the foundation has grown from a passionate idea into a vibrant force for good — spearheading initiatives in environmental conservation, education, and rural development. Himanshu believes in leading by example, often working on the ground alongside volunteers, nurturing green spaces, and building bridges between people and purpose.",
     skills: [],
-    image: "/assets/img/g1.jpg",
+    image: "/assets/img/himanshu.jpg",
     socials: {
       facebook: "https://facebook.com/sarahjohnson",
       instagram: "https://instagram.com/sarahjohnson",
@@ -143,16 +143,17 @@ const TeamContent = () => {
     },
 
     {
-      name: "Lisa Park",
-      title: "AI Strategist",
-      desc: "Works on responsible AI, predictive systems.",
-      skills: ["ML Models", "Analytics", "AI Ethics"],
-      image: "/assets/img/g1.jpg",
+      name: "Himani Bhandari",
+      title: "Volunteer – AI Research",
+      desc: "Tech. Ethics. Impact.",
+      punch: "Harnessing AI for environmental progress.",
+      skills: ["Machine Learning", "AI Ethics", "Community"],
+      image: "/assets/img/himani.jpg",
       socials: {
-        facebook: "https://facebook.com/lisapark",
-        instagram: "https://instagram.com/lisapark",
-        twitter: "https://twitter.com/lisapark",
-        linkedin: "https://linkedin.com/in/lisapark",
+        facebook: "https://facebook.com/himani.bhandari",
+        instagram: "https://instagram.com/himani.b.ai",
+        twitter: "https://twitter.com/himani_b_ai",
+        linkedin: "https://linkedin.com/in/himanibhandari",
       },
     },
     {
