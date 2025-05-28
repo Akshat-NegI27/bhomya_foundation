@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ContactContent.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const ContactContent = () => {
   const [formData, setFormData] = useState({
@@ -242,12 +243,101 @@ const ContactContent = () => {
       </div>
 
       <div className="follow-section">
-        <h4>Follow Us</h4>
+        <h3 className="follow-title">Connect with Us Online</h3>
+        <div className="linef"></div>
+
         <p>
           Stay connected with us on social media to update on our latest
           initiatives and events.
         </p>
-        <div className="social-icons">{/* Add social icons if needed */}</div>
+
+        <div className="social-media-container">
+          <ul className="social-media-list">
+            <li>
+              <a
+                href="https://www.facebook.com/mhveducation/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="MHV Education on Facebook"
+              >
+                <i className="fa-brands fa-facebook"></i>
+                <span>Facebook</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.instagram.com/mhveducation/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="MHV Education on Instagram"
+              >
+                <i className="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.linkedin.com/company/mhv-education/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="MHV Education on LinkedIn"
+              >
+                <i className="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://www.youtube.com/@MHVeducation"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="MHV Education on YouTube"
+              >
+                <i className="fa-brands fa-youtube"></i>
+                <span>YouTube</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://medium.com/@mhveducation"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="MHV Education on Medium"
+              >
+                <i className="fa-brands fa-medium"></i>
+                <span>Medium</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="mailto:mhveducation@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Email MHV Education"
+              >
+                <i className="fa-solid fa-envelope"></i>
+                <span>Mail</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://wa.me/+919634104622"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat with MHV Education on WhatsApp"
+              >
+                <i className="fa-brands fa-whatsapp"></i>
+                <span>WhatsApp</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
