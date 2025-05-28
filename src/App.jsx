@@ -2,7 +2,8 @@ import { useState, useEffect, Suspense, lazy } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import CustomCursor from "./hooks/CustomCursor";
 import Loader from "./hooks/loader/Loader";
-// Removed PageTransition import
+import ScrollToTop from "./hooks/ScrollToTop/ScrollToTop";
+import ScrollToTopArrow from "./hooks/ScrollToTopArrowIcon/ScrollToTopArrow";
 import "./App.css";
 
 // Lazy-loaded pages
@@ -30,7 +31,10 @@ const App = () => {
         <Loader />
       ) : (
         <div className="app-wrapper fade-in">
+          <ScrollToTop />
           <CustomCursor />
+          <ScrollToTopArrow></ScrollToTopArrow>
+
           <Suspense fallback={<Loader />}>
             <Routes location={location} key={location.pathname}>
               <Route path="/" element={<Home />} />
