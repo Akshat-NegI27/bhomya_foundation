@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./donateContent.css";
+
+
+gsap.registerPlugin(ScrollTrigger);
 
 const DonateContent = () => {
   const [amount, setAmount] = useState(50);
   const [customAmount, setCustomAmount] = useState("");
-  const [type, setType] = useState("one-time");
-  const [form, setForm] = useState({ name: "", email: "", phone: "" });
-
+  const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
   const handlePayment = () => {
     const finalAmount = customAmount || amount;
     if (!form.name || !form.email || finalAmount < 1) {
@@ -15,11 +16,11 @@ const DonateContent = () => {
     }
 
     const options = {
-      key: "YOUR_RAZORPAY_KEY_ID",
+      key: "YOUR_RAZORPAY_KEY_ID", // Replace with your live/test key
       amount: finalAmount * 100,
       currency: "INR",
       name: "Bhomya Foundation",
-      description: `${type === "monthly" ? "Monthly" : "One-time"} Donation`,
+      description: `Donation by ${form.name}`,
       prefill: {
         name: form.name,
         email: form.email,
@@ -39,9 +40,24 @@ const DonateContent = () => {
 
   return (
     <div className="donate-wrapper">
+<div className="hero-donate">
+  <div className="texta">
+    <h1 ref={headingRef}>
+      Make a <span className="highlight">Difference Today</span>
+    </h1>
+    <p className="intro">
+      Your contribution empowers us to plant more trees, protect wildlife, and support sustainable communities.
+      Every rupee you donate goes directly to real impact on the ground.
+    </p>
+  </div>
+
+</div>
+
+
       <div className="donate-form">
         <div className="donate-left-panel">
           <h3 className="section-title">Choose Your Impact</h3>
+          <p>Select a contribution amount or enter a custom amount of your choice.</p>
           <div className="amount-grid">
             {[25, 50, 100, 250, 500].map((val) => (
               <button
@@ -55,57 +71,25 @@ const DonateContent = () => {
                 ₹{val}
               </button>
             ))}
-            <button
-              className={`impact-btn ${customAmount ? "selected" : ""}`}
-              onClick={() => {
-                setAmount(null);
-                setCustomAmount("1");
-              }}
-            >
-              Custom
-            </button>
-          </div>
-
-          {customAmount && (
             <input
               type="number"
-              placeholder="Enter custom amount"
+              placeholder="Custom"
+              className="custom-input-inline"
               value={customAmount}
-              className="custom-input"
-              onChange={(e) => setCustomAmount(e.target.value)}
+              onChange={(e) => {
+                setAmount(null);
+                setCustomAmount(e.target.value);
+              }}
             />
-          )}
-
-          <h4 className="section-title">Donation Type</h4>
-          <div className="donation-type-cards">
-            <label className={`type-card ${type === "one-time" ? "active" : ""}`}>
-              <input
-                type="radio"
-                name="donation-type"
-                value="one-time"
-                checked={type === "one-time"}
-                onChange={() => setType("one-time")}
-              />
-              <div>
-                <strong>One-time</strong>
-                <p>Single contribution</p>
-              </div>
-            </label>
-
-            <label className={`type-card ${type === "monthly" ? "active" : ""}`}>
-              <input
-                type="radio"
-                name="donation-type"
-                value="monthly"
-                checked={type === "monthly"}
-                onChange={() => setType("monthly")}
-              />
-              <div>
-                <strong>Monthly</strong>
-                <p>Recurring support</p>
-              </div>
-            </label>
           </div>
+
+          <h4 className="section-title">Leave a Message</h4>
+          <textarea
+            className="message-box"
+            placeholder="Share a message with us (optional)"
+            value={form.message}
+            onChange={(e) => setForm({ ...form, message: e.target.value })}
+          />
         </div>
 
         <div className="donate-right-panel">
@@ -132,7 +116,8 @@ const DonateContent = () => {
           <div className="impact-box">
             <strong>Your Impact:</strong>
             <p>
-              ₹{customAmount || amount} can help us plant trees and support conservation efforts.
+              ₹{customAmount || amount} can help us plant trees and support conservation efforts,
+              creating a greener future for generations to come.
             </p>
           </div>
 
@@ -140,7 +125,7 @@ const DonateContent = () => {
             ❤️ Donate ₹{customAmount || amount}
           </button>
           <small className="secure-text">
-            Your donation is secure and encrypted.
+            Your donation is secure and encrypted. We never store your payment details.
           </small>
         </div>
       </div>
