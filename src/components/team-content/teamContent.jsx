@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./teamContent.css";
+import "./responsive_team.css";
 import heros from "/assets/img/g2.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
