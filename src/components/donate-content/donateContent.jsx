@@ -1,13 +1,35 @@
 import React, { useState, useRef, useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./donateContent.css";
-
 
 gsap.registerPlugin(ScrollTrigger);
 
 const DonateContent = () => {
+  const headingRef = useRef(null);
   const [amount, setAmount] = useState(50);
   const [customAmount, setCustomAmount] = useState("");
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
+
+  useEffect(() => {
+    if (headingRef.current) {
+      gsap.fromTo(
+        headingRef.current,
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: headingRef.current,
+            start: "top 80%",
+          },
+        }
+      );
+    }
+  }, []);
+
   const handlePayment = () => {
     const finalAmount = customAmount || amount;
     if (!form.name || !form.email || finalAmount < 1) {
@@ -16,7 +38,7 @@ const DonateContent = () => {
     }
 
     const options = {
-      key: "YOUR_RAZORPAY_KEY_ID", // Replace with your live/test key
+      key: "YOUR_RAZORPAY_KEY_ID", // Replace with your Razorpay key
       amount: finalAmount * 100,
       currency: "INR",
       name: "Bhomya Foundation",
@@ -40,19 +62,17 @@ const DonateContent = () => {
 
   return (
     <div className="donate-wrapper">
-<div className="hero-donate">
-  <div className="texta">
-    <h1 ref={headingRef}>
-      Make a <span className="highlight">Difference Today</span>
-    </h1>
-    <p className="intro">
-      Your contribution empowers us to plant more trees, protect wildlife, and support sustainable communities.
-      Every rupee you donate goes directly to real impact on the ground.
-    </p>
-  </div>
-
-</div>
-
+      <div className="hero-donate">
+        <div className="texta">
+          <h1 ref={headingRef}>
+            Make a <span className="highlight">Difference Today</span>
+          </h1>
+          <p className="intro">
+            Your contribution empowers us to plant more trees, protect wildlife, and support sustainable communities.
+            Every rupee you donate goes directly to real impact on the ground.
+          </p>
+        </div>
+      </div>
 
       <div className="donate-form">
         <div className="donate-left-panel">
