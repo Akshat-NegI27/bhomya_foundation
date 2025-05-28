@@ -185,47 +185,68 @@ const TeamContent = () => {
   ];
 
   const extendedTeam = [
-    "Alex Thompson – Software Engineer",
-    "Maria Garcia – UX Designer",
-    "Robert Kim – DevOps Engineer",
-    "Jennifer Lee – Business Analyst",
-    "Carlos Martinez – Quality Assurance",
-    "Nina Patel – Content Strategist",
-    "Tom Anderson – Customer Success",
-    "Sophie Zhang – Data Scientist",
+    "Km Pooja – Secretary",
+    "Aditi Pant – Treasurer",
+    "Gautam Kumar – Deputy Secretary",
+    "Samriddhi Sharma – Spokesperson and Member",
+    "Dr Naveen Chandra – Research & Development Team Lead",
+    "Jagdamba Bhatt – Medicinal Plant Team Lead"
+
   ];
 
   const detailedTeam = [
     {
-      id: "michael",
-      name: "Michael Chen",
-      title: "Co-founder & CTO",
-      image: "/assets/img/g1.jpg",
-      bio: "Michael is a full-stack architect with 15+ years of experience in AI/ML and scalable systems.",
+      id: "arun",
+      name: "Arun Pratap Mishra",
+      title: "Vice President",
+      image: "/assets/img/vice__president.jpg",
+      bio: "Arun Pratap Mishra is a forward-thinking leader and strategic planner who serves as the Vice President of Bhomya Foundation. With a strong commitment to sustainable development, Arun plays a crucial role in shaping the foundation’s long-term vision and operational efficiency. His leadership combines administrative clarity with a passion for grassroots impact. Known for fostering multi-sector partnerships and guiding mission-driven teams, Arun ensures that every initiative aligns with ecological responsibility and community empowerment.",
       experience: [
-        "Led development of 50+ enterprise platforms",
-        "Mentor for 500+ junior developers",
+        "Oversaw the launch of a region-wide afforestation campaign impacting 10,000+ trees",
+        "Built partnerships with local governance bodies for sanitation and water conservation projects",
+        "Mentored youth leaders and volunteers in leadership development programs"
       ],
     },
+
     {
-      id: "emily",
-      name: "Emily Davis",
-      title: "Creative Director",
-      image: "/assets/img/g1.jpg",
-      bio: "Emily brings innovative thinking to every pixel she touches, specializing in immersive UX.",
+      id: "pratiksha",
+      name: "Pratiksha Panwar",
+      title: "Strategist",
+      image: "/assets/img/strategist.jpg",
+      bio: "Pratiksha Panwar is a vibrant strategist at Bhomya Foundation with a background in nursing and a heart rooted in service. As a third-year nursing student, she understands the vital link between public health and environmental sustainability. She plays a pivotal role in developing and executing health awareness programs, volunteer engagement drives, and youth-led eco-campaigns. Her empathetic nature, coupled with creative outreach strategies, ensures that Bhomya Foundation’s message reaches the people who need it most.",
       experience: [
-        "Former Lead Designer at TopDesign Inc.",
-        "Speaker at UX World 2023",
+        "Led a menstrual hygiene awareness drive reaching 1,200+ adolescent girls",
+        "Designed a youth volunteer program now active across 15 educational institutions",
+        "Organized first-aid and primary care workshops during field campaigns"
       ],
     },
+
     {
-      id: "david",
-      name: "David Rodriguez",
-      title: "Lead Developer",
-      image: "/assets/img/g1.jpg",
-      bio: "David is a backend expert with deep understanding of DevOps, cloud architecture, and scalable systems.",
-      experience: ["10+ years in Node/Python", "Built resilient microservices"],
+      id: "sipu",
+      name: "Sipu",
+      title: "Joint Secretary",
+      image: "/assets/img/joint_secratery.jpg",
+      bio: "Sipu is a passionate ecologist and the Joint Secretary of Bhomya Foundation. He focuses on the intersection of urban biodiversity, forest conservation, and environmental education. Known for his extensive fieldwork and commitment to scientific rigor, he translates research into community education tools. Whether tracking bird populations or coordinating habitat restoration efforts, Sipu brings a grounded, data-driven approach to every project while supporting the administrative backbone of the organization.",
+      experience: [
+        "Published field notes on migratory bird diversity in northern India",
+        "Led a local habitat restoration program across 3 forest edge villages",
+        "Developed ecological education toolkits for school-level biodiversity clubs"
+      ],
     },
+
+    {
+      id: "himani",
+      name: "Himani Bhandari",
+      title: "Volunteer – AI Research",
+      image: "/assets/img/himani.jpg",
+      bio: "Himani Bhandari is an emerging researcher and nursing professional focused on the use of AI, GIS, and remote sensing in ecological and climate initiatives. Her interdisciplinary knowledge allows her to blend data science with on-ground needs, helping Bhomya Foundation assess climate impacts and plan sustainable interventions. Passionate about ethics in tech and community collaboration, she bridges technology with human values in every research task she undertakes.",
+      experience: [
+        "Co-developed GIS maps for carbon emission tracking in rural zones",
+        "Contributed to AI models predicting soil degradation patterns",
+        "Published awareness blogs on responsible tech use in environmental monitoring"
+      ],
+    },
+
   ];
 
   return (
