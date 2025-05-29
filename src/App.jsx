@@ -5,7 +5,6 @@ import Loader from "./hooks/loader/Loader";
 import ScrollToTop from "./hooks/ScrollToTop/ScrollToTop";
 import ScrollToTopArrow from "./hooks/ScrollToTopArrowIcon/ScrollToTopArrow";
 import "./App.css";
-import { FALSE } from "sass-embedded";
 
 // Lazy-loaded pages
 const Home = lazy(() => import("./pages/home/home"));
@@ -22,20 +21,22 @@ const App = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 4500); // Shortened for usability
+    // Trigger loader on initial load and every route change
+    setLoading(true);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 4000); // time to complete preLoaderAnim
     return () => clearTimeout(timer);
-  }, []);
+  }, [location.pathname]);
 
   return (
     <>
-      {loading ? (
-        <Loader />
-      ) : (
+      {loading && <Loader key={location.pathname} />}
+      {!loading && (
         <div className="app-wrapper fade-in">
           <ScrollToTop />
           <CustomCursor />
-          <ScrollToTopArrow></ScrollToTopArrow>
-
+          <ScrollToTopArrow />
           <Suspense fallback={<Loader />}>
             <Routes location={location} key={location.pathname}>
               <Route path="/" element={<Home />} />
