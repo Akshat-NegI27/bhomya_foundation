@@ -47,7 +47,7 @@ const InvolveContent = () => {
         <div className="about-cards-grid">
           <div className="involves-card">
             <div className="photox">
-              <img src="/assets/img/founder.jpg" alt="Vision" />
+              <img src="/assets/img/wwd0.jpg" alt="Vision" />
             </div>
             <h1>Intern / Trainee</h1>
             <h2>Hands-on Experience & Training</h2>
@@ -95,7 +95,7 @@ const InvolveContent = () => {
           </div>
           <div className="involves-card">
             <div className="photox">
-              <img src="/assets/img/wwd3.jpg" alt="Where We Work" />
+              <img src="/assets/img/wwd6.jpg" alt="Where We Work" />
             </div>
             <h1>Volunteer</h1>
             <h2>Create change on the ground</h2>

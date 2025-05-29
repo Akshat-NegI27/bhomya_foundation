@@ -7,36 +7,13 @@ const imageUrl =
 const products = [
   {
     id: 1,
-    name: "Eco Tote Bag",
+    name: " Bag",
     price: "₹499",
     category: "Accessories",
     description: "Stylish, eco-friendly tote for everyday use.",
     image: imageUrl,
   },
-  {
-    id: 2,
-    name: "Clay Water Bottle",
-    price: "₹799",
-    category: "Kitchen",
-    description: "Traditional and healthy way to stay hydrated.",
-    image: imageUrl,
-  },
-  {
-    id: 3,
-    name: "Bamboo Toothbrush",
-    price: "₹149",
-    category: "Personal Care",
-    description: "Sustainable and biodegradable toothbrush.",
-    image: imageUrl,
-  },
-  {
-    id: 4,
-    name: "Organic Cotton T-shirt",
-    price: "₹899",
-    category: "Clothing",
-    description: "Soft, breathable, and planet-friendly.",
-    image: imageUrl,
-  },
+ 
 ];
 
 const categories = ["All", "Accessories", "Kitchen", "Personal Care", "Clothing"];

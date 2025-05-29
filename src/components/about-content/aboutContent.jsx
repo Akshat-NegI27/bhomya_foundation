@@ -46,7 +46,7 @@ const AboutContent = () => {
         <div className="about-cards-grid">
           <div className="about-card" style={{ marginTop: "150px" }}>
             <div className="photox">
-              <img src="/assets/img/founder.jpg" alt="Vision" />
+              <img src="/assets/img/wwd0.jpg" alt="Vision" />
             </div>
             <h3>Our Vision</h3>
             <p>
@@ -96,7 +96,7 @@ const AboutContent = () => {
           <div className="program-card">
             <div className="program-img">
               <img
-                src="/assets/img/founder.jpg"
+                src="/assets/img/wwd5.jpg"
                 alt="Environmental Restoration"
               />
             </div>
@@ -109,7 +109,7 @@ const AboutContent = () => {
           </div>
           <div className="program-card">
             <div className="program-img">
-              <img src="/assets/img/founder.jpg" alt="Community Engagement" />
+              <img src="/assets/img/wwd6.jpg" alt="Community Engagement" />
             </div>
 
             <h4>Community Engagement</h4>
@@ -120,7 +120,7 @@ const AboutContent = () => {
           </div>
           <div className="program-card">
             <div className="program-img">
-              <img src="/assets/img/founder.jpg" alt="Education & Awareness" />
+              <img src="/assets/img/wwd7.jpg" alt="Education & Awareness" />
             </div>
 
             <h4>Education & Awareness</h4>
@@ -131,7 +131,7 @@ const AboutContent = () => {
           </div>
           <div className="program-card">
             <div className="program-img">
-              <img src="/assets/img/founder.jpg" alt="Research & Development" />
+              <img src="/assets/img/wwd8.jpg" alt="Research & Development" />
             </div>
 
             <h4>Research & Development</h4>
