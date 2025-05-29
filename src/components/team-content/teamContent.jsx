@@ -145,6 +145,20 @@ const TeamContent = () => {
       },
     },
     {
+      name: "Gautam Kumar",
+      title: "Deputy Secretary",
+      desc: "Discipline. Oversight. Execution.",
+      punch: "Driving operational excellence for sustainable progress.",
+      skills: ["Team Management", "Compliance", "Strategic Execution"],
+      image: "/assets/img/deputy_secretary.jpg",
+      socials: {
+        facebook: "https://facebook.com/gautam.bhomya",
+        instagram: "https://www.instagram.com/gautam___uk?igsh=cWx4aXVuaDVlMWFu",
+        twitter: "https://twitter.com/gautam_bhomya",
+        linkedin: "https://linkedin.com/in/gautam-bhomya",
+      },
+    },
+    {
       name: "Pratiksha",
       title: "Strategist",
       desc: "Ideas. Execution. Outreach.",
@@ -223,6 +237,19 @@ const TeamContent = () => {
         "Developed ecological education toolkits for school-level biodiversity clubs"
       ],
     },
+    {
+      id: "gautam",
+      name: "Gautam Kumar",
+      title: "Deputy Secretary",
+      image: "/assets/img/deputy_secretary.jpg",
+      bio: "Gautam Kumar holds a Master’s degree in Sociology and plays a key role in community engagement at Bhomya Foundation. He has strong skills in working with communities, raising awareness, and supporting local development. Gautam is passionate about involving people in environmental conservation and believes that real change starts at the grassroots. His work focuses on connecting communities with the foundation’s goals, helping them take active steps toward a more sustainable and aware society.",
+      experience: [
+        "Facilitated over 20 grassroots awareness campaigns on waste management and eco-conscious living",
+        "Coordinated community dialogues that led to sustainable water usage practices in 5 rural settlements",
+        "Built partnerships with local institutions to drive village-level sustainability projects"
+      ],
+    }
+    ,
     {
       id: "pratiksha",
       name: "Pratiksha Panwar",
