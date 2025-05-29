@@ -159,6 +159,21 @@ const TeamContent = () => {
       },
     },
     {
+      name: "Jagdamba Bhatt",
+      title: "Cultural & Medicinal Plant Coordinator",
+      desc: "Tradition. Healing. Conservation.",
+      punch: "Preserving cultural heritage through the wisdom of native plants.",
+      skills: ["Ethnobotany", "Cultural Preservation", "Community Education"],
+      image: "/assets/img/bhatt.jpg",
+      socials: {
+        facebook: "https://facebook.com/jagdamba.bhomya",
+        instagram: "https://instagram.com/jagdamba.bhomya",
+        twitter: "https://twitter.com/jagdamba_bhomya",
+        linkedin: "https://linkedin.com/in/jagdamba-bhomya",
+      },
+    }
+    ,
+    {
       name: "Pratiksha",
       title: "Strategist",
       desc: "Ideas. Execution. Outreach.",
@@ -191,12 +206,9 @@ const TeamContent = () => {
   ];
 
   const extendedTeam = [
-    "Km Pooja – Secretary",
     "Aditi Pant – Treasurer",
-    "Gautam Kumar – Deputy Secretary",
     "Samriddhi Sharma – Spokesperson and Member",
     "Dr Naveen Chandra – Research & Development Team Lead",
-    "Jagdamba Bhatt – Medicinal Plant Team Lead"
 
   ];
 
@@ -247,6 +259,19 @@ const TeamContent = () => {
         "Facilitated over 20 grassroots awareness campaigns on waste management and eco-conscious living",
         "Coordinated community dialogues that led to sustainable water usage practices in 5 rural settlements",
         "Built partnerships with local institutions to drive village-level sustainability projects"
+      ],
+    }
+    ,
+    {
+      id: "jagdamba",
+      name: "Jagdamba Bhatt",
+      title: "Cultural & Medicinal Plant Coordinator",
+      image: "/assets/img/bhatt.jpg",
+      bio: "Jagdamba Bhatt is a dedicated guardian of traditional knowledge and serves as the Cultural & Medicinal Plant Coordinator at Bhomya Foundation. With a deep-rooted understanding of local heritage, she works to preserve and promote the use of indigenous medicinal plants and cultural practices. Her work bridges ancient wisdom with modern environmental awareness, ensuring that community-led conservation includes both ecological and cultural dimensions.",
+      experience: [
+        "Documented over 50 native medicinal plant species used in traditional healing practices",
+        "Led cultural heritage workshops involving elders and school children in 8 rural communities",
+        "Developed community gardens focused on cultivating and conserving local medicinal flora"
       ],
     }
     ,
