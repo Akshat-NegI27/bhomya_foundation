@@ -5,6 +5,7 @@ import Loader from "./hooks/loader/Loader";
 import ScrollToTop from "./hooks/ScrollToTop/ScrollToTop";
 import ScrollToTopArrow from "./hooks/ScrollToTopArrowIcon/ScrollToTopArrow";
 import "./App.css";
+import { FALSE } from "sass-embedded";
 
 // Lazy-loaded pages
 const Home = lazy(() => import("./pages/home/home"));
@@ -17,11 +18,11 @@ const Donate = lazy(() => import("./pages/donate/donate"));
 const Gallery = lazy(() => import("./pages/gallery/gallery"));
 
 const App = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const location = useLocation();
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 2000); // Shortened for usability
+    const timer = setTimeout(() => setLoading(false), 4500); // Shortened for usability
     return () => clearTimeout(timer);
   }, []);
 
