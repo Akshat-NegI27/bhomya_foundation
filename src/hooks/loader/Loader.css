@@ -148,7 +148,7 @@
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   width: 100%;
-  background: rgb(255, 255, 255);
+  background: #e0f7de;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -157,9 +157,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgb(255, 0, 0) !important;
+  color: #236724 !important;
   overflow: hidden !important;
-  z-index: 999;
+  z-index: 1001;
 
   .texts-container {
     font-family: manrope, sans-serif;
@@ -173,7 +173,7 @@
     height: 60px;
     width: 260;
     overflow: hidden;
-    color: rgb(255, 0, 0) !important;
+    color: #236724 !important;
   }
 }
 @media only screen and (max-width: 800px) {

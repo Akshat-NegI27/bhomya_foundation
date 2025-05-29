@@ -1,7 +1,6 @@
-import { useState, useEffect, Suspense, lazy } from "react";
+import { useEffect, Suspense, lazy } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import CustomCursor from "./hooks/CustomCursor";
-import Loader from "./hooks/loader/Loader";
 import ScrollToTop from "./hooks/ScrollToTop/ScrollToTop";
 import ScrollToTopArrow from "./hooks/ScrollToTopArrowIcon/ScrollToTopArrow";
 import "./App.css";
@@ -17,41 +16,30 @@ const Donate = lazy(() => import("./pages/donate/donate"));
 const Gallery = lazy(() => import("./pages/gallery/gallery"));
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
   const location = useLocation();
 
   useEffect(() => {
-    // Trigger loader on initial load and every route change
-    setLoading(true);
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 4000); // time to complete preLoaderAnim
-    return () => clearTimeout(timer);
+    window.scrollTo(0, 0);
   }, [location.pathname]);
 
   return (
-    <>
-      {loading && <Loader key={location.pathname} />}
-      {!loading && (
-        <div className="app-wrapper fade-in">
-          <ScrollToTop />
-          <CustomCursor />
-          <ScrollToTopArrow />
-          <Suspense fallback={<Loader />}>
-            <Routes location={location} key={location.pathname}>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/team" element={<Team />} />
-              <Route path="/gallery" element={<Gallery />} />
-              <Route path="/involve" element={<Involve />} />
-              <Route path="/donate" element={<Donate />} />
-              <Route path="/store" element={<Store />} />
-            </Routes>
-          </Suspense>
-        </div>
-      )}
-    </>
+    <div className="app-wrapper fade-in">
+      <ScrollToTop />
+      <CustomCursor />
+      <ScrollToTopArrow />
+      <Suspense fallback={null}>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/involve" element={<Involve />} />
+          <Route path="/donate" element={<Donate />} />
+          <Route path="/store" element={<Store />} />
+        </Routes>
+      </Suspense>
+    </div>
   );
 };
 
