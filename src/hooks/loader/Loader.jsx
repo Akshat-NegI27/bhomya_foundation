@@ -1,31 +1,21 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import "./index.js";
 import "./Loader.css";
+import { preLoaderAnim } from "./index.js";
 
-const quotes = ["Germinating the seeds of conservation."];
+// const quotes = ["Germinating the seeds of conservation."];
 
-const Loader = ({ onComplete }) => {
-  const [fadeOut, setFadeOut] = useState(false);
-  const [quote, setQuote] = useState("");
-
+const Loader = () => {
   useEffect(() => {
-    setQuote(quotes[Math.floor(Math.random() * quotes.length)]);
-
-    const showTime = setTimeout(() => {
-      setFadeOut(true);
-      const finishTime = setTimeout(onComplete, 1000); // 1s fade-out
-      return () => clearTimeout(finishTime);
-    }, 5000); // 👈 Increase to 5s visible before fade
-
-    return () => clearTimeout(showTime);
-  }, [onComplete]);
-
+    preLoaderAnim();
+  }, []);
   return (
-    <div
-      className={`loader-container ${fadeOut ? "loader-fadeout" : ""}`}
-      aria-hidden="true"
-    >
-      <h4 className="loader-text">Bhomya Foundation</h4>
-      <div className="loader-quote">{quote}</div>
+    <div className="preloader">
+      <div className="texts-container">
+        <span>| BHOMYA </span>
+        <span>&nbsp; FOUNDATION &nbsp; </span>
+        {/* <span> NEGI |</span> */}
+      </div>
     </div>
   );
 };

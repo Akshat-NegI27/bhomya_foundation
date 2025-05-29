@@ -1,5 +1,5 @@
 @import "../fonts/fonts.css";
-
+/* 
 .loader-container {
   position: fixed;
   top: 0;
@@ -49,7 +49,7 @@
   position: absolute;
   opacity: 0;
   animation: quoteFadeIn 1.5s ease forwards;
-  animation-delay: 2s; /* Starts after text fades out */
+  animation-delay: 2s; 
 }
 
 .loader-fadeout {
@@ -140,6 +140,53 @@
     .loader-quote {
       font-size: 0.8rem;
       letter-spacing: 1px;
+    }
+  }
+} */
+
+.preloader {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  background: rgb(255, 255, 255);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 0, 0) !important;
+  overflow: hidden !important;
+  z-index: 999;
+
+  .texts-container {
+    font-family: manrope, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 260;
+    overflow: hidden;
+    color: rgb(255, 0, 0) !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* -------------Preloader-------------- */
+  .preloader {
+    height: 200vh;
+    height: calc(var(--vh, 1vh) * 200);
+    width: 100%;
+    .texts-container {
+      font-size: 22px;
+      height: fit-content;
+      width: fit-content;
+      letter-spacing: 0.2em;
     }
   }
 }
