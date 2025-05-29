@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./involveContent.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import FlairButton from "../../hooks/buttonhover/FlairButton";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -50,13 +50,16 @@ const InvolveContent = () => {
               <img src="/assets/img/founder.jpg" alt="Vision" />
             </div>
             <h1>Intern / Trainee</h1>
-            <h2>Gain hands-on experience and professional training</h2>
+            <h2>Hands-on Experience & Training</h2>
             <p>
-              Work alongside our experts on real-world environmental projects
-              involving fieldwork, data analysis, experiments, and impactful
-              campaigns.
+              Work with our experts on impactful environmental projects
+              involving fieldwork, research, and awareness campaigns.
             </p>
-            <h3>Apply as Intern</h3>
+            <div className="buttons">
+              <Link className="button-underline" to="/About">
+                Apply as Intern
+              </Link>
+            </div>
           </div>
           <div className="involves-card">
             <div className="photox">
@@ -68,8 +71,10 @@ const InvolveContent = () => {
               Support us through consistent involvement, get access to exclusive
               events, newsletters, and help shape our initiatives.
             </p>
-            <div style={{ padding: "50px" }}>
-              <FlairButton text="Donate Now" />
+            <div className="buttons">
+              <Link className="button-underline" to="/About">
+                Join as Member
+              </Link>
             </div>
           </div>
           <div className="involves-card">
@@ -82,7 +87,11 @@ const InvolveContent = () => {
               Join as a strategic ally for CSR projects, education programs, and
               wide-reaching environmental initiatives.
             </p>
-            <h3>Become a Partner</h3>
+            <div className="buttons">
+              <Link className="button-underline" to="/About">
+                Become a Partner
+              </Link>
+            </div>
           </div>
           <div className="involves-card">
             <div className="photox">
@@ -94,11 +103,18 @@ const InvolveContent = () => {
               Contribute your time and creativity to plantation drives,
               awareness campaigns, and event coordination.
             </p>
-            <h3>Become a Volunteer</h3>
+            <div className="buttons">
+              <Link className="button-underline" to="/About">
+                Become a Volunteer
+              </Link>
+            </div>
           </div>
         </div>
       </section>
       <div className="involve-container">
+        <div className="bglay">
+          <h2>BHOMYA FOUNDATION</h2>
+        </div>
         <div className="involve-header">
           <span className="badge">Join Our Cause</span>
           <h1>Get Involved</h1>
@@ -113,7 +129,8 @@ const InvolveContent = () => {
             {
               title: "Intern / Trainee",
               subtitle: "Gain hands-on experience and training",
-              desc: "Interns and trainees work closely with our environmental experts...",
+              desc: "As an intern or trainee, you'll be actively involved in real-world environmental projects under the mentorship of seasoned experts. This role offers a unique opportunity to contribute to meaningful research, assist in ecological experiments, and support awareness campaigns while building a strong foundation in sustainable practices.",
+
               roles: [
                 "🌿 Field and Research Projects",
                 "📈 Data analysis and reporting",
@@ -127,7 +144,7 @@ const InvolveContent = () => {
             {
               title: "Member",
               subtitle: "Be a committed part of our mission",
-              desc: "Members support us with regular participation...",
+              desc: "As a member, you become an integral part of our mission. Members actively participate in events, awareness programs, and community initiatives, helping us build a stronger, more eco-conscious society through consistent support and engagement.",
               roles: [
                 "📬 Monthly newsletters & reports",
                 "🤝 Event & workshop access",
@@ -141,7 +158,7 @@ const InvolveContent = () => {
             {
               title: "Partner With Us",
               subtitle: "Collaborate to drive greater change",
-              desc: "Collaborate as a strategic partner...",
+              desc: "Collaborate with us as a strategic partner to drive impactful environmental initiatives. Our partners contribute resources, expertise, and network support to advance shared sustainability goals and foster long-term community development.",
               roles: [
                 "🏢 CSR Projects",
                 "📊 Impact reporting",
@@ -155,7 +172,7 @@ const InvolveContent = () => {
             {
               title: "Volunteer",
               subtitle: "Make a direct, meaningful impact",
-              desc: "Volunteers play a critical role in on-ground activities...",
+              desc: "Volunteers play a vital role in executing on-ground activities, contributing their time and energy to support environmental campaigns, community outreach, and conservation projects that create measurable impact.",
               roles: [
                 "🌱 Plantation drives",
                 "📣 Awareness campaigns",
