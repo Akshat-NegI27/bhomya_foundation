@@ -48,7 +48,7 @@ const InvolveContent = () => {
         <div className="about-cards-grid">
           <div className="involves-card">
             <div className="photox">
-              <img src="/assets/img/wwd0.jpg" alt="Vision" />
+              <img src="/assets/img/gi1.jpg" alt="Vision" />
             </div>
             <h1>Intern / Trainee</h1>
             <h2>Hands-on Experience & Training</h2>
@@ -64,7 +64,7 @@ const InvolveContent = () => {
           </div>
           <div className="involves-card">
             <div className="photox">
-              <img src="/assets/img/wwd2.jpg" alt="Mission" />
+              <img src="/assets/img/gi2.jpg" alt="Mission" />
             </div>
             <h1>Member</h1>
             <h2>Be an active contributor to our mission</h2>
@@ -80,7 +80,7 @@ const InvolveContent = () => {
           </div>
           <div className="involves-card">
             <div className="photox">
-              <img src="/assets/img/wwd3.jpg" alt="Where We Work" />
+              <img src="/assets/img/gi3.jpg" alt="Where We Work" />
             </div>
             <h1>Partner With Us</h1>
             <h2>Collaborate for greater impact</h2>
