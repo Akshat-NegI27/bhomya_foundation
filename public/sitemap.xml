@@ -1,28 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://mhveducation.com/</loc>
-    <lastmod>2025-05-04</lastmod>
+    <loc>https://bhomya.org/</loc>
+    <lastmod>2025-05-29</lastmod>
     <priority>1.00</priority>
   </url>
 
   <url>
-    <loc>https://mhveducation.com/Courses</loc>
-    <lastmod>2025-05-04</lastmod>
+    <loc>https://bhomya.org/about</loc>
+    <lastmod>2025-05-29</lastmod>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://mhveducation.com/About</loc>
-    <lastmod>2025-05-04</lastmod>
+    <loc>https://bhomya.org/team</loc>
+    <lastmod>2025-05-29</lastmod>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://bhomya.org/programs</loc>
+    <lastmod>2025-05-29</lastmod>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://bhomya.org/involve</loc>
+    <lastmod>2025-05-29</lastmod>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://mhveducation.com/Contact</loc>
-    <lastmod>2025-05-04</lastmod>
+    <loc>https://bhomya.org/donate</loc>
+    <lastmod>2025-05-29</lastmod>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://bhomya.org/gallery</loc>
+    <lastmod>2025-05-29</lastmod>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://bhomya.org/contact</loc>
+    <lastmod>2025-05-29</lastmod>
     <priority>0.80</priority>
   </url>
+
+  <url>
+    <loc>https://bhomya.org/store</loc>
+    <lastmod>2025-05-29</lastmod>
+    <priority>0.60</priority>
+  </url>
+
 </urlset>
