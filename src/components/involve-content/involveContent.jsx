@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./involveContent.css";
+import "./responsive_involve.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
@@ -35,7 +36,7 @@ const InvolveContent = () => {
       <section className="about-us">
         <div className="textaa">
           <h1>
-            About <span className="highlightt">Us</span>
+            Get <span className="highlightt">Involved</span>
           </h1>
           <p className="description">
             Bhomya Foundation is a non-profit organization located in the heart

@@ -159,6 +159,20 @@ const TeamContent = () => {
       },
     },
     {
+      name: "Dr. Naveen Chandra",
+      title: "Research & Development Team Lead",
+      desc: "Innovation. Insight. Impact.",
+      punch: "Driving environmental solutions through science and research excellence.",
+      skills: ["Ecological Research", "Project Design", "Data Analysis"],
+      image: "/assets/img/naveen.jpg",
+      socials: {
+        facebook: "https://facebook.com/naveen.bhomya",
+        instagram: "https://instagram.com/naveen.bhomya",
+        twitter: "https://twitter.com/naveen_bhomya",
+        linkedin: "https://linkedin.com/in/naveen-bhomya",
+      },
+    },
+    {
       name: "Jagdamba Bhatt",
       title: "Cultural & Medicinal Plant Coordinator",
       desc: "Tradition. Healing. Conservation.",
@@ -208,7 +222,14 @@ const TeamContent = () => {
   const extendedTeam = [
     "Aditi Pant – Treasurer",
     "Samriddhi Sharma – Spokesperson and Member",
-    "Dr Naveen Chandra – Research & Development Team Lead",
+    "Shivam Kishwan  – Field Research Expert",
+    "Sonal Shukla – Uttar Pradesh Team Lead",
+    "Ashok – Jammu & Kashmir Team Lead  ",
+    "Dr. Naveen Chandra – Subject Expert ",
+    "Shivam Kishwan – Field Research Expert",
+    "Vipin Rao – Senior Technical Associate ",
+    "Sarabjeet Kaur – Subject Expert  ",
+    "Rounak Patra – Subject Expert",
 
   ];
 
@@ -259,6 +280,19 @@ const TeamContent = () => {
         "Facilitated over 20 grassroots awareness campaigns on waste management and eco-conscious living",
         "Coordinated community dialogues that led to sustainable water usage practices in 5 rural settlements",
         "Built partnerships with local institutions to drive village-level sustainability projects"
+      ],
+    }
+    ,
+    {
+      id: "naveen",
+      name: "Dr. Naveen Chandra",
+      title: "Research & Development Team Lead",
+      image: "/assets/img/naveen.jpg", // Update if the image path differs
+      bio: "Dr. Naveen Chandra is a leading environmental researcher and the R&D Team Lead at Bhomya Foundation. With a doctoral degree in Ecology and years of field experience, he specializes in designing innovative conservation models rooted in science and local knowledge. His work bridges the gap between data-driven insights and practical environmental action. Dr. Chandra is dedicated to advancing ecological research, fostering collaboration between academic institutions and grassroots movements, and building evidence-based strategies for sustainable development.",
+      experience: [
+        "Directed multi-year ecological research projects across North India",
+        "Published studies on biodiversity conservation and climate resilience",
+        "Mentors young researchers and coordinates field-based R&D programs"
       ],
     }
     ,

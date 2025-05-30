@@ -35,7 +35,7 @@ const ContactContent = () => {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    setErrors({ ...errors, [e.target.name]: "" }); // Clear error on change
+    setErrors({ ...errors, [e.target.name]: "" }); 
   };
 
   const handleSubmit = (e) => {
@@ -218,7 +218,7 @@ const ContactContent = () => {
               <strong>Phone:</strong> +91 XXXXX XXXXX
             </p>
             <p>
-              <strong>Address:</strong> Mangal Chowk, Near Kargi Chowk,
+              <strong>Address:</strong> Monal Enclave, Near Kargi Chowk,
               Dehradun, <br />
               Uttarakhand – 248001, India
             </p>
