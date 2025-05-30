@@ -1,0 +1,15 @@
+@media only screen and (max-width: 767px) {
+    .involve-cards {
+        display: none !important;
+    }
+
+    .textaa {
+        h1 {
+            font-size: 2.5rem !important;
+        }
+    }
+    .involve-container{
+        display: none !important;
+    }
+
+}

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./involveContent.css";
+import "./responsive_involve.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
@@ -35,7 +36,7 @@ const InvolveContent = () => {
       <section className="about-us">
         <div className="textaa">
           <h1>
-            About <span className="highlightt">Us</span>
+            Get <span className="highlightt">Involved</span>
           </h1>
           <p className="description">
             Bhomya Foundation is a non-profit organization located in the heart
@@ -47,7 +48,7 @@ const InvolveContent = () => {
         <div className="about-cards-grid">
           <div className="involves-card">
             <div className="photox">
-              <img src="/assets/img/wwd0.jpg" alt="Vision" />
+              <img src="/assets/img/gi1.jpg" alt="Vision" />
             </div>
             <h1>Intern / Trainee</h1>
             <h2>Hands-on Experience & Training</h2>
@@ -63,7 +64,7 @@ const InvolveContent = () => {
           </div>
           <div className="involves-card">
             <div className="photox">
-              <img src="/assets/img/wwd2.jpg" alt="Mission" />
+              <img src="/assets/img/gi2.jpg" alt="Mission" />
             </div>
             <h1>Member</h1>
             <h2>Be an active contributor to our mission</h2>
@@ -79,7 +80,7 @@ const InvolveContent = () => {
           </div>
           <div className="involves-card">
             <div className="photox">
-              <img src="/assets/img/wwd3.jpg" alt="Where We Work" />
+              <img src="/assets/img/gi3.jpg" alt="Where We Work" />
             </div>
             <h1>Partner With Us</h1>
             <h2>Collaborate for greater impact</h2>

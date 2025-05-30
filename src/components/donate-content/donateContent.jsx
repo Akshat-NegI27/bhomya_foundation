@@ -79,7 +79,7 @@ const DonateContent = () => {
           <h3 className="section-title">Choose Your Impact</h3>
           <p>Select a contribution amount or enter a custom amount of your choice.</p>
           <div className="amount-grid">
-            {[25, 50, 100, 250, 500].map((val) => (
+            {[51, 101, 501, 1100, 1501].map((val) => (
               <button
                 key={val}
                 className={`impact-btn ${amount === val && !customAmount ? "selected" : ""}`}

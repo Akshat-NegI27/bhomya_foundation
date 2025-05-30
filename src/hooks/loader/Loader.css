@@ -176,13 +176,19 @@
     color: #236724 !important;
   }
 }
+
 @media only screen and (max-width: 800px) {
+
   /* -------------Preloader-------------- */
   .preloader {
     height: 200vh;
     height: calc(var(--vh, 1vh) * 200);
     width: 100%;
+
     .texts-container {
+      position: relative;
+      top: 25%;
+
       font-size: 22px;
       height: fit-content;
       width: fit-content;
@@ -190,3 +196,5 @@
     }
   }
 }
+
+
