@@ -282,7 +282,6 @@ const TeamContent = () => {
   const extendedTeam = [
     "Aditi Pant – Treasurer",
     "Samriddhi Sharma – Spokesperson and Member",
-    "Shivam Kishwan  – Field Research Expert",
     "Sonal Shukla – Uttar Pradesh Team Lead",
     "Ashok – Jammu & Kashmir Team Lead  ",
     "Dr. Naveen Chandra – Subject Expert ",
