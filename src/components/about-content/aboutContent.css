@@ -215,23 +215,8 @@
 .achievements-section {
   padding: 80px 16px;
   text-align: center;
-  h2 {
-    color: #047857;
-    font-size: 3.5rem;
-    /* margin-top: 40px; */
-    font-family: inter-n8;
-    font-weight: 800;
-    text-transform: uppercase;
-  }
-  .description {
-    font-size: 1rem;
-    color: #4b5563;
-    /* margin-bottom: 50px; */
-    font-family: Poppins;
-    font-weight: 400;
-    max-width: 800px;
-    margin: 0 auto 50px;
-  }
+  position: relative;
+  z-index: 3;
 }
 
 .timeline-container {
@@ -415,19 +400,41 @@
   }
 }
 
-.achievements-section {
+.headd {
+  width: 1000px;
+  text-align: center;
+  background-color: white;
   position: relative;
-
-  /* min-height: 100vh;
-  overflow: hidden; */
-  z-index: 5;
+  z-index: 100;
+  h2 {
+    color: #047857;
+    font-size: 3.5rem;
+    /* margin-top: 40px; */
+    font-family: inter-n8;
+    font-weight: 800;
+    text-transform: uppercase;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+  }
+  .description {
+    width: 100%;
+    font-size: 1rem;
+    color: #4b5563;
+    /* margin-bottom: 50px; */
+    font-family: Poppins;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    z-index: 100;
+  }
 }
 .pinBackground {
-  position: relative;
-  z-index: 3;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
 }
 .pinImage {
   width: 100%;
@@ -436,14 +443,13 @@
   filter: grayscale(100%);
 }
 .achievements-bg {
-  position: absolute;
-  top: 280px;
+  /* position: absolute; */
+  top: 0px;
   left: 0;
   height: 65vh;
   width: 100%;
-  /* background: linear-gradient(180deg, #e1eeda, #5fb036); */
   padding: 0px 20px;
-  z-index: 0;
+  background-color: red;
   overflow: hidden;
 }
 

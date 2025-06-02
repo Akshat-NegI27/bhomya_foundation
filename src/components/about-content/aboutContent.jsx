@@ -1,10 +1,10 @@
+import gsap from "gsap";
 import "./aboutContent.css";
 import "./responsive_about.css";
-import React, { useEffect, useRef } from "react";
-import gsap from "gsap";
+import { useEffect, useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 import g1 from "/assets/img/s4.jpg";
+gsap.registerPlugin(ScrollTrigger);
 
 const AboutContent = () => {
   const sectionRef = useRef();
@@ -16,8 +16,8 @@ const AboutContent = () => {
 
     ScrollTrigger.create({
       trigger: section,
-      start: "top -=85", // adjust the start position
-      end: "+=1380 top", // adjust the scroll length
+      start: "top +=770",
+      end: "+=1280 top",
       pin: pinWrap,
       pinSpacing: false,
       scrub: true,
@@ -170,22 +170,24 @@ const AboutContent = () => {
       </section>
 
       {/* Achievements */}
-      <div className="pinBackground">
-        <div className="achievements-bg" ref={pinWrapRef}>
+      <span className="pinBackground" ref={pinWrapRef}>
+        <div className="headd">
+          <h2>
+            Our <span className="highlight">Achievements</span>
+          </h2>
+          <p className="description">
+            Since our establishment, we have successfully organized and executed
+            multiple initiatives focused on environmental conservation and
+            community awareness.
+          </p>
+        </div>
+
+        <div className="achievements-bg">
           <img src={g1} className="pinImage" alt="" />
         </div>
-      </div>
+      </span>
 
       <section className="achievements-section" ref={sectionRef}>
-        <h2>
-          Our <span className="highlight">Achievements</span>
-        </h2>
-        <p className="description">
-          Since our establishment, we have successfully organized and executed
-          multiple initiatives focused on environmental conservation and
-          community awareness.
-        </p>
-
         <div className="timeline-container">
           <div className="timeline-line"></div>
           <div className="timeline-item left">
