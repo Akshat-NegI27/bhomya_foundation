@@ -449,8 +449,7 @@
   height: 65vh;
   width: 100%;
   padding: 0px 20px;
-  background-color: red;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* future vision */
