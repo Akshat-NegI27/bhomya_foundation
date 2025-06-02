@@ -6,7 +6,7 @@
 
 /* General Section Style */
 .about-us {
-  padding: 30px 16px 80px;
+  padding: 30px 16px 40px;
   text-align: center;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .about-card {
-  margin-top: 150px;
+  /* margin-top: 150px; */
   background: #f9fdf7;
   border-radius: 12px;
   padding: 15px;

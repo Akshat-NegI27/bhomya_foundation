@@ -1,6 +1,5 @@
 import { useEffect, Suspense, lazy } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import CustomCursor from "./hooks/CustomCursor";
 import ScrollToTop from "./hooks/ScrollToTop/ScrollToTop";
 import ScrollToTopArrow from "./hooks/ScrollToTopArrowIcon/ScrollToTopArrow";
 import "./App.css";
@@ -25,7 +24,6 @@ const App = () => {
   return (
     <div className="app-wrapper fade-in">
       <ScrollToTop />
-      <CustomCursor />
       <ScrollToTopArrow />
       <Suspense fallback={null}>
         <Routes location={location} key={location.pathname}>

@@ -68,7 +68,7 @@ const AboutContent = () => {
               climate resilience.
             </p>
           </div>
-          <div className="about-card" >
+          <div className="about-card " style={{ marginTop: "150px" }}>
             <div className="photox">
               <img src="/assets/img/wwd3.jpg" alt="Where We Work" />
             </div>
@@ -95,10 +95,7 @@ const AboutContent = () => {
         <div className="programs-grid">
           <div className="program-card">
             <div className="program-img">
-              <img
-                src="/assets/img/wwd5.jpg"
-                alt="Environmental Restoration"
-              />
+              <img src="/assets/img/wwd5.jpg" alt="Environmental Restoration" />
             </div>
 
             <h4>Environmental Restoration</h4>
