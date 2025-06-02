@@ -187,6 +187,12 @@ const TeamContent = () => {
       },
     }
     ,
+
+
+  ];
+
+
+  const otherTeam = [
     {
       name: "Pratiksha",
       title: "Strategist",
@@ -216,9 +222,63 @@ const TeamContent = () => {
       },
     },
 
+    
+  {
+    name: "Akhilesh Rawat",
+    title: "Master's in Smart Building Technologies and Sustainable Management",
+    desc: "Graduate from BBW Hochschule University of Applied Sciences, Germany",
+    punch: "Driving innovation in smart and sustainable infrastructure.",
+    skills: ["Smart Building", "Sustainability", "Project Management"],
+    image: "/assets/img/akhilesh.jpg",
+    socials: {},
+  },
+  {
+    name: "Sonal Shukla",
+    title: "ESG Research Analyst",
+    desc: "Focused on environmental, social, and governance research.",
+    punch: "Promoting responsible and sustainable investing.",
+    skills: ["ESG Analysis", "Sustainability", "Reporting"],
+    image: "/assets/img/sonal.jpg",
+    socials: {},
+  },
+  {
+    name: "Satavisha Banik",
+    title: "QA Analyst",
+    desc: "Ensuring quality and reliability through rigorous testing.",
+    punch: "Striving for excellence in every software product.",
+    skills: ["Quality Assurance", "Testing", "Documentation"],
+    image: "/assets/img/Satavisha .jpg",
+    socials: {},
+  },
+  {
+    name: "Arpit Chaudhary",
+    title: "QA Analyst",
+    desc: "Detail-oriented and focused on software integrity.",
+    punch: "Precision and reliability at the heart of every release.",
+    skills: ["Manual Testing", "Automation", "Bug Tracking"],
+    image: "/assets/img/Arpit .jpg",
+    socials: {},
+  },
+  {
+    name: "Avantika Nautiyal",
+    title: "Social Worker",
+    desc: "Dedicated to community service and empowerment.",
+    punch: "Building better lives through compassion and action.",
+    skills: ["Community Outreach", "Welfare Programs", "Empowerment"],
+    image: "/assets/img/Avantika .jpg",
+    socials: {},
+  },
+  {
+    name: "Iqra Mehdi",
+    title: "Social Worker",
+    desc: "Passionate about social justice and education.",
+    punch: "Creating change through grassroots initiatives.",
+    skills: ["Education", "Women Empowerment", "Youth Engagement"],
+    image: "/assets/img/Iqra .jpg",
+    socials: {},
+  }
 
   ];
-
   const extendedTeam = [
     "Aditi Pant – Treasurer",
     "Samriddhi Sharma – Spokesperson and Member",
@@ -391,7 +451,20 @@ const TeamContent = () => {
           <TeamCard key={i} {...member} />
         ))}
       </div>
-      <h2 className="section-heading">Our Extended Team</h2>
+
+      <h2 className="section-heading">Volunteer </h2>
+      <div className="line"></div>
+
+      <p className="section-subheading">
+        The other team members       </p>
+      <div className="other-team-grid">
+        {otherTeam.map((member, i) => (
+          <TeamCard key={i} {...member} />
+        ))}
+      </div>
+
+
+      <h2 className="section-heading">Other Members</h2>
       <div className="line"></div>
 
       <p className="section-subheading">
