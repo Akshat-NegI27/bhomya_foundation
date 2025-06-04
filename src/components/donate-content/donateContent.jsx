@@ -38,7 +38,7 @@ const DonateContent = () => {
     }
 
     const options = {
-      key: "YOUR_RAZORPAY_KEY_ID", // Replace with your Razorpay key
+      key: "YOUR_RAZORPAY_KEY_ID", 
       amount: finalAmount * 100,
       currency: "INR",
       name: "Bhomya Foundation",

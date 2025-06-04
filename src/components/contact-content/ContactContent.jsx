@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./ContactContent.css";
 import "./responsive_contact.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import emailjs from "@emailjs/browser";
+
 
 const ContactContent = () => {
   const [formData, setFormData] = useState({
@@ -35,7 +37,7 @@ const ContactContent = () => {
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
-    setErrors({ ...errors, [e.target.name]: "" }); 
+    setErrors({ ...errors, [e.target.name]: "" });
   };
 
   const handleSubmit = (e) => {
@@ -54,19 +56,38 @@ const ContactContent = () => {
 
     setStatus("Sending...");
 
-    // Simulate AJAX
-    setTimeout(() => {
-      setStatus("Message sent successfully!");
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
-      setErrors({});
-      setAgreed(false);
-    }, 1000);
+    const templateParams = {
+      name: `${formData.firstName} ${formData.lastName}`,
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message,
+    };
+
+    emailjs
+      .send(
+        "service_kcndtib",
+        "template_3in1qpp",
+        templateParams,
+        "T4LKGZaBd51g9xa63"
+      )
+      .then(
+        (response) => {
+          setStatus("Message sent successfully!");
+          setFormData({
+            firstName: "",
+            lastName: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+          setErrors({});
+          setAgreed(false);
+        },
+        (err) => {
+          console.error("EmailJS error:", err);
+          setStatus("Failed to send message. Please try again later.");
+        }
+      );
   };
   return (
     <div className="contactpg">
