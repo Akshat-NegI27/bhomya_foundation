@@ -114,7 +114,7 @@ const DonateContent = () => {
           <h4 className="section-title">Scan to Donate</h4>
 <div className="qr-section">
   <img
-    src="/assets/qr-code.png" 
+    src="/assets/img/qr-code.png" 
     alt="QR Code for Donation"
     className="qr-code-img"
   />
