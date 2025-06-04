@@ -236,7 +236,7 @@ const ContactContent = () => {
               <strong>Email:</strong> info@bhomyafoundation.org
             </p>
             <p>
-              <strong>Phone:</strong> +91 XXXXX XXXXX
+              <strong>Phone:</strong> +91 73109 53284
             </p>
             <p>
               <strong>Address:</strong> Monal Enclave, Near Kargi Chowk,
