@@ -110,6 +110,17 @@ const DonateContent = () => {
             value={form.message}
             onChange={(e) => setForm({ ...form, message: e.target.value })}
           />
+
+          <h4 className="section-title">Scan to Donate</h4>
+<div className="qr-section">
+  <img
+    src="/assets/qr-code.png" 
+    alt="QR Code for Donation"
+    className="qr-code-img"
+  />
+  <p style={{ fontSize: "13px", marginTop: "8px" }}>Scan using any UPI app</p>
+</div>
+
         </div>
 
         <div className="donate-right-panel">

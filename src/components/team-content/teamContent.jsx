@@ -229,10 +229,10 @@ const TeamContent = () => {
       skills: ["Data Analysis", "Visualization", "Problem Solving"],
       image: "/assets/img/Yashica.jpg",
       socials: {
-        facebook: "https://facebook.com/yashica.gusain", // update if needed
-        instagram: "https://instagram.com/yashica_gusain", // update if needed
-        twitter: "https://twitter.com/yashica_gusain", // update if needed
-        linkedin: "https://linkedin.com/in/yashica-gusain", // update if needed
+        facebook: "https://facebook.com/yashica.gusain", 
+        instagram: "https://instagram.com/yashica_gusain", 
+        twitter: "https://twitter.com/yashica_gusain", 
+        linkedin: "https://linkedin.com/in/yashica-gusain", 
       },
     },
     {
@@ -243,11 +243,10 @@ const TeamContent = () => {
       skills: ["Web Development", "UI/UX Design", "Responsive Design"],
       image: "/assets/img/samridhi.jpg",
       socials: {
-        facebook: "https://facebook.com/samridhi.sharma", // update if needed
-        instagram: "https://instagram.com/samridhi_sharma", // update if needed
-        twitter: "https://twitter.com/samridhi_sharma", // update if needed
-        linkedin: "https://linkedin.com/in/samridhi-sharma", // update if needed
-      },
+        facebook: "https://facebook.com/samridhi.sharma", 
+        instagram: "https://instagram.com/samridhi_sharma", 
+        twitter: "https://twitter.com/samridhi_sharma", 
+        linkedin: "https://linkedin.com/in/samridhi-sharma",       },
     },
 
 
