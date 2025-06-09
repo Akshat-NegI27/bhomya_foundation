@@ -37,7 +37,7 @@ const DonateContent = () => {
     }
 
     const options = {
-      key: "rzp_live_jgIHqxNFQK5LWX", 
+      key: "rzp_live_jgIHqxNFQK5LWX",
       amount: finalAmount * 100,
       currency: "INR",
       name: "Bhomya Foundation",
@@ -48,7 +48,7 @@ const DonateContent = () => {
         contact: form.phone,
       },
       handler: (response) => {
-        alert("Payment Successful: " + response.razorpay_payment_id);
+        window.location.href = "/thank-you"; 
       },
       theme: {
         color: "#2d6c44",
@@ -111,14 +111,14 @@ const DonateContent = () => {
           />
 
           <h4 className="section-title">Scan to Donate</h4>
-<div className="qr-section">
-  <img
-    src="/assets/img/qr-code.png" 
-    alt="QR Code for Donation"
-    className="qr-code-img"
-  />
-  <p style={{ fontSize: "13px", marginTop: "8px" }}>Scan using any UPI app</p>
-</div>
+          <div className="qr-section">
+            <img
+              src="/assets/img/qr-code.png"
+              alt="QR Code for Donation"
+              className="qr-code-img"
+            />
+            <p style={{ fontSize: "13px", marginTop: "8px" }}>Scan using any UPI app</p>
+          </div>
 
         </div>
 
