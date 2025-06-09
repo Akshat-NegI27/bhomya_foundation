@@ -277,7 +277,7 @@ const ContactContent = () => {
           <ul className="social-media-list">
             <li>
               <a
-                href="https://www.facebook.com/mhveducation/"
+                href="https://www.facebook.com/share/19FkrDEpZF/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="MHV Education on Facebook"
@@ -289,7 +289,7 @@ const ContactContent = () => {
 
             <li>
               <a
-                href="https://www.instagram.com/mhveducation/"
+                href="https://www.instagram.com/bhomya_foundation/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="MHV Education on Instagram"
@@ -301,7 +301,7 @@ const ContactContent = () => {
 
             <li>
               <a
-                href="https://www.linkedin.com/company/mhv-education/"
+                href="https://www.linkedin.com/in/bhomya-foundation/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="MHV Education on LinkedIn"
@@ -313,7 +313,7 @@ const ContactContent = () => {
 
             <li>
               <a
-                href="https://www.youtube.com/@MHVeducation"
+                href="https://www.youtube.com/@BhomyaFoundation"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="MHV Education on YouTube"
@@ -323,21 +323,11 @@ const ContactContent = () => {
               </a>
             </li>
 
-            <li>
-              <a
-                href="https://medium.com/@mhveducation"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="MHV Education on Medium"
-              >
-                <i className="fa-brands fa-medium"></i>
-                <span>Medium</span>
-              </a>
-            </li>
+            
 
             <li>
               <a
-                href="mailto:mhveducation@gmail.com"
+                href="mailto:support@bhomya.org"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Email MHV Education"
@@ -349,10 +339,10 @@ const ContactContent = () => {
 
             <li>
               <a
-                href="https://wa.me/+919634104622"
+                href="https://wa.me/+917310953284"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Chat with MHV Education on WhatsApp"
+                aria-label="Chat with Bhomya on WhatsApp"
               >
                 <i className="fa-brands fa-whatsapp"></i>
                 <span>WhatsApp</span>

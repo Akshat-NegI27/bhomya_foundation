@@ -1,22 +1,35 @@
 import React, { useState } from "react";
 import "./storeContent.css";
 
-const imageUrl =
-  "https://images.pexels.com/photos/32164897/pexels-photo-32164897/free-photo-of-rustic-succulent-plant-in-weathered-pot.jpeg";
-
 const products = [
   {
     id: 1,
-    name: " Bag",
-    price: "₹499",
-    category: "Accessories",
-    description: "Stylish, eco-friendly tote for everyday use.",
-    image: imageUrl,
+    name: "Half Sleeve Shirt",
+    price: "₹1500",
+    category: "Clothing",
+    description: "Comfortable half sleeve shirt made from organic cotton.",
+    image:   "assets/img/shirt.png", 
   },
- 
+  {
+    id: 2,
+    name: "Ceramic Mug",
+    price: "₹250",
+    category: "Accessories",
+    description: "Premium ceramic mug with eco-themed print.",
+    image:   "assets/img/mug.png", 
+  },
+  {
+    id: 3,
+    name: "Shirt + Mug Combo",
+    price: "₹1700",
+    category: "Combo Offer",
+    description: "Save ₹50 with this exclusive shirt and mug combo.",
+    image:   "https://images.pexels.com/photos/32164897/pexels-photo-32164897/free-photo-of-rustic-succulent-plant-in-weathered-pot.jpeg", 
+  },
 ];
 
-const categories = ["All", "Accessories", "Kitchen", "Personal Care", "Clothing"];
+
+const categories = ["All", "Accessories", "Cothing", "Combo Offer"];
 
 const StoreContent = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);

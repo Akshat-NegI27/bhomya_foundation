@@ -140,6 +140,21 @@ const AboutContent = () => {
         </div>
       </section>
 
+      <section className="mentor-highlight">
+        <div className="mentor-container">
+          <div className="mentor-image">
+            <img src="/assets/img/ujjawal.jpg" alt="Dr. Ujjwal Kumar" />
+          </div>
+          <div className="mentor-text">
+            <h2>Meet Our Mentor</h2>
+            <h3>Dr. Ujjwal Kumar</h3>
+            <p>
+              Dr. Ujjwal Kumar has more than 18 years of research and teaching experience in the field of Atmospheric science/Environmental Science/Atmospheric-Environmental Modelling / Statistical-Time Series modelling / machine learning analysis of environmental data. He is currently serving at School of Envrionment & Natural Resources, Doon University, India. Prior to joining Doon University, he worked as Post Doc Researcher at KNMI-Royal Netherlands Meteorological Institute, Netherlands for three and half years  mainly on operational air quality forecasting system using Chemical Transport Models with data assimilation of surface/satellite observations. Prior to this, he also worked for two years at VITO-Flemish Institute for Technological Research, Belgium on data assimilation of chemical transport model AURORA. He has more than 40 research publications to his credit in different high quality impact factor journals including Nature, Atmospheric Chemistry & Physics (ACP), and Atmospheric Environment among others. He has carried out several scientific/action-oriented projects as Principal Investigator (PI) sponsored by DST, SERB, Ministry of Environment Forest & Climate Change, UGC and has been a collaborator in several international projects such as MACC (a EU project), PASODOBLE (a EU project), SMOGPROG (Ministry of Environment, Netherlands). He has been a recipient of Young Scientist medal by Society for Science of Climate Change and Sustainable Environment for exemplary work in Environment & Sustainable Development (2023), Uttarakhand Governor’s Award for 2nd best Research Publications in Science (2015-16).  He also serves as an editorial board member of the journal SN Applied Sciences, Discover Forests and Journal of Aritifical Intelligence.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Our Impact */}
       <section className="our-impact">
         <h2>
