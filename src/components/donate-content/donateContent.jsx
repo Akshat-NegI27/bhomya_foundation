@@ -4,7 +4,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./donateContent.css";
 
 gsap.registerPlugin(ScrollTrigger);
-
 const DonateContent = () => {
   const headingRef = useRef(null);
   const [amount, setAmount] = useState(50);
@@ -38,7 +37,7 @@ const DonateContent = () => {
     }
 
     const options = {
-      key: "YOUR_RAZORPAY_KEY_ID", 
+      key: "rzp_live_jgIHqxNFQK5LWX", 
       amount: finalAmount * 100,
       currency: "INR",
       name: "Bhomya Foundation",
