@@ -312,7 +312,7 @@
   }
 
   .menu-icon {
-    display: block;
+    display: flex;
     font-size: 1.8rem;
     cursor: pointer;
     color: #000;
@@ -343,8 +343,11 @@
 
   .logo {
     margin: 0;
+    height: 35px;
+
     img {
       width: 100%;
+
       margin: 0;
     }
   }
@@ -365,7 +368,4 @@
   .menu-icon {
     font-size: 1.4rem;
   }
-}
-
-@media (max-width: 768px) {
 }
