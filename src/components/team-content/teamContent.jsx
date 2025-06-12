@@ -209,7 +209,7 @@ const TeamContent = () => {
     },
     {
       name: "Himani Bhandari",
-      title: "Volunteer – AI Research",
+      title: "Health professional",
       desc: "Tech. Ethics. Impact.",
       punch: "Harnessing AI for environmental progress.",
       skills: ["Machine Learning", "AI Ethics", "Community"],
@@ -221,62 +221,89 @@ const TeamContent = () => {
         linkedin: "https://linkedin.com/in/himanibhandari",
       },
     },
+ {
+      name: "Yashica Gusain",
+      title: "Member",
+      desc: "Insightful. Analytical. Dedicated.",
+      punch: "Turning data into impact-driven decisions.",
+      skills: ["Data Analysis", "Visualization", "Problem Solving"],
+      image: "/assets/img/Yashica.jpg",
+      socials: {
+        facebook: "https://facebook.com/yashica.gusain", 
+        instagram: "https://instagram.com/yashica_gusain", 
+        twitter: "https://twitter.com/yashica_gusain", 
+        linkedin: "https://linkedin.com/in/yashica-gusain", 
+      },
+    },
+    {
+      name: "Samridhi Sharma",
+      title: "Member",
+      desc: "Creative. Precise. Efficient.",
+      punch: "Building digital solutions with purpose and precision.",
+      skills: ["Web Development", "UI/UX Design", "Responsive Design"],
+      image: "/assets/img/samridhi.jpg",
+      socials: {
+        facebook: "https://facebook.com/samridhi.sharma", 
+        instagram: "https://instagram.com/samridhi_sharma", 
+        twitter: "https://twitter.com/samridhi_sharma", 
+        linkedin: "https://linkedin.com/in/samridhi-sharma",       },
+    },
 
-    
-  {
-    name: "Akhilesh Rawat",
-    title: "Master's in Smart Building Technologies and Sustainable Management",
-    desc: "Graduate from BBW Hochschule University of Applied Sciences, Germany",
-    punch: "Driving innovation in smart and sustainable infrastructure.",
-    skills: ["Smart Building", "Sustainability", "Project Management"],
-    image: "/assets/img/akhilesh.jpg",
-    socials: {},
-  },
-  {
-    name: "Sonal Shukla",
-    title: "ESG Research Analyst",
-    desc: "Focused on environmental, social, and governance research.",
-    punch: "Promoting responsible and sustainable investing.",
-    skills: ["ESG Analysis", "Sustainability", "Reporting"],
-    image: "/assets/img/sonal.jpg",
-    socials: {},
-  },
-  {
-    name: "Satavisha Banik",
-    title: "QA Analyst",
-    desc: "Ensuring quality and reliability through rigorous testing.",
-    punch: "Striving for excellence in every software product.",
-    skills: ["Quality Assurance", "Testing", "Documentation"],
-    image: "/assets/img/Satavisha .jpg",
-    socials: {},
-  },
-  {
-    name: "Arpit Chaudhary",
-    title: "QA Analyst",
-    desc: "Detail-oriented and focused on software integrity.",
-    punch: "Precision and reliability at the heart of every release.",
-    skills: ["Manual Testing", "Automation", "Bug Tracking"],
-    image: "/assets/img/Arpit .jpg",
-    socials: {},
-  },
-  {
-    name: "Avantika Nautiyal",
-    title: "Social Worker",
-    desc: "Dedicated to community service and empowerment.",
-    punch: "Building better lives through compassion and action.",
-    skills: ["Community Outreach", "Welfare Programs", "Empowerment"],
-    image: "/assets/img/Avantika .jpg",
-    socials: {},
-  },
-  {
-    name: "Iqra Mehdi",
-    title: "Social Worker",
-    desc: "Passionate about social justice and education.",
-    punch: "Creating change through grassroots initiatives.",
-    skills: ["Education", "Women Empowerment", "Youth Engagement"],
-    image: "/assets/img/Iqra .jpg",
-    socials: {},
-  }
+
+    {
+      name: "Akhilesh Rawat",
+      title: "Master's in Smart Building Technologies and Sustainable Management",
+      desc: "Graduate from BBW Hochschule University of Applied Sciences, Germany",
+      punch: "Driving innovation in smart and sustainable infrastructure.",
+      skills: ["Smart Building", "Sustainability", "Project Management"],
+      image: "/assets/img/akhilesh.jpg",
+      socials: {},
+    },
+    {
+      name: "Sonal Shukla",
+      title: "ESG Research Analyst",
+      desc: "Focused on environmental, social, and governance research.",
+      punch: "Promoting responsible and sustainable investing.",
+      skills: ["ESG Analysis", "Sustainability", "Reporting"],
+      image: "/assets/img/sonal.jpg",
+      socials: {},
+    },
+    {
+      name: "Satavisha Banik",
+      title: "QA Analyst",
+      desc: "Ensuring quality and reliability through rigorous testing.",
+      punch: "Striving for excellence in every software product.",
+      skills: ["Quality Assurance", "Testing", "Documentation"],
+      image: "/assets/img/Satavisha .jpg",
+      socials: {},
+    },
+    {
+      name: "Arpit Chaudhary",
+      title: "QA Analyst",
+      desc: "Detail-oriented and focused on software integrity.",
+      punch: "Precision and reliability at the heart of every release.",
+      skills: ["Manual Testing", "Automation", "Bug Tracking"],
+      image: "/assets/img/Arpit .jpg",
+      socials: {},
+    },
+    {
+      name: "Avantika Nautiyal",
+      title: "Social Worker",
+      desc: "Dedicated to community service and empowerment.",
+      punch: "Building better lives through compassion and action.",
+      skills: ["Community Outreach", "Welfare Programs", "Empowerment"],
+      image: "/assets/img/Avantika .jpg",
+      socials: {},
+    },
+    {
+      name: "Iqra Mehdi",
+      title: "Social Worker",
+      desc: "Passionate about social justice and education.",
+      punch: "Creating change through grassroots initiatives.",
+      skills: ["Education", "Women Empowerment", "Youth Engagement"],
+      image: "/assets/img/Iqra .jpg",
+      socials: {},
+    }
 
   ];
   const extendedTeam = [
@@ -386,7 +413,7 @@ const TeamContent = () => {
     {
       id: "himani",
       name: "Himani Bhandari",
-      title: "Volunteer – AI Research",
+      title: "Health professional",
       image: "/assets/img/himani.jpg",
       bio: "Himani Bhandari is an emerging researcher and nursing professional focused on the use of AI, GIS, and remote sensing in ecological and climate initiatives. Her interdisciplinary knowledge allows her to blend data science with on-ground needs, helping Bhomya Foundation assess climate impacts and plan sustainable interventions. Passionate about ethics in tech and community collaboration, she bridges technology with human values in every research task she undertakes.",
       experience: [
@@ -395,6 +422,8 @@ const TeamContent = () => {
         "Published awareness blogs on responsible tech use in environmental monitoring"
       ],
     },
+
+   
 
   ];
 
@@ -451,7 +480,7 @@ const TeamContent = () => {
         ))}
       </div>
 
-      <h2 className="section-heading">Volunteer </h2>
+      <h2 className="section-heading">SUPPORT TEAM</h2>
       <div className="line"></div>
 
       <p className="section-subheading">
@@ -463,7 +492,7 @@ const TeamContent = () => {
       </div>
 
 
-      <h2 className="section-heading">Other Members</h2>
+      <h2 className="section-heading">Volunteer</h2>
       <div className="line"></div>
 
       <p className="section-subheading">

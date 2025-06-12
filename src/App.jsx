@@ -13,6 +13,7 @@ const Store = lazy(() => import("./pages/store/store"));
 const Involve = lazy(() => import("./pages/involve/involve"));
 const Donate = lazy(() => import("./pages/donate/donate"));
 const Gallery = lazy(() => import("./pages/gallery/gallery"));
+const ThankYou = lazy(() => import("./pages/thankyou/ThankYou"));
 
 const App = () => {
   const location = useLocation();
@@ -35,6 +36,8 @@ const App = () => {
           <Route path="/involve" element={<Involve />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/store" element={<Store />} />
+          <Route path="/thank-you" element={<ThankYou />} />
+
         </Routes>
       </Suspense>
     </div>

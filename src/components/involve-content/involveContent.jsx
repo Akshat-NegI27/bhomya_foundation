@@ -57,9 +57,15 @@ const InvolveContent = () => {
               involving fieldwork, research, and awareness campaigns.
             </p>
             <div className="buttons">
-              <Link className="button-underline" to="/About">
+              <a
+                className="button-underline"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdm_xrOT2QheVAz7ttbkJssOIVYcVER1dH55P6v1xg8FvfIWA/viewform?usp=sf_link "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Apply as Intern
-              </Link>
+              </a>
+
             </div>
           </div>
           <div className="involves-card">
@@ -73,9 +79,15 @@ const InvolveContent = () => {
               events, newsletters, and help shape our initiatives.
             </p>
             <div className="buttons">
-              <Link className="button-underline" to="/About">
+              <a
+                className="button-underline"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdm_xrOT2QheVAz7ttbkJssOIVYcVER1dH55P6v1xg8FvfIWA/viewform?usp=sf_link "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Join as Member
-              </Link>
+              </a>
+
             </div>
           </div>
           <div className="involves-card">
@@ -89,9 +101,15 @@ const InvolveContent = () => {
               wide-reaching environmental initiatives.
             </p>
             <div className="buttons">
-              <Link className="button-underline" to="/About">
+              <a
+                className="button-underline"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdm_xrOT2QheVAz7ttbkJssOIVYcVER1dH55P6v1xg8FvfIWA/viewform?usp=sf_link "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Become a Partner
-              </Link>
+              </a>
+
             </div>
           </div>
           <div className="involves-card">
@@ -105,9 +123,15 @@ const InvolveContent = () => {
               awareness campaigns, and event coordination.
             </p>
             <div className="buttons">
-              <Link className="button-underline" to="/About">
+              <a
+                className="button-underline"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdm_xrOT2QheVAz7ttbkJssOIVYcVER1dH55P6v1xg8FvfIWA/viewform?usp=sf_link "
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Become a Volunteer
-              </Link>
+              </a>
+
             </div>
           </div>
         </div>
@@ -138,7 +162,7 @@ const InvolveContent = () => {
                 "🧪 Environmental experiments",
                 "📝 Documentation & Campaigns",
               ],
-              btn: "Apply as Intern",
+              // btn: "Apply as Intern",
               color: "green",
               icon: "icon-intern",
             },
@@ -152,7 +176,7 @@ const InvolveContent = () => {
                 "🗳 Feedback & planning involvement",
                 "🎖 Recognition for loyalty",
               ],
-              btn: "Join as Member",
+              // btn: "Join as Member",
               color: "brown",
               icon: "icon-member",
             },
@@ -166,7 +190,7 @@ const InvolveContent = () => {
                 "📚 Educational tie-ups",
                 "🌐 Network access",
               ],
-              btn: "Become a Partner",
+              // btn: "Become a Partner",
               color: "green",
               icon: "icon-partner",
             },
@@ -180,7 +204,7 @@ const InvolveContent = () => {
                 "🎪 Event coordination",
                 "🧠 Creative contributions",
               ],
-              btn: "Become a Volunteer",
+              // btn: "Become a Volunteer",
               color: "brown",
               icon: "icon-volunteer",
             },
