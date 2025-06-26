@@ -70,6 +70,20 @@
   width: 100%;
   margin-bottom: 15px;
 }
+.photoxz {
+  display: flex;
+  flex-wrap: wrap;
+  width: 450px;
+  height: 390px;
+  overflow: hidden;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 10px;
+}
+.photoxz img {
+  width: 100%;
+  margin-bottom: 15px;
+}
 
 .about-card h3 {
   text-align: center;

@@ -56,8 +56,8 @@ const AboutContent = () => {
             </p>
           </div>
           <div className="about-card">
-            <div className="photox">
-              <img src="/assets/img/wwd2.jpg" alt="Mission" />
+            <div className="photoxz">
+              <img src="/assets/img/doon.jpg" alt="Mission" />
             </div>
             <h3>Our Mission</h3>
             <p>
@@ -143,10 +143,34 @@ const AboutContent = () => {
       <section className="mentor-highlight">
         <div className="mentor-container">
           <div className="mentor-image">
+            <img src="/assets/img/kusum.jpeg" alt="Dr. Kusum" />
+          </div>
+          <div className="mentor-text">
+                        <h2>Meet Our Mentor</h2>
+
+            <h3>Dr. Amit Kumar</h3>
+            <p>
+              Dr. Kusum Arunachalam, a distinguished scholar with over 27 years of experience, specializes in Restoration Ecology and Natural Resource Management, focusing on the Indian Himalayas. A tropical soil ecologist, she earned her Ph.D. from NEHU, India. She received the CSIR-Independent Research Associateship (1997) and DST-Young Scientist Award (1998) before joining NERIST as a Lecturer, later becoming an Assistant Professor (2007). She also served as a Senior Scientific Officer at the Uttarakhand State Council for Science & Technology (2007-2009). Currently, she is a Professor at Doon University’s School of Environment & Natural Resources, where she has also held key administrative positions, including Dean Academics, Dean of the School, Director-IQAC, and Acting Vice Chancellor. Dr. Arunachalam has led major research projects on soil ecology, wetland conservation, and ecosystem dynamics, collaborating with indigenous communities like the Jad Bhutiya, Jaunsari, Apatani, and Nishi to validate their traditional knowledge. She has completed 15 R&D projects worth ₹10 crores, funded by agencies like UGC, DST, CSIR, MoEF&CC, ICAR, GIZ, and MoES, and has contributed to national task forces on Himalayan sustainability. Recognized for her contributions, she received the National Young Woman Bioscientist Award (2005) and the BOYSCAST Fellowship (2002-03) for research in Germany. A Fellow of prestigious organizations like the International Society of Tropical Ecology and the National Environmental Science Academy, she has mentored numerous Master’s, Doctoral, and Post-Doctoral students. Through her multidisciplinary approach—integrating modern science with traditional ecological wisdom—she has significantly advanced ecological research, empowered indigenous communities, and promoted sustainable environmental practices.            </p>
+          </div>
+        </div>
+      </section>      <section className="mentor-highlight">
+        <div className="mentor-container">
+          <div className="mentor-image">
+            <img src="/assets/img/kusum.jpeg" alt="Dr. Kusum" />
+          </div>
+          <div className="mentor-text">
+            <h3>Dr. Kusum Arunachalam</h3>
+            <p>
+              Dr. Kusum Arunachalam, a distinguished scholar with over 27 years of experience, specializes in Restoration Ecology and Natural Resource Management, focusing on the Indian Himalayas. A tropical soil ecologist, she earned her Ph.D. from NEHU, India. She received the CSIR-Independent Research Associateship (1997) and DST-Young Scientist Award (1998) before joining NERIST as a Lecturer, later becoming an Assistant Professor (2007). She also served as a Senior Scientific Officer at the Uttarakhand State Council for Science & Technology (2007-2009). Currently, she is a Professor at Doon University’s School of Environment & Natural Resources, where she has also held key administrative positions, including Dean Academics, Dean of the School, Director-IQAC, and Acting Vice Chancellor. Dr. Arunachalam has led major research projects on soil ecology, wetland conservation, and ecosystem dynamics, collaborating with indigenous communities like the Jad Bhutiya, Jaunsari, Apatani, and Nishi to validate their traditional knowledge. She has completed 15 R&D projects worth ₹10 crores, funded by agencies like UGC, DST, CSIR, MoEF&CC, ICAR, GIZ, and MoES, and has contributed to national task forces on Himalayan sustainability. Recognized for her contributions, she received the National Young Woman Bioscientist Award (2005) and the BOYSCAST Fellowship (2002-03) for research in Germany. A Fellow of prestigious organizations like the International Society of Tropical Ecology and the National Environmental Science Academy, she has mentored numerous Master’s, Doctoral, and Post-Doctoral students. Through her multidisciplinary approach—integrating modern science with traditional ecological wisdom—she has significantly advanced ecological research, empowered indigenous communities, and promoted sustainable environmental practices.            </p>
+          </div>
+        </div>
+      </section>
+      <section className="mentor-highlight">
+        <div className="mentor-container">
+          <div className="mentor-image">
             <img src="/assets/img/ujjawal.jpg" alt="Dr. Ujjwal Kumar" />
           </div>
           <div className="mentor-text">
-            <h2>Meet Our Mentor</h2>
             <h3>Dr. Ujjwal Kumar</h3>
             <p>
               Dr. Ujjwal Kumar has more than 18 years of research and teaching experience in the field of Atmospheric science/Environmental Science/Atmospheric-Environmental Modelling / Statistical-Time Series modelling / machine learning analysis of environmental data. He is currently serving at School of Envrionment & Natural Resources, Doon University, India. Prior to joining Doon University, he worked as Post Doc Researcher at KNMI-Royal Netherlands Meteorological Institute, Netherlands for three and half years  mainly on operational air quality forecasting system using Chemical Transport Models with data assimilation of surface/satellite observations. Prior to this, he also worked for two years at VITO-Flemish Institute for Technological Research, Belgium on data assimilation of chemical transport model AURORA. He has more than 40 research publications to his credit in different high quality impact factor journals including Nature, Atmospheric Chemistry & Physics (ACP), and Atmospheric Environment among others. He has carried out several scientific/action-oriented projects as Principal Investigator (PI) sponsored by DST, SERB, Ministry of Environment Forest & Climate Change, UGC and has been a collaborator in several international projects such as MACC (a EU project), PASODOBLE (a EU project), SMOGPROG (Ministry of Environment, Netherlands). He has been a recipient of Young Scientist medal by Society for Science of Climate Change and Sustainable Environment for exemplary work in Environment & Sustainable Development (2023), Uttarakhand Governor’s Award for 2nd best Research Publications in Science (2015-16).  He also serves as an editorial board member of the journal SN Applied Sciences, Discover Forests and Journal of Aritifical Intelligence.
@@ -154,6 +178,7 @@ const AboutContent = () => {
           </div>
         </div>
       </section>
+
 
       {/* Our Impact */}
       <section className="our-impact">
