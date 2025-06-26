@@ -419,7 +419,7 @@ const TeamContent = () => {
       name: "Jagdamba Bhatt",
       title: "Cultural & Medicinal Plant Coordinator",
       image: "/assets/img/bhatt.jpg",
-      bio: "Jagdamba Bhatt is a dedicated guardian of traditional knowledge and serves as the Cultural & Medicinal Plant Coordinator at Bhomya Foundation. With a deep-rooted understanding of local heritage, she works to preserve and promote the use of indigenous medicinal plants and cultural practices. Her work bridges ancient wisdom with modern environmental awareness, ensuring that community-led conservation includes both ecological and cultural dimensions.",
+      bio: "Jagdamba Bhatt is a dedicated guardian of traditional knowledge and serves as the Cultural & Medicinal Plant Coordinator at Bhomya Foundation. With a deep-rooted understanding of local heritage, she works to preserve and promote the use of indigenous medicinal plants and cultural practices. His work bridges ancient wisdom with modern environmental awareness, ensuring that community-led conservation includes both ecological and cultural dimensions.",
       experience: [
         "Documented over 50 native medicinal plant species used in traditional healing practices",
         "Led cultural heritage workshops involving elders and school children in 8 rural communities",
