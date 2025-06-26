@@ -304,9 +304,9 @@ const HomeContent = () => {
           <div className="sec3-video">
             <iframe
               ref={asd}
-              width="2200"
+              width="1000"
               height="600"
-              src="https://www.youtube.com/embed/ECHrDbdYPXo?autoplay=1&controls=0&loop=1&playlist=ECHrDbdYPXo&mute=1"
+              src="https://www.youtube.com/embed/8Ca5PIxaohY?autoplay=1&controls=0&loop=1&mute=1"
               title="Eco Partnership"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
