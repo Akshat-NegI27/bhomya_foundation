@@ -12,23 +12,27 @@
             font-size: 2.5rem;
         }
     }
-.about-card {
-    max-width: 380px;
-}
-.our-impact
-{
-    padding: 10px 16px;
-}
-.photox img {
+
+    .about-card {
+        max-width: 380px;
+    }
+
+    .our-impact {
+        padding: 10px 16px;
+    }
+
+    .photox img {
         width: 100%;
         height: auto;
     }
+
     .impact-stats {
         display: none;
     }
 
     .achievements-section {
         padding: 16px 16px;
+
         h2 {
             font-size: 2.5rem;
         }
@@ -73,6 +77,6 @@
             max-width: 380px;
         }
     }
-   
+
 
 }

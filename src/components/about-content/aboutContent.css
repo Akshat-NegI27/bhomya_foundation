@@ -120,6 +120,26 @@
     max-width: 800px;
     margin: 0 auto 50px;
   }
+}.what-we-doo {
+  padding: 0px 8px 10px;
+  text-align: center;
+  h2 {
+    color: #047857;
+    font-size: 3.5rem;
+    /* margin-top: 40px; */
+    font-family: inter-n8;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  .description {
+    font-size: 1rem;
+    color: #4b5563;
+    /* margin-bottom: 50px; */
+    font-family: Poppins;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 0 auto 50px;
+  }
 }
 .programs-grid {
   display: flex;
