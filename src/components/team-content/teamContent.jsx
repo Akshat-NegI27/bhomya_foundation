@@ -130,6 +130,20 @@ const TeamContent = () => {
         linkedin: "https://linkedin.com/in/jameswilson",
       },
     },
+        {
+      name: "Aditi Pant",
+      title: "Treasurer",
+      desc: "Finance. Strategy. Growth.",
+      punch: "Empowering communities through financial stewardship.",
+      skills: ["Financial Management", "Budgeting", "Resource Allocation"],
+      image: "/assets/img/aditi.jpg",
+      socials: {
+        facebook: "https://facebook.com/jessicabrown",
+        instagram: "https://www.instagram.com/aditi_pant_2004?igsh=MWlocDJlOWltYXA1Mw==",
+        twitter: "https://twitter.com/jessicabrown",
+        linkedin: "https://linkedin.com/in/jessicabrown",
+      },
+    },
     {
       name: "Sipu",
       title: "Joint Secretary",
@@ -144,6 +158,7 @@ const TeamContent = () => {
         linkedin: "https://linkedin.com/in/davidrodriguez",
       },
     },
+
     {
       name: "Gautam Kumar",
       title: "Deputy Secretary",
@@ -159,54 +174,28 @@ const TeamContent = () => {
       },
     },
     {
-      name: "Dr. Naveen Chandra",
-      title: "Research & Development Team Lead",
-      desc: "Innovation. Insight. Impact.",
-      punch: "Driving environmental solutions through science and research excellence.",
-      skills: ["Ecological Research", "Project Design", "Data Analysis"],
-      image: "/assets/img/naveen.jpg",
+      name: "Samridhi Sharma",
+      title: "Member",
+      desc: "Creative. Precise. Efficient.",
+      punch: "Building digital solutions with purpose and precision.",
+      skills: ["Web Development", "UI/UX Design", "Responsive Design"],
+      image: "/assets/img/samridhi.jpg",
       socials: {
-        facebook: "https://facebook.com/naveen.bhomya",
-        instagram: "https://instagram.com/naveen.bhomya",
-        twitter: "https://twitter.com/naveen_bhomya",
-        linkedin: "https://linkedin.com/in/naveen-bhomya",
+        facebook: "https://facebook.com/samridhi.sharma",
+        instagram: "https://instagram.com/samridhi_sharma",
+        twitter: "https://twitter.com/samridhi_sharma",
+        linkedin: "https://linkedin.com/in/samridhi-sharma",
       },
     },
-    {
-      name: "Jagdamba Bhatt",
-      title: "Cultural & Medicinal Plant Coordinator",
-      desc: "Tradition. Healing. Conservation.",
-      punch: "Preserving cultural heritage through the wisdom of native plants.",
-      skills: ["Ethnobotany", "Cultural Preservation", "Community Education"],
-      image: "/assets/img/bhatt.jpg",
-      socials: {
-        facebook: "https://facebook.com/jagdamba.bhomya",
-        instagram: "https://instagram.com/jagdamba.bhomya",
-        twitter: "https://twitter.com/jagdamba_bhomya",
-        linkedin: "https://linkedin.com/in/jagdamba-bhomya",
-      },
-    }
+
+
+
     ,
 
 
   ];
 
-
-  const otherTeam = [
-    {
-      name: "Pratiksha",
-      title: "Strategist",
-      desc: "Ideas. Execution. Outreach.",
-      punch: "Crafting impactful journeys through design thinking.",
-      skills: ["Campaign Strategy", "User Research", "Engagement"],
-      image: "/assets/img/strategist.jpg",
-      socials: {
-        facebook: "https://facebook.com/emilydavis",
-        instagram: "https://www.instagram.com/pratiksha.panwar_2k4?igsh=MWlocDJlOWltYXA1Mw==",
-        twitter: "https://twitter.com/emilydavis",
-        linkedin: "https://linkedin.com/in/emilydavis",
-      },
-    },
+  const volunteer = [
     {
       name: "Himani Bhandari",
       title: "Health professional",
@@ -221,7 +210,7 @@ const TeamContent = () => {
         linkedin: "https://linkedin.com/in/himanibhandari",
       },
     },
- {
+    {
       name: "Yashica Gusain",
       title: "Member",
       desc: "Insightful. Analytical. Dedicated.",
@@ -229,28 +218,12 @@ const TeamContent = () => {
       skills: ["Data Analysis", "Visualization", "Problem Solving"],
       image: "/assets/img/Yashica.jpg",
       socials: {
-        facebook: "https://facebook.com/yashica.gusain", 
-        instagram: "https://instagram.com/yashica_gusain", 
-        twitter: "https://twitter.com/yashica_gusain", 
-        linkedin: "https://linkedin.com/in/yashica-gusain", 
+        facebook: "https://facebook.com/yashica.gusain",
+        instagram: "https://instagram.com/yashica_gusain",
+        twitter: "https://twitter.com/yashica_gusain",
+        linkedin: "https://linkedin.com/in/yashica-gusain",
       },
-    },
-    {
-      name: "Samridhi Sharma",
-      title: "Member",
-      desc: "Creative. Precise. Efficient.",
-      punch: "Building digital solutions with purpose and precision.",
-      skills: ["Web Development", "UI/UX Design", "Responsive Design"],
-      image: "/assets/img/samridhi.jpg",
-      socials: {
-        facebook: "https://facebook.com/samridhi.sharma", 
-        instagram: "https://instagram.com/samridhi_sharma", 
-        twitter: "https://twitter.com/samridhi_sharma", 
-        linkedin: "https://linkedin.com/in/samridhi-sharma",       },
-    },
-
-
-    {
+    }, {
       name: "Akhilesh Rawat",
       title: "Master's in Smart Building Technologies and Sustainable Management",
       desc: "Graduate from BBW Hochschule University of Applied Sciences, Germany",
@@ -305,13 +278,60 @@ const TeamContent = () => {
       socials: {},
     }
 
+  ]
+
+  const otherTeam = [
+
+
+
+
+    {
+      name: "Dr. Naveen Chandra",
+      title: "Research & Development Team Lead",
+      desc: "Innovation. Insight. Impact.",
+      punch: "Driving environmental solutions through science and research excellence.",
+      skills: ["Ecological Research", "Project Design", "Data Analysis"],
+      image: "/assets/img/naveen.jpg",
+      socials: {
+        facebook: "https://facebook.com/naveen.bhomya",
+        instagram: "https://instagram.com/naveen.bhomya",
+        twitter: "https://twitter.com/naveen_bhomya",
+        linkedin: "https://linkedin.com/in/naveen-bhomya",
+      },
+    },
+    {
+      name: "Jagdamba Bhatt",
+      title: "Cultural & Medicinal Plant Coordinator",
+      desc: "Tradition. Healing. Conservation.",
+      punch: "Preserving cultural heritage through the wisdom of native plants.",
+      skills: ["Ethnobotany", "Cultural Preservation", "Community Education"],
+      image: "/assets/img/bhatt.jpg",
+      socials: {
+        facebook: "https://facebook.com/jagdamba.bhomya",
+        instagram: "https://instagram.com/jagdamba.bhomya",
+        twitter: "https://twitter.com/jagdamba_bhomya",
+        linkedin: "https://linkedin.com/in/jagdamba-bhomya",
+      },
+    },
+    {
+      name: "Pratiksha",
+      title: "Strategist",
+      desc: "Ideas. Execution. Outreach.",
+      punch: "Crafting impactful journeys through design thinking.",
+      skills: ["Campaign Strategy", "User Research", "Engagement"],
+      image: "/assets/img/strategist.jpg",
+      socials: {
+        facebook: "https://facebook.com/emilydavis",
+        instagram: "https://www.instagram.com/pratiksha.panwar_2k4?igsh=MWlocDJlOWltYXA1Mw==",
+        twitter: "https://twitter.com/emilydavis",
+        linkedin: "https://linkedin.com/in/emilydavis",
+      },
+    },
+
+
+
   ];
   const extendedTeam = [
-    "Aditi Pant – Treasurer",
-    "Samriddhi Sharma – Spokesperson and Member",
-    "Sonal Shukla – Uttar Pradesh Team Lead",
-    "Ashok – Jammu & Kashmir Team Lead  ",
-    "Dr. Naveen Chandra – Subject Expert ",
     "Shivam Kishwan – Field Research Expert",
     "Vipin Rao – Senior Technical Associate ",
     "Sarabjeet Kaur – Subject Expert  ",
@@ -357,6 +377,18 @@ const TeamContent = () => {
       ],
     },
     {
+      id: "aditi",
+      name: "Aditi",
+      title: "Treasurer",
+      image: "/assets/img/aditi.jpg",
+      bio: "Aditi holds a Master’s degree in Environmental Management and is dedicated to promoting sustainable practices within communities. As the Treasurer of Bhomya Foundation, she manages financial resources while ensuring that environmental initiatives receive the necessary funding. Aditi is passionate about empowering local communities through education and resource management, believing that financial sustainability is key to long-term environmental conservation.",
+      experience: [
+        "Managed financial planning for over 15 community-based environmental projects",
+        "Developed funding proposals that secured grants for river conservation efforts",
+        "Implemented transparent financial reporting systems to enhance donor trust"
+      ],
+    }
+    , {
       id: "gautam",
       name: "Gautam Kumar",
       title: "Deputy Secretary",
@@ -423,7 +455,7 @@ const TeamContent = () => {
       ],
     },
 
-   
+
 
   ];
 
@@ -480,7 +512,7 @@ const TeamContent = () => {
         ))}
       </div>
 
-      <h2 className="section-heading">SUPPORT TEAM</h2>
+      <h2 className="section-heading"> OPERATIONAL SUPPORT TEAM</h2>
       <div className="line"></div>
 
       <p className="section-subheading">
@@ -496,8 +528,14 @@ const TeamContent = () => {
       <div className="line"></div>
 
       <p className="section-subheading">
-        The talented individuals who make it all possible
-      </p>
+        The other team members       </p>
+      <div className="other-team-grid">
+        {volunteer.map((member, i) => (
+          <TeamCard key={i} {...member} />
+        ))}
+      </div>
+      <p className="section-subheading">
+        SUBJECT EXPERT      </p>
 
       <div className="extended-wrapper">
         <div className="extended-grid">
