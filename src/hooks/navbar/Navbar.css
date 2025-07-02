@@ -343,11 +343,11 @@
 
   .logo {
     margin: 0;
+    width: fit-content;
     height: 35px;
 
     img {
       width: 100%;
-
       margin: 0;
     }
   }
