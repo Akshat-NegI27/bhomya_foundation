@@ -104,45 +104,7 @@
   }
 }
 
-@media (max-width: 1023px) {
-  .loader-container {
-    .loader-text,
-    .loader-quote {
-      font-size: 1rem;
-      letter-spacing: 5px;
-    }
-  }
-}
-
-@media (max-width: 768px) {
-  .loader-container {
-    .loader-text,
-    .loader-quote {
-      font-size: 1rem;
-      letter-spacing: 3px;
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .loader-container {
-    .loader-text,
-    .loader-quote {
-      font-size: 1rem;
-      letter-spacing: 2px;
-    }
-  }
-}
-
-@media (max-width: 320px) {
-  .loader-container {
-    .loader-text,
-    .loader-quote {
-      font-size: 0.8rem;
-      letter-spacing: 1px;
-    }
-  }
-} */
+*/
 
 .preloader {
   height: 100vh;
@@ -176,25 +138,49 @@
     color: #236724 !important;
   }
 }
-
-@media only screen and (max-width: 800px) {
-
-  /* -------------Preloader-------------- */
+/* Preloader for screens smaller than 800px */
+@media (max-width: 800px) {
   .preloader {
     height: 200vh;
     height: calc(var(--vh, 1vh) * 200);
     width: 100%;
+  }
 
-    .texts-container {
-      position: relative;
-      top: 25%;
-
-      font-size: 22px;
-      height: fit-content;
-      width: fit-content;
-      letter-spacing: 0.2em;
-    }
+  .preloader .texts-container {
+    position: relative;
+    top: 25%;
+    font-size: 14px;
+    height: fit-content;
+    width: fit-content;
+    letter-spacing: 0.2em;
   }
 }
 
+/* Adjustments for different screen sizes */
+@media (max-width: 1023px) {
+  .texts-container {
+    font-size: 1rem;
+    letter-spacing: 5px;
+  }
+}
 
+@media (max-width: 768px) {
+  .texts-container {
+    font-size: 1rem;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .texts-container {
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 320px) {
+  .texts-container {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+}
