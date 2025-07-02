@@ -1,82 +1,113 @@
 @media only screen and (max-width: 767px) {
-    .photox {
-        width: 350px;
+  .photox {
+    width: 100%;
+  }
+  .photoxz {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-card {
+    margin-top: 10px !important;
+    overflow: hidden;
+  }
+
+  .what-we-do {
+    padding: 0;
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+  .program-card {
+    width: 100%;
+    max-width: fit-content;
+  }
+  .about-card {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .our-impact {
+    padding: 10px 16px;
+  }
+
+  .photox img {
+    width: 100%;
+    height: auto;
+  }
+
+  .impact-stats {
+    display: none;
+  }
+
+  .achievements-section {
+    padding: 16px 16px;
+
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .timeline-line {
+    display: none;
+  }
+
+  .timeline-item {
+    margin: 0;
+  }
+
+  .achievements-section {
+    .description {
+      margin: 0;
+    }
+  }
+
+  .future-vision {
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .future-vision {
+    .vision-flex {
+      flex-direction: column;
+      align-items: center;
+      max-width: 380px;
     }
 
-    .about-card {
-        margin-top: 10px;
+    .vision-list {
+      align-items: center;
     }
+  }
 
-    .what-we-do {
-        h2 {
-            font-size: 2.5rem;
-        }
+  .future-vision {
+    .commitment-box {
+      max-width: 380px;
     }
-
-    .about-card {
-        max-width: 380px;
+  }
+  .mentor-container {
+    gap: 0;
+  }
+  .mentor-highlight {
+    padding: 0;
+  }
+  .mentor-image {
+    width: 100%;
+    height: auto;
+    img {
+      width: 100%;
+      height: auto;
     }
+  }
+  .mentor-text {
+    padding: 30px 0px;
+  }
+}
 
-    .our-impact {
-        padding: 10px 16px;
+@media only screen and (max-width: 500px) {
+  .headd {
+    h2 {
+      font-size: 2.5rem;
     }
-
-    .photox img {
-        width: 100%;
-        height: auto;
-    }
-
-    .impact-stats {
-        display: none;
-    }
-
-    .achievements-section {
-        padding: 16px 16px;
-
-        h2 {
-            font-size: 2.5rem;
-        }
-    }
-
-    .timeline-line {
-        display: none;
-
-    }
-
-    .timeline-item {
-        margin: 0;
-    }
-
-    .achievements-section {
-        .description {
-            margin: 0;
-        }
-    }
-
-    .future-vision {
-        h2 {
-            font-size: 2.5rem;
-        }
-    }
-
-    .future-vision {
-        .vision-flex {
-            flex-direction: column;
-            align-items: center;
-            max-width: 380px;
-        }
-
-        .vision-list {
-            align-items: center;
-        }
-    }
-
-
-    .future-vision {
-        .commitment-box {
-            max-width: 380px;
-        }
-    }
-
-
+  }
 }

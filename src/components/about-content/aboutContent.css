@@ -1,12 +1,14 @@
 .about-wrapper {
   font-family: "Poppins", sans-serif;
   color: #333;
-  width: 100%;
+  width: 90%;
+  overflow: hidden;
+  margin: auto;
 }
 
 /* General Section Style */
 .about-us {
-  padding: 30px 16px 40px;
+  /* padding: 30px 16px 40px; */
   text-align: center;
 }
 
@@ -120,7 +122,8 @@
     max-width: 800px;
     margin: 0 auto 50px;
   }
-}.what-we-doo {
+}
+.what-we-doo {
   padding: 0px 8px 10px;
   text-align: center;
   h2 {
@@ -563,7 +566,7 @@
   width: 350px;
   max-width: 100%;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .mentor-text {
