@@ -130,7 +130,7 @@ const Footer = () => {
             </div>
             <div className="tou">
               <a href="/assets/docs/Terms and condition.pdf" target="_blank"> Terms of Use</a>
-              <a href="/assets/docs/Privacy and policy.pdf" target="_blank">Privacy Policy</a>
+              <a href="https://www.termsfeed.com/live/80c1e13b-ffc8-45ac-a415-eb1249e4bbde" target="_blank">Privacy Policy</a>
             </div>
           </div>
         </div>
