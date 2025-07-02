@@ -129,8 +129,8 @@ const Footer = () => {
               <span>2025 BHOMYA FOUNDATION</span>
             </div>
             <div className="tou">
-              <a href="#">Terms of Use</a>
-              <a href="#">Privacy Policy</a>
+              <a href="/assets/docs/Terms and condition.pdf" target="_blank"> Terms of Use</a>
+              <a href="/assets/docs/Privacy and policy.pdf" target="_blank">Privacy Policy</a>
             </div>
           </div>
         </div>
