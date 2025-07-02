@@ -26,10 +26,10 @@ const Footer = () => {
               </p>
             </div>
             <div className="social_media">
-              <a href="https://www.facebook.com/mhveducation/">
+              <a href="https://www.facebook.com/bhomyafoundation?rdid=CokX0Z14XaXalu0r&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19FkrDEpZF%2F#">
                 <box-icon type="logo" name="facebook" size="md"></box-icon>
               </a>
-              <a href="https://www.instagram.com/mhveducation/">
+              <a href="https://www.instagram.com/bhomya_foundation/">
                 <box-icon type="logo" name="instagram" size="md"></box-icon>
               </a>
               <a href="https://www.linkedin.com/in/bhomya-foundation/">
@@ -47,7 +47,7 @@ const Footer = () => {
                 <li className="service_name">GET INVOLVE</li>
                 <li>
                   <a
-                    href="/assets/courses/Beginner_Technical_Analysis_Course_Syllabus.pdf"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdm_xrOT2QheVAz7ttbkJssOIVYcVER1dH55P6v1xg8FvfIWA/viewform?usp=sf_link "
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -56,7 +56,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="/assets/courses/Advanced_Technical_Analysis_Course_Syllabus.pdf"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdm_xrOT2QheVAz7ttbkJssOIVYcVER1dH55P6v1xg8FvfIWA/viewform?usp=sf_link "
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -65,7 +65,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="/assets/courses/Intraday_Strategy_Course_Syllabus.pdf"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdm_xrOT2QheVAz7ttbkJssOIVYcVER1dH55P6v1xg8FvfIWA/viewform?usp=sf_link "
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -74,7 +74,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="/assets/courses/Elliott_Wave_Program_Syllabus.pdf"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdm_xrOT2QheVAz7ttbkJssOIVYcVER1dH55P6v1xg8FvfIWA/viewform?usp=sf_link "
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -83,7 +83,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="/assets/courses/Chartered_Market_Technician_CMT_Syllabus.pdf"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdm_xrOT2QheVAz7ttbkJssOIVYcVER1dH55P6v1xg8FvfIWA/viewform?usp=sf_link "
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -96,7 +96,7 @@ const Footer = () => {
               <li className="service_name">Resources</li>
               <li>
                 <a
-                  href="https://medium.com/@mhveducation"
+                  href="https://bhomya.org"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -129,8 +129,8 @@ const Footer = () => {
               <span>2025 BHOMYA FOUNDATION</span>
             </div>
             <div className="tou">
-              <a href="#">Terms of Use</a>
-              <a href="#">Privacy Policy</a>
+              <a href="/assets/docs/Terms and condition.pdf" target="_blank"> Terms of Use</a>
+              <a href="/assets/docs/Privacy and policy.pdf" target="_blank">Privacy Policy</a>
             </div>
           </div>
         </div>
