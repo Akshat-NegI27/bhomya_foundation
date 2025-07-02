@@ -61,6 +61,16 @@ const TeamCard = ({ name, title, desc, skills, image, socials }) => (
   </div>
 );
 
+const TeamCardVolunteer = ({ name, title, desc, skills, image, socials }) => (
+  <div className="team-card-volunteer">
+    <div className="team-image">{image && <img src={image} alt={name} />}</div>
+
+    <div className="team-info-volunteer">
+      <h3>{name}</h3>
+    </div>
+  </div>
+);
+
 const TeamContent = () => {
   const headingRef = useRef(null);
   const asd = useRef(null);
@@ -93,9 +103,11 @@ const TeamContent = () => {
     image: "/assets/img/himanshu.jpg",
     socials: {
       facebook: "https://www.facebook.com/share/16jArF78XT/ ",
-      instagram: "https://www.instagram.com/sahu_sarkar09?igsh=bG1ya3BoZnZtcWFo",
+      instagram:
+        "https://www.instagram.com/sahu_sarkar09?igsh=bG1ya3BoZnZtcWFo",
       // twitter: "https://twitter.com/sarahjohnson",
-      linkedin: "https://www.linkedin.com/in/himanshu-sahu-7329961a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin:
+        "https://www.linkedin.com/in/himanshu-sahu-7329961a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     },
   };
 
@@ -115,7 +127,6 @@ const TeamContent = () => {
       },
     },
 
-
     {
       name: "Pooja Purohit",
       title: "Secretary",
@@ -125,12 +136,13 @@ const TeamContent = () => {
       image: "/assets/img/pooja.jpg",
       socials: {
         facebook: "https://facebook.com/jameswilson",
-        instagram: "https://www.instagram.com/poojapurohit1?utm_source=qr&igsh=aHJnNTU3MHR5d2sw",
+        instagram:
+          "https://www.instagram.com/poojapurohit1?utm_source=qr&igsh=aHJnNTU3MHR5d2sw",
         twitter: "https://twitter.com/jameswilson",
         linkedin: "https://linkedin.com/in/jameswilson",
       },
     },
-        {
+    {
       name: "Aditi Pant",
       title: "Treasurer",
       desc: "Finance. Strategy. Growth.",
@@ -139,7 +151,8 @@ const TeamContent = () => {
       image: "/assets/img/aditi.jpg",
       socials: {
         facebook: "https://facebook.com/jessicabrown",
-        instagram: "https://www.instagram.com/aditi_pant_2004?igsh=MWlocDJlOWltYXA1Mw==",
+        instagram:
+          "https://www.instagram.com/aditi_pant_2004?igsh=MWlocDJlOWltYXA1Mw==",
         twitter: "https://twitter.com/jessicabrown",
         linkedin: "https://linkedin.com/in/jessicabrown",
       },
@@ -168,7 +181,8 @@ const TeamContent = () => {
       image: "/assets/img/deputy_secretary.jpg",
       socials: {
         facebook: "https://facebook.com/gautam.bhomya",
-        instagram: "https://www.instagram.com/gautam___uk?igsh=cWx4aXVuaDVlMWFu",
+        instagram:
+          "https://www.instagram.com/gautam___uk?igsh=cWx4aXVuaDVlMWFu",
         twitter: "https://twitter.com/gautam_bhomya",
         linkedin: "https://linkedin.com/in/gautam-bhomya",
       },
@@ -188,11 +202,7 @@ const TeamContent = () => {
       },
     },
 
-
-
     ,
-
-
   ];
 
   const volunteer = [
@@ -223,9 +233,11 @@ const TeamContent = () => {
         twitter: "https://twitter.com/yashica_gusain",
         linkedin: "https://linkedin.com/in/yashica-gusain",
       },
-    }, {
+    },
+    {
       name: "Akhilesh Rawat",
-      title: "Master's in Smart Building Technologies and Sustainable Management",
+      title:
+        "Master's in Smart Building Technologies and Sustainable Management",
       desc: "Graduate from BBW Hochschule University of Applied Sciences, Germany",
       punch: "Driving innovation in smart and sustainable infrastructure.",
       skills: ["Smart Building", "Sustainability", "Project Management"],
@@ -276,20 +288,16 @@ const TeamContent = () => {
       skills: ["Education", "Women Empowerment", "Youth Engagement"],
       image: "/assets/img/Iqra .jpg",
       socials: {},
-    }
-
-  ]
+    },
+  ];
 
   const otherTeam = [
-
-
-
-
     {
       name: "Dr. Naveen Chandra",
       title: "Research & Development Team Lead",
       desc: "Innovation. Insight. Impact.",
-      punch: "Driving environmental solutions through science and research excellence.",
+      punch:
+        "Driving environmental solutions through science and research excellence.",
       skills: ["Ecological Research", "Project Design", "Data Analysis"],
       image: "/assets/img/naveen.jpg",
       socials: {
@@ -303,7 +311,8 @@ const TeamContent = () => {
       name: "Jagdamba Bhatt",
       title: "Cultural & Medicinal Plant Coordinator",
       desc: "Tradition. Healing. Conservation.",
-      punch: "Preserving cultural heritage through the wisdom of native plants.",
+      punch:
+        "Preserving cultural heritage through the wisdom of native plants.",
       skills: ["Ethnobotany", "Cultural Preservation", "Community Education"],
       image: "/assets/img/bhatt.jpg",
       socials: {
@@ -322,21 +331,18 @@ const TeamContent = () => {
       image: "/assets/img/strategist.jpg",
       socials: {
         facebook: "https://facebook.com/emilydavis",
-        instagram: "https://www.instagram.com/pratiksha.panwar_2k4?igsh=MWlocDJlOWltYXA1Mw==",
+        instagram:
+          "https://www.instagram.com/pratiksha.panwar_2k4?igsh=MWlocDJlOWltYXA1Mw==",
         twitter: "https://twitter.com/emilydavis",
         linkedin: "https://linkedin.com/in/emilydavis",
       },
     },
-
-
-
   ];
   const extendedTeam = [
     "Shivam Kishwan – Field Research Expert",
     "Vipin Rao – Senior Technical Associate ",
     "Sarabjeet Kaur – Subject Expert  ",
     "Rounak Patra – Subject Expert",
-
   ];
 
   const detailedTeam = [
@@ -349,7 +355,7 @@ const TeamContent = () => {
       experience: [
         "Oversaw the launch of a region-wide afforestation campaign impacting 10,000+ trees",
         "Built partnerships with local governance bodies for sanitation and water conservation projects",
-        "Mentored youth leaders and volunteers in leadership development programs"
+        "Mentored youth leaders and volunteers in leadership development programs",
       ],
     },
     {
@@ -361,7 +367,7 @@ const TeamContent = () => {
       experience: [
         "Leads river ecosystem awareness programs in rural and urban settlements",
         "Coordinated water quality monitoring initiatives in the Himalayan region",
-        "Plays a central role in community mobilization for river cleanup campaigns"
+        "Plays a central role in community mobilization for river cleanup campaigns",
       ],
     },
     {
@@ -373,7 +379,7 @@ const TeamContent = () => {
       experience: [
         "Published field notes on migratory bird diversity in northern India",
         "Led a local habitat restoration program across 3 forest edge villages",
-        "Developed ecological education toolkits for school-level biodiversity clubs"
+        "Developed ecological education toolkits for school-level biodiversity clubs",
       ],
     },
     {
@@ -385,10 +391,10 @@ const TeamContent = () => {
       experience: [
         "Managed financial planning for over 15 community-based environmental projects",
         "Developed funding proposals that secured grants for river conservation efforts",
-        "Implemented transparent financial reporting systems to enhance donor trust"
+        "Implemented transparent financial reporting systems to enhance donor trust",
       ],
-    }
-    , {
+    },
+    {
       id: "gautam",
       name: "Gautam Kumar",
       title: "Deputy Secretary",
@@ -397,10 +403,9 @@ const TeamContent = () => {
       experience: [
         "Facilitated over 20 grassroots awareness campaigns on waste management and eco-conscious living",
         "Coordinated community dialogues that led to sustainable water usage practices in 5 rural settlements",
-        "Built partnerships with local institutions to drive village-level sustainability projects"
+        "Built partnerships with local institutions to drive village-level sustainability projects",
       ],
-    }
-    ,
+    },
     {
       id: "naveen",
       name: "Dr. Naveen Chandra",
@@ -410,10 +415,9 @@ const TeamContent = () => {
       experience: [
         "Directed multi-year ecological research projects across North India",
         "Published studies on biodiversity conservation and climate resilience",
-        "Mentors young researchers and coordinates field-based R&D programs"
+        "Mentors young researchers and coordinates field-based R&D programs",
       ],
-    }
-    ,
+    },
     {
       id: "jagdamba",
       name: "Jagdamba Bhatt",
@@ -423,10 +427,9 @@ const TeamContent = () => {
       experience: [
         "Documented over 50 native medicinal plant species used in traditional healing practices",
         "Led cultural heritage workshops involving elders and school children in 8 rural communities",
-        "Developed community gardens focused on cultivating and conserving local medicinal flora"
+        "Developed community gardens focused on cultivating and conserving local medicinal flora",
       ],
-    }
-    ,
+    },
     {
       id: "pratiksha",
       name: "Pratiksha Panwar",
@@ -436,27 +439,9 @@ const TeamContent = () => {
       experience: [
         "Led a menstrual hygiene awareness drive reaching 1,200+ adolescent girls",
         "Designed a youth volunteer program now active across 15 educational institutions",
-        "Organized first-aid and primary care workshops during field campaigns"
+        "Organized first-aid and primary care workshops during field campaigns",
       ],
     },
-
-
-
-    {
-      id: "himani",
-      name: "Himani Bhandari",
-      title: "Health professional",
-      image: "/assets/img/himani.jpg",
-      bio: "Himani Bhandari is an emerging researcher and nursing professional focused on the use of AI, GIS, and remote sensing in ecological and climate initiatives. Her interdisciplinary knowledge allows her to blend data science with on-ground needs, helping Bhomya Foundation assess climate impacts and plan sustainable interventions. Passionate about ethics in tech and community collaboration, she bridges technology with human values in every research task she undertakes.",
-      experience: [
-        "Co-developed GIS maps for carbon emission tracking in rural zones",
-        "Contributed to AI models predicting soil degradation patterns",
-        "Published awareness blogs on responsible tech use in environmental monitoring"
-      ],
-    },
-
-
-
   ];
 
   return (
@@ -515,28 +500,24 @@ const TeamContent = () => {
       <h2 className="section-heading"> OPERATIONAL SUPPORT TEAM</h2>
       <div className="line"></div>
 
-      <p className="section-subheading">
-        The other team members       </p>
+      <p className="section-subheading">The other team members </p>
       <div className="other-team-grid">
         {otherTeam.map((member, i) => (
           <TeamCard key={i} {...member} />
         ))}
       </div>
 
-
       <h2 className="section-heading">Volunteer</h2>
       <div className="line"></div>
-
-      <p className="section-subheading">
-        The other team members       </p>
+      <p className="section-subheading">The other team members </p>
       <div className="other-team-grid">
         {volunteer.map((member, i) => (
-          <TeamCard key={i} {...member} />
+          <TeamCardVolunteer key={i} {...member} />
         ))}
       </div>
-      <p className="section-subheading">
-        SUBJECT EXPERT      </p>
 
+      <p className="section-heading">SUBJECT EXPERT</p>
+      <div className="line"></div>
       <div className="extended-wrapper">
         <div className="extended-grid">
           {extendedTeam.map((member, index) => (
@@ -546,7 +527,9 @@ const TeamContent = () => {
           ))}
         </div>
       </div>
+
       <h2 className="section-heading">Team Member Highlights</h2>
+      <div className="line"></div>
       <p className="section-subheading">
         Learn more about our amazing team members
       </p>
