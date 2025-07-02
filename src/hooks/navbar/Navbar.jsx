@@ -31,10 +31,8 @@ const Navbar = () => {
   return (
     <>
       <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
-        <div className="logo-container">
-          <div className="logo">
-            <img src={brandlogo} alt="BlockChat Logo" className="logos" />
-          </div>
+        <div className="logo">
+          <img src={brandlogo} alt="BlockChat Logo" className="logos" />
         </div>
 
         <div className={`navbar-links ${menuOpen ? "open" : ""}`}>

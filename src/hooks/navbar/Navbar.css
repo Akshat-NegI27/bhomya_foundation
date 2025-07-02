@@ -65,12 +65,12 @@
 .logo {
   display: flex;
   align-items: center;
+  width: auto;
   height: 50px;
   margin-left: 90px;
   img {
     height: 100%;
     width: 100%;
-
     transition: height 0.3s ease-in-out;
   }
 }
