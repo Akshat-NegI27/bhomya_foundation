@@ -194,7 +194,7 @@ const AboutContent = () => {
           </div>
           <div className="mentor-text">
             <h3>Prof. Kusum Arunachalam</h3>
-            <h3>SENR, Doon <University></University></h3>
+            <h3>SENR, Doon University</h3>
             <p>
               Prof. Kusum Arunachalam, a distinguished scholar with over 27 years
               of experience, specializes in Restoration Ecology and Natural
