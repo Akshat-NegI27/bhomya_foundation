@@ -339,10 +339,10 @@ const TeamContent = () => {
     },
   ];
   const extendedTeam = [
-    "Shivam Kishwan – Field Research Expert",
-    "Vipin Rao – Senior Technical Associate ",
-    "Sarabjeet Kaur – Subject Expert  ",
-    "Rounak Patra – Subject Expert",
+    "Shivam Kishwan",
+    "Vipin Rao  ",
+    "Dr. Sarabjeet Kaur  ",
+    "Rounak Patra ",
   ];
 
   const detailedTeam = [

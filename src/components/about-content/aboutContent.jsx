@@ -152,11 +152,12 @@ const AboutContent = () => {
 
         <div className="mentor-container">
           <div className="mentor-image">
-            <img src="/assets/img/amit.jpeg" alt="Dr. Kusum" />
+            <img src="/assets/img/amit.jpeg" alt="Prof. Kusum" />
           </div>
 
           <div className="mentor-text">
             <h3>Dr. Amit Kumar</h3>
+            <h3>Scientist - E Wildlife Institute of India </h3>
             <p>
               Since a young age, I've been fascinated by plants, wanting to know
               their names, how and where they grow, and how they differed from
@@ -189,12 +190,13 @@ const AboutContent = () => {
       <section className="mentor-highlight">
         <div className="mentor-container">
           <div className="mentor-image">
-            <img src="/assets/img/kusum.jpeg" alt="Dr. Kusum" />
+            <img src="/assets/img/kusum.jpeg" alt="Prof. Kusum" />
           </div>
           <div className="mentor-text">
-            <h3>Dr. Kusum Arunachalam</h3>
+            <h3>Prof. Kusum Arunachalam</h3>
+            <h3>SENR, Doon <University></University></h3>
             <p>
-              Dr. Kusum Arunachalam, a distinguished scholar with over 27 years
+              Prof. Kusum Arunachalam, a distinguished scholar with over 27 years
               of experience, specializes in Restoration Ecology and Natural
               Resource Management, focusing on the Indian Himalayas. A tropical
               soil ecologist, she earned her Ph.D. from NEHU, India. She
@@ -235,6 +237,7 @@ const AboutContent = () => {
           </div>
           <div className="mentor-text">
             <h3>Dr. Ujjwal Kumar</h3>
+            <h3>SENR, Doon University</h3>
             <p>
               Dr. Ujjwal Kumar has more than 18 years of research and teaching
               experience in the field of Atmospheric science/Environmental

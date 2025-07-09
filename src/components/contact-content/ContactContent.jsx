@@ -233,7 +233,7 @@ const ContactContent = () => {
           <div className="info-section">
             <h3>Contact Information</h3>
             <p>
-              <strong>Email:</strong> info@bhomyafoundation.org
+              <strong>Email:</strong> info@bhomya.org
             </p>
             <p>
               <strong>Phone:</strong> +91 73109 53284
