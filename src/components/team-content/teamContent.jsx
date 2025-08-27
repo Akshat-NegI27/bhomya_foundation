@@ -410,7 +410,7 @@ const TeamContent = () => {
       id: "naveen",
       name: "Dr. Naveen Chandra",
       title: "Research & Development Team Lead",
-      image: "/assets/img/naveen.jpg", // Update if the image path differs
+      image: "/assets/img/naveen.jpg",
       bio: "Dr. Naveen Chandra is a leading environmental researcher and the R&D Team Lead at Bhomya Foundation. With a doctoral degree in Ecology and years of field experience, he specializes in designing innovative conservation models rooted in science and local knowledge. His work bridges the gap between data-driven insights and practical environmental action. Dr. Chandra is dedicated to advancing ecological research, fostering collaboration between academic institutions and grassroots movements, and building evidence-based strategies for sustainable development.",
       experience: [
         "Directed multi-year ecological research projects across North India",
