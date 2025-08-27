@@ -102,8 +102,8 @@ const HomeContent = () => {
           <div className="sec1-content">
             <h3>Environmental Conservation NGO</h3>
             <h1>
-              Together For Trees
-              <br /> United For Tomorrow
+              Germinating the seeds 
+              <br /> of Conservation.
             </h1>
             <h2>Be the Change, Plant the Change.</h2>
             <p>
